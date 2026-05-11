@@ -1,0 +1,10 @@
+traceroute to www.umass.edu (2606:4700::6812:145e), 30 hops max, 80 byte packets
+ 1  fritz.box (2003:ef:f734:2b00:de39:6fff:fea9:ce9f)  1.433 ms  2.509 ms  2.683 ms
+ 2  2003:0:8a03:f000::1 (2003:0:8a03:f000::1)  9.790 ms  9.760 ms  9.730 ms
+ 3  * * *
+ 4  ffm-b5-link.ip.twelve99.net (2001:2035:0:2509::1)  14.799 ms  13.969 ms  14.960 ms
+ 5  ffm-bb1-v6.ip.twelve99.net (2001:2034:1:6b::1)  14.049 ms ffm-bb2-v6.ip.twelve99.net (2001:2034:1:6c::1)  14.609 ms ffm-bb1-v6.ip.twelve99.net (2001:2034:1:6b::1)  15.355 ms
+ 6  ffm-b11-link.ip.twelve99.net (2001:2035:0:760::1)  14.850 ms  11.280 ms  11.737 ms
+ 7  cloudflare-ic-371891.ip.twelve99-cust.net (2001:2035:0:20f4::2)  13.702 ms cloudflare-ic-328337.ip.twelve99-cust.net (2001:2035:0:760::2)  13.772 ms cloudflare-ic-371891.ip.twelve99-cust.net (2001:2035:0:20f4::2)  13.636 ms
+ 8  2400:cb00:71:3:: (2400:cb00:71:3::)  20.818 ms 2400:cb00:696:3:: (2400:cb00:696:3::)  14.804 ms 2400:cb00:931:3:: (2400:cb00:931:3::)  15.119 ms
+ 9  2400:cb00:930:1024::ac47:8c4c (2400:cb00:930:1024::ac47:8c4c)  14.029 ms 2400:cb00:933:1024::ac46:f45f (2400:cb00:933:1024::ac46:f45f)  13.963 ms 2400:cb00:472:1024::ac46:f9f0 (2400:cb00:472:1024::ac46:f9f0)  14.325 ms

@@ -1,0 +1,31 @@
+traceroute to www.htwg-konstanz.de (2001:7c0:5f0:f020::20:31), 30 hops max, 80 byte packets
+ 1  fritz.box (2003:ef:f734:2b00:de39:6fff:fea9:ce9f)  2.479 ms  2.415 ms  2.395 ms         -> Lokaler Router
+ 2  2003:0:8a03:f000::1 (2003:0:8a03:f000::1)  9.310 ms  10.139 ms  10.122 ms               -> Telekom (Mein ISP)
+ 3  * * *
+ 4  2003:0:130e:4009::2 (2003:0:130e:4009::2)  15.696 ms  16.257 ms  15.213 ms              -> Telekom (Mein ISP)
+ 5  stu-eti-a99-hu0-4-0-11.belwue.net (2001:7c0:2:111d::)  19.443 ms stu-eti-a99-hu0-4-0-7.belwue.net (2001:7c0:2:10c7::)  19.864 ms  20.158 ms         -> belwue.net Router
+ 6  kar-rz-a99-hu0-2-0-0.belwue.net (2001:7c0:2:10c8::)  20.622 ms kar-rz-a99-hu0-1-0-0.belwue.net (2001:7c0:2:10c1::1)  23.844 ms kar-rz-a99-hu0-2-0-4.belwue.net (2001:7c0:2:10f4::)  21.881 ms         -> belwue.net Router
+ 7  frb-rz-1-hu0-0-1-0.belwue.net (2001:7c0:2:109e::1)  23.862 ms  19.297 ms  21.969 ms         -> belwue.net Router
+ 8  frb-kg-1-hu0-0-1-1.belwue.net (2001:7c0:2:1136::)  23.626 ms  24.049 ms  24.518 ms         -> belwue.net Router
+ 9  kon-rz-1-hu0-0-1-1.belwue.net (2001:7c0:2:1135::)  22.649 ms  20.248 ms  23.168 ms         -> belwue.net Router
+10  2001:7c0:3:806::a (2001:7c0:3:806::a)  22.905 ms  21.155 ms  18.490 ms         -> belwue.net Ziel: HTWG
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  * * *
+21  * * *
+22  * * *
+23  * * *
+24  * * *
+25  * * *
+26  * * *
+27  * * *
+28  * * *
+29  * * *
+30  * * *

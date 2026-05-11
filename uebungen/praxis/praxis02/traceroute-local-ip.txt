@@ -1,0 +1,2 @@
+traceroute to 192.168.178.98 (192.168.178.98), 30 hops max, 60 byte packets
+ 1  fedora.fritz.box (192.168.178.98)  0.131 ms  0.018 ms  0.016 ms

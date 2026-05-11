@@ -1,0 +1,12 @@
+traceroute to google.com (2a00:1450:4016:804::200e), 30 hops max, 80 byte packets
+ 1  fritz.box (2003:ef:f734:2b00:de39:6fff:fea9:ce9f)  1.149 ms  2.851 ms  2.832 ms
+ 2  2003:0:8a03:f000::1 (2003:0:8a03:f000::1)  7.012 ms  6.993 ms  7.240 ms
+ 3  * * *
+    -- Ab hier gleiche ASNs wie Internettool
+ 4  2003:0:f00::809 (2003:0:f00::809)  13.947 ms 2001:4860:1:1:0:cf8:0:16 (2001:4860:1:1:0:cf8:0:16)  13.718 ms  14.797 ms
+ 5  2001:4860:0:1::83bb (2001:4860:0:1::83bb)  15.560 ms  15.116 ms  15.490 ms
+ 6  2001:4860:0:1::5bab (2001:4860:0:1::5bab)  16.561 ms 2001:4860:0:1::5ba9 (2001:4860:0:1::5ba9)  11.919 ms  12.159 ms
+
+    -- Letzte ASN ist anders als Internettool
+
+ 7  muc12s05-in-x0e.1e100.net (2a00:1450:4016:804::200e)  14.515 ms  14.476 ms  14.849 ms

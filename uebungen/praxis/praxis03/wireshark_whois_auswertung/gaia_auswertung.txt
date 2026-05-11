@@ -1,0 +1,14 @@
+=== Gaia DNS ===
+128.119.245.12
+
+=== Gaia IP ===
+128.119.245.12
+
+=== Gaia WHOIS gekürzt ===
+NetRange:       128.119.0.0 - 128.119.255.255
+CIDR:           128.119.0.0/16
+NetName:        UMASS-NET
+OriginAS:       
+Organization:   University of Massachusetts - AMHERST (UNIVER-6)
+OrgName:        University of Massachusetts - AMHERST
+Country:        US

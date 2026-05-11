@@ -1,0 +1,13 @@
+=== HTWG DNS ===
+cms.htwg-konstanz.de.
+141.37.20.31
+
+=== HTWG IPv4 ===
+cms.htwg-konstanz.de.
+
+=== HTWG IPv6 ===
+cms.htwg-konstanz.de.
+
+=== HTWG WHOIS IPv4 gekürzt ===
+
+=== HTWG WHOIS IPv6 gekürzt ===

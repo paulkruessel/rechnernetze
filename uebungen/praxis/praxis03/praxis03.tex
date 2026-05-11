@@ -1,0 +1,469 @@
+\documentclass{kdiartcl}
+
+\usepackage{amsmath}
+\usetikzlibrary{arrows.meta,decorations.pathreplacing}
+
+\university{HTWG Konstanz}
+\institute{Fachbereich Angewandte Informatik}
+\lecture{Rechnernetze}
+\date{\today}
+
+\author{Paul Krüssel}
+\title{Lösung Praxisaufgabe 3}
+%\subtitle{Abgabeende: 14. April 2026}
+
+\singlespacing
+
+\begin{document}
+\maketitle
+
+\setcounter{section}{1}
+
+\section{Monitoring von Sockets}
+
+Die lokale IP des Laptops ist zum Zeitpunkt der Analyse 192.168.178.98.
+
+\subsection{Wieviele Sockets sind insgesamt geöffnet}
+Der Command 'netstat -an | tail -n +3 | wc -l' gibt aus, das aktuell 1330 Sockets offen sind, davon 53 TCP und 21 UDP.
+
+\subsection{Wie unterscheiden sich die Einträge von TCP und UDP Sockets?}
+Beispiel TCP Socket:
+\begin{verbatim}
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.1:5054          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:32973         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:2680          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:46137         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:8384          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:27182         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40882         ESTABLISHED
+tcp        0      0 127.0.0.1:46137         127.0.0.1:55196         ESTABLISHED
+tcp        0      0 127.0.0.1:55196         127.0.0.1:46137         ESTABLISHED
+tcp        0      0 192.168.178.98:52680    34.107.243.93:443       ESTABLISHED
+tcp        0      0 192.168.178.98:35622    172.64.155.209:443      TIME_WAIT  
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40872         ESTABLISHED
+tcp        0      0 192.168.178.98:51800    13.69.68.64:443         ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40918         ESTABLISHED
+tcp        0      0 127.0.0.1:40872         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40882         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40890         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40902         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40918         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40930         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40930         ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40902         ESTABLISHED
+tcp        0      0 192.168.178.98:36624    51.104.15.253:443       ESTABLISHED
+tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED
+tcp        0      0 127.0.0.1:46658         127.0.0.1:35169         ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40890         ESTABLISHED
+tcp6       0      0 127.0.0.1:35169         :::*                    LISTEN     
+tcp6       0      0 :::5355                 :::*                    LISTEN     
+tcp6       0      0 :::22000                :::*                    LISTEN     
+tcp6       0      0 ::1:631                 :::*                    LISTEN     
+tcp6       0      0 2003:ef:f734:2b00:50146 2a04:4e42:6f::347:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:50366 2a04:4e42:6f::347:443   ESTABLISHED
+tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT 
+tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:39014 2600:1901:1:4be:::443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:37036 2603:1061:14:63::1:443  ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:37260 2600:1901:1:7c5:::443   TIME_WAIT  
+tcp6       0      0 2003:ef:f734:2b00:37276 2600:1901:1:7c5:::443   TIME_WAIT  
+tcp6       0      0 127.0.0.1:35169         127.0.0.1:46658         ESTABLISHED
+tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:43506 2a06:98c1:3108::ac4:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:50412 2a04:4e42:6f::762:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:51382 2603:1061:13f1:182c:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:32774 2603:1026:3000:a8:::443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:33476 2a04:4e42:6f::347:443   ESTABLISHED
+\end{verbatim}
+Beispiel UDP Socket:
+\begin{verbatim}
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+udp        0      0 192.168.178.98:3702     0.0.0.0:*                          
+udp        0      0 239.255.255.250:3702    0.0.0.0:*                          
+udp        0      0 0.0.0.0:21027           0.0.0.0:*                          
+udp        0      0 0.0.0.0:5353            0.0.0.0:*                          
+udp        0      0 0.0.0.0:5355            0.0.0.0:*                          
+udp        0      0 0.0.0.0:41256           0.0.0.0:*                          
+udp        0      0 0.0.0.0:41911           0.0.0.0:*                          
+udp        0      0 127.0.0.54:53           0.0.0.0:*                          
+udp        0      0 127.0.0.53:53           0.0.0.0:*                          
+udp        0      0 192.168.178.98:68       192.168.178.1:67        ESTABLISHED
+udp        0      0 127.0.0.1:323           0.0.0.0:*                          
+udp6       0      0 fe80::ec13:63ea:c3:3702 :::*                               
+udp6       0      0 ff02::c:3702            :::*                               
+udp6       0      0 :::21027                :::*                               
+udp6       0      0 :::5353                 :::*                               
+udp6       0      0 :::5355                 :::*                               
+udp6       0      0 :::22000                :::*                               
+udp6       0      0 :::60616                :::*                               
+udp6       0      0 ::1:323                 :::*                               
+udp6     960      0 fe80::ec13:63ea:c38:546 :::*                               
+udp6       0      0 :::34879                :::*                               
+\end{verbatim}
+
+Ein Unterschied ist, dass fast kein UDP Socket einen State hat, während TCP aber mehrere Zustände hat:
+\begin{itemize}
+    \item \texttt{LISTEN}: Ein Dienst wartet auf eingehende TCP-Verbindungen
+    \item \texttt{ESTABLISHED}: Verbindung besteht aktiv
+    \item \texttt{TIME\_WAIT}: Verbindung wurde beendet, der Kernel wartet noch kurz auf Verspätete Pakete
+    \item \texttt{CLOSE\_WAIT}: Gegenstelle hat geschlossen, der lokale Prozess hat den Socket aber noch offen
+\end{itemize}
+Dies liegt daran, dass UDP keine Verbindungen nicht selber Verbindungen verwaltet, da es verbindungslos ist.
+
+\subsection{Was bedeuten die Einträge in der Spalte „State“ bei TCP Sockets?}
+Siehe oben.
+\subsection{Wie viele Server Ports hat ihr Rechner geöffnet (state=Listening)? Auf diesen Ports (und den UDP
+Ports) kann ihr Rechner von außen kontaktiert werden.}
+
+\begin{verbatim}
+    paul@fedora:~$ ss -lnt | tail -n +2 | wc -l
+    15
+    paul@fedora:~$ ss -lntu | tail -n +2 | wc -l
+    35
+\end{verbatim}
+Es sind 15 TCP Ports auf \texttt{LISTENING} eingestellt. Zudem kann der PC über 20 weitere UDP Ports empfangen.
+
+\subsection{Wie viele Sockets (ESTABLISHED) werden neu geöffnet, wenn Sie die Messung nach einer Minute
+erneut durchführen bzw. die Ergebnisse aktualisieren?}
+Neue Ausgabe der TCP Sockets:
+\begin{verbatim}
+paul@fedora:~$ netstat -ant
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.1:5054          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:32973         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:2680          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:46137         0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:8384          0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:27182         0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40882         ESTABLISHED
+tcp        0      0 192.168.178.98:33298    34.107.243.93:443       ESTABLISHED
+tcp        0      0 127.0.0.1:46137         127.0.0.1:55196         ESTABLISHED
+tcp        0      0 127.0.0.1:55196         127.0.0.1:46137         ESTABLISHED
+tcp        0      0 192.168.178.98:45420    20.189.173.27:443       ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40872         ESTABLISHED
+tcp        0      0 192.168.178.98:42026    172.64.155.209:443      TIME_WAIT  
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40918         ESTABLISHED
+tcp        0      0 192.168.178.98:60926    13.69.68.64:443         ESTABLISHED
+tcp        0      0 127.0.0.1:40872         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40882         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40890         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40902         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40918         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:40930         127.0.0.1:5054          ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40930         ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40902         ESTABLISHED
+tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED
+tcp        0      0 127.0.0.1:46658         127.0.0.1:35169         ESTABLISHED
+tcp        0      0 127.0.0.1:5054          127.0.0.1:40890         ESTABLISHED
+tcp6       0      0 127.0.0.1:35169         :::*                    LISTEN     
+tcp6       0      0 :::5355                 :::*                    LISTEN     
+tcp6       0      0 :::22000                :::*                    LISTEN     
+tcp6       0      0 ::1:631                 :::*                    LISTEN     
+tcp6       0      0 2003:ef:f734:2b00:36298 2a04:4e42:6f::347:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:36306 2a04:4e42:6f::347:443   ESTABLISHED
+tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT 
+tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:36878 2606:4700:7::175:443    ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:39014 2600:1901:1:4be:::443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:35288 2600:1480:2000:23:::443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:44138 2600:1480:2000:23:::443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:51582 2603:1061:13f1:181a:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:42646 2600:1901:1:7c5:::443   TIME_WAIT  
+tcp6       0      0 2003:ef:f734:2b00:42668 2600:1901:1:7c5:::443   TIME_WAIT  
+tcp6       0      0 127.0.0.1:35169         127.0.0.1:46658         ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:51606 2600:1901:1:7c5:::443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:51618 2600:1901:1:7c5:::443   ESTABLISHED
+tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:43538 2a06:98c1:3108::ac4:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:43540 2a06:98c1:3108::ac4:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:50200 2a04:4e42:6f::762:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED
+paul@fedora:~$
+\end{verbatim}
+
+In der neuen Messung sind es nun 36 \texttt{ESTABLISHED} Sockets, während es in der alten noch 33 waren. Dementsprechend gibt es nun 3 \texttt{ESTABLISHED} Sockets mehr. Zudem sind 14 Einträge dazugekommen und 11 verschwunden (geschlossen).
+
+\subsection{Sehen Sie zahlreiche Sockets mit IP-Adresse 127.0.0.1? Finden Sie heraus, wofür diese IP Adresse
+benutzt wird und blenden Sie alle Sockets mit dieser Adresse aus.}
+
+Die IP-Adresse \texttt{127.0.0.1} ist die Lokale loopback IP-Adresse, mit dem sich das Laptop selber anspricht. Also Anwendungen können andere Anwendungen, die auf dem Laptop laufen, über diese IP-Adresse immer erreichen, auch wenn das Laptop eine neue lokale IP-Adresse bekommt. \\
+Ausgabe ohne \texttt{127.0.0.1}:
+\begin{verbatim}
+paul@fedora:~$ netstat -ant | grep -v '127\.0\.0\.1'
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN     
+tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN     
+tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN     
+tcp        0      0 192.168.178.98:38170    34.107.243.93:443       ESTABLISHED
+tcp        0      0 192.168.178.98:45420    20.189.173.27:443       ESTABLISHED
+tcp        0      0 192.168.178.98:60926    13.69.68.64:443         ESTABLISHED
+tcp        0      0 192.168.178.98:40334    104.18.32.47:443        TIME_WAIT  
+tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED
+tcp6       0      0 :::5355                 :::*                    LISTEN     
+tcp6       0      0 :::22000                :::*                    LISTEN     
+tcp6       0      0 ::1:631                 :::*                    LISTEN     
+tcp6       0      0 2003:ef:f734:2b00:51774 2a04:4e42:6f::347:443   ESTABLISHED
+tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT 
+tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:56110 2a04:4e42:6f::347:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:58232 2a04:4e42:6f::347:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:60640 2600:1901:1:4be:::443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:60594 2600:1480:2000:23:::443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:51582 2603:1061:13f1:181a:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:44988 2603:1061:14:63::1:443  ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:53942 2600:1901:1:7c5:::443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:53952 2600:1901:1:7c5:::443   ESTABLISHED
+tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:43540 2a06:98c1:3108::ac4:443 ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:36134 2a04:4e42:6f::762:443   ESTABLISHED
+tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED
+\end{verbatim}
+
+\subsection{Bestimmen sie anhand der Portnummer und der Portliste für einige interessante/unbekannte Prozesse, mit welchem Protokoll diese kommunizieren.}
+
+\begin{itemize}
+    \item \texttt{systemd-resolve} verwendet Port \texttt{53} über TCP und UDP für DNS. Der Dienst ist an lokale Loopback-Adressen gebunden und dient als lokaler DNS-Resolver.
+    \item \texttt{cupsd} verwendet Port \texttt{631} über TCP für den Druckdienst CUPS beziehungsweise IPP. Da der Dienst nur auf \texttt{127.0.0.1} und \texttt{::1} lauscht, ist er nur lokal erreichbar.
+    \item \texttt{syncthing} verwendet Port \texttt{22000} über TCP und UDP für die Dateisynchronisation. Zusätzlich wird Port \texttt{21027} über UDP für lokale Geräteerkennung verwendet.
+\end{itemize}
+
+
+\section{Details über die Kommunikationspartner ihres PCs}
+
+\subsection{Wie erhält das Programm die Informationen? Welcher Server wird kontaktiert? Welches Protokoll wird verwendet?}
+
+Unter Linux wurde statt \texttt{IPNetInfo} der Befehl \texttt{whois} verwendet. Während der Ausführung von \texttt{whois} wurde mit Wireshark mitgeschnitten.
+
+Beispiel Command:
+\begin{verbatim}
+whois 128.119.245.12
+\end{verbatim}
+
+In Wireshark wurde danach folgender Filter verwendet:
+\begin{verbatim}
+tcp.port == 43
+\end{verbatim}
+
+Dabei sieht man, dass der Rechner eine TCP-Verbindung zu einem WHOIS-Server aufbaut. Der verwendete Port ist \texttt{43}. Das verwendete Protokoll ist also WHOIS über TCP.
+
+Die Informationen werden nicht direkt vom eigentlichen Webserver abgefragt. Stattdessen fragt der Rechner eine öffentliche WHOIS-Datenbank ab. Der Client sendet dabei die IP-Adresse an den WHOIS-Server und bekommt als Antwort Informationen wie Netzbereich, Organisation, Land und Kontaktinformationen zurück.
+
+Für die Adresse \texttt{128.119.245.12} kam eine ARIN-WHOIS-Ausgabe zurück. Für die HTWG-Adresse \texttt{141.37.20.31} kam eine RIPE-WHOIS-Ausgabe zurück. Man sieht also, dass je nach IP-Adresse unterschiedliche WHOIS-Datenbanken zuständig sind.
+
+\subsection{In welchem Netz befindet sich der Web-Server der ersten Wireshark-Aufgabe?}
+
+In der ersten Wireshark-Aufgabe wurde die Seite
+\begin{verbatim}
+http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html
+\end{verbatim}
+aufgerufen.
+
+Der verwendete Command war:
+\begin{verbatim}
+curl -4 -v http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html -o /tmp/gaia.html
+\end{verbatim}
+
+Die Ausgabe zeigt, dass \texttt{gaia.cs.umass.edu} auf die IPv4-Adresse \texttt{128.119.245.12} aufgelöst wurde:
+\begin{verbatim}
+* Host gaia.cs.umass.edu:80 was resolved.
+* IPv4: 128.119.245.12
+* Connected to gaia.cs.umass.edu (128.119.245.12) port 80
+> GET /wireshark-labs/INTRO-wireshark-file1.html HTTP/1.1
+< HTTP/1.1 200 OK
+\end{verbatim}
+
+Danach wurde die IP-Adresse mit \texttt{whois} untersucht:
+\begin{verbatim}
+whois 128.119.245.12
+\end{verbatim}
+
+Die gekürzte WHOIS-Ausgabe war:
+\begin{verbatim}
+NetRange:       128.119.0.0 - 128.119.255.255
+CIDR:           128.119.0.0/16
+NetName:        UMASS-NET
+Organization:   University of Massachusetts - AMHERST
+OrgName:        University of Massachusetts - AMHERST
+Country:        US
+\end{verbatim}
+
+Der Webserver befindet sich also im Netz \texttt{128.119.0.0/16}. Dieses Netz gehört zur \texttt{University of Massachusetts - AMHERST} in den USA. Da die Verbindung zu Port \texttt{80} aufgebaut wurde und die URL mit \texttt{http://} beginnt, wurde hier HTTP verwendet.
+
+\subsection{Welche Informationen finden Sie über die HTWG?}
+
+Für die HTWG wurde die Webseite
+\begin{verbatim}
+https://www.htwg-konstanz.de/
+\end{verbatim}
+aufgerufen.
+
+Der verwendete Command war:
+\begin{verbatim}
+curl -4 -v https://www.htwg-konstanz.de/ -o /tmp/htwg.html
+\end{verbatim}
+
+Die Ausgabe zeigt, dass \texttt{www.htwg-konstanz.de} auf die IPv4-Adresse \texttt{141.37.20.31} aufgelöst wurde:
+\begin{verbatim}
+* Host www.htwg-konstanz.de:443 was resolved.
+* IPv4: 141.37.20.31
+* Connected to www.htwg-konstanz.de (141.37.20.31) port 443
+\end{verbatim}
+
+Außerdem sieht man im TLS-Zertifikat Informationen zur HTWG:
+\begin{verbatim}
+subject: C=DE; ST=Baden-Wuerttemberg;
+O=Hochschule Konstanz Technik Wirtschaft und Gestaltung;
+CN=www.htwg-konstanz.de
+\end{verbatim}
+
+Danach wurde die IP-Adresse mit \texttt{whois} untersucht:
+\begin{verbatim}
+whois 141.37.20.31
+\end{verbatim}
+
+Die WHOIS-Ausgabe enthält:
+\begin{verbatim}
+inetnum:        141.37.0.0 - 141.37.255.255
+netname:        FH-KN
+country:        DE
+org-name:       Hochschule Konstanz Technik, Wirtschaft und Gestaltung
+address:        Brauneggerstr. 55
+address:        78462 Konstanz, Germany
+route:          141.37.0.0/16
+descr:          FH-KONSTANZ
+origin:         AS553
+\end{verbatim}
+
+Über die HTWG findet man also, dass die Webseite unter der IP-Adresse \texttt{141.37.20.31} erreichbar ist. Diese Adresse liegt im Netzbereich \texttt{141.37.0.0/16}. Der Netzname ist \texttt{FH-KN}. Als Organisation ist \texttt{Hochschule Konstanz Technik, Wirtschaft und Gestaltung} eingetragen. Außerdem ist als Adresse \texttt{Brauneggerstr. 55, 78462 Konstanz, Germany} angegeben. Das Netz gehört zu Deutschland und wird über \texttt{AS553} geroutet.
+
+Da die HTWG-Webseite über Port \texttt{443} aufgerufen wurde, handelt es sich hierbei um HTTPS-Kommunikation.
+
+
+
+\section{Sockets beim Laden einer Web-Seite}
+
+
+
+\subsection{Bestimmen Sie die Anzahl Sockets, die geöffnet werden, wenn Sie \texttt{www.spiegel.de} herunterladen.}
+
+Für die Messung habe ich \texttt{www.spiegel.de} im Browser geöffnet und danach die externen TCP-Verbindungen gezählt.
+
+\begin{verbatim}
+paul@fedora:~$ ss -H -tan state established | grep -Ev '127\.|::1|192\.168\.178\.' | wc -l
+41
+\end{verbatim}
+
+Nach dem Laden von \texttt{www.spiegel.de} waren also 41 externe TCP-Sockets geöffnet. Die Messung wurde mit aktiviertem Adblocker \texttt{uBlock Origin} und aktivierter Privacy-Protection-Erweiterung \texttt{Privacy Badger} durchgeführt. Ohne diese Erweiterungen könnten mehr Sockets geöffnet werden, da dann vermutlich mehr Werbung, Tracking-Dienste und externe Inhalte geladen werden.
+
+Kurz zu dem Regex-Teil im Command: Mit \texttt{grep -Ev} werden Zeilen ausgeblendet, die auf den regulären Ausdruck passen. \texttt{127\textbackslash.} filtert lokale Loopback-Adressen, \texttt{::1} filtert die IPv6-Loopback-Adresse und \texttt{192\textbackslash.168\textbackslash.178\textbackslash.} filtert Verbindungen im lokalen Heimnetz.
+
+\subsection{Was ist die maximale Anzahl von Sockets pro Remote-IP-Adresse?}
+
+Dafür wurden die Remote-IP-Adressen gezählt und sortiert.
+
+\begin{verbatim}
+paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/01_spiegel_established.txt \
+> | sed -E 's/^\[([^]]+)\]:[0-9]+$/\1/; s/^([^:]+):[0-9]+$/\1/' \
+> | sort \
+> | uniq -c \
+> | sort -nr \
+> | head -n 1
+      4 2a02:26f0:480:33::212:40da
+\end{verbatim}
+
+Die maximale Anzahl von Sockets pro Remote-IP-Adresse war also 4.
+
+Der Regex im \texttt{sed}-Befehl entfernt den Port von der Remote-Adresse. Der erste Teil ist für IPv6-Adressen mit eckigen Klammern gedacht, z.B. \texttt{[2a04:...]:443}. Der zweite Teil ist für normale IPv4-Adressen mit Port gedacht, z.B. \texttt{1.2.3.4:443}. Mit \texttt{\textbackslash 1} wird jeweils nur die IP-Adresse ohne Port ausgegeben.
+
+\subsection{Welche Remote-Ports werden verwendet?}
+
+Die Remote-Ports wurden aus der Liste der Verbindungen extrahiert.
+
+\begin{verbatim}
+paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/01_spiegel_established.txt \
+> | sed -E 's/^.*:([0-9]+)$/\1/' \
+> | sort -n -u
+80
+443
+\end{verbatim}
+
+Es wurden also die Ports \texttt{80} und \texttt{443} verwendet. Das passt zu HTTP und HTTPS.
+
+Der Regex \texttt{s/\^{}.*:([0-9]+)\$/\textbackslash 1/} nimmt alles bis zum letzten Doppelpunkt weg und gibt nur die Zahl am Ende aus. Dadurch bleibt nur der Remote-Port übrig.
+
+\subsection{Wie viele verschiedene Firmen können Sie die Remote-Hosts zuordnen?}
+
+Die Remote-IP-Adressen wurden mit \texttt{whois} untersucht. Dabei konnten mehrere Firmen bzw. Organisationen erkannt werden.
+
+\begin{verbatim}
+paul@fedora:~$ cat socket_webseiten_analyse/06_spiegel_whois.csv
+\end{verbatim}
+
+Gefundene Firmen waren unter anderem:
+\begin{itemize}
+    \item \texttt{Google LLC}
+    \item \texttt{Google Cloud}
+    \item \texttt{Akamai Technologies}
+    \item \texttt{Amazon.com, Inc.}
+    \item \texttt{Microsoft Corporation}
+    \item \texttt{Cloudflare, Inc.}
+    \item \texttt{Fastly, Inc.}
+    \item \texttt{CDN77}
+\end{itemize}
+
+Wenn man \texttt{Google LLC} und \texttt{Google Cloud} zusammenfasst, komme ich auf ungefähr 7 verschiedene Firmen.
+
+\subsection{Laden Sie eine andere populäre Web-Seite und vergleichen Sie die Liste der kontaktierten Firmen.}
+
+Zum Vergleich wurde eine andere populäre Webseite geladen und danach wieder die gleiche Messung durchgeführt.
+
+\begin{verbatim}
+paul@fedora:~$ ss -H -tan state established | grep -Ev '127\.|::1|192\.168\.178\.' | wc -l
+49
+\end{verbatim}
+
+Für die Vergleichsseite wurden also 49 externe TCP-Sockets gemessen.
+
+Die Remote-Ports waren wieder:
+\begin{verbatim}
+paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/07_vergleich_established.txt \
+> | sed -E 's/^.*:([0-9]+)$/\1/' \
+> | sort -n -u
+80
+443
+\end{verbatim}
+
+Die maximale Anzahl von Sockets pro Remote-IP-Adresse war ebenfalls 4:
+\begin{verbatim}
+paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/07_vergleich_established.txt \
+> | sed -E 's/^\[([^]]+)\]:[0-9]+$/\1/; s/^([^:]+):[0-9]+$/\1/' \
+> | sort \
+> | uniq -c \
+> | sort -nr \
+> | head -n 1
+      4 2a02:26f0:480:33::212:40da
+\end{verbatim}
+
+Die kontaktierten Firmen waren ähnlich wie bei \texttt{www.spiegel.de}, z.B. Google, Akamai, Amazon, Microsoft, Cloudflare und Fastly. Man sieht also, dass populäre Webseiten viele externe Dienste bzw. CDNs kontaktieren.
+
+
+\end{document}
+
