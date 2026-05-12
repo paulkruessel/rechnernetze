@@ -24,6 +24,136 @@
 \setcounter{section}{2}
 
 \section{Rechen-Server}
+
+\subsection{Verwendete Python-Programme und Ausführung}
+
+Für die Versuche wurden mehrere Python-Programme verwendet. Ich habe die Programme jeweils so ausgeführt, dass die Konsolenausgabe mit \texttt{tee} in eine Logdatei geschrieben wurde. Dadurch sind die Versuche wiederholbar und die Ausgaben können später direkt in der Auswertung verwendet werden. Die Option \texttt{-u} wurde bei Serverprogrammen verwendet, damit Python die Ausgabe nicht puffert. Bei allen Befehlen leitet \texttt{2>\&1} auch Fehlermeldungen in die Logdatei um.
+
+\subsubsection*{calc\_server\_tcp\_threaded.py}
+
+Dieses Programm ist der TCP-Rechenserver. Es bindet einen Stream-Socket an eine IP-Adresse und einen Port, wartet mit \texttt{accept()} auf eingehende Verbindungen und startet für jeden Client einen eigenen Thread. In diesem Thread wird die Anfrage empfangen, geparst, berechnet und beantwortet. Lokal wurde der Server mit folgendem Befehl gestartet:
+
+\begin{verbatim}
+python3 -u calc_server_tcp_threaded.py --ip 127.0.0.1 --port 50001 \
+  2>&1 | tee log_calc_server_tcp_local_clean.txt
+\end{verbatim}
+
+Für den Hotspot-Versuch wurde derselbe Server auf die Hotspot-IP des Fedora-Laptops gebunden:
+
+\begin{verbatim}
+python3 -u calc_server_tcp_threaded.py --ip 172.20.10.2 --port 50001 \
+  2>&1 | tee log_calc_server_tcp_hotspot_clean.txt
+\end{verbatim}
+
+\subsubsection*{calc\_server\_udp.py}
+
+Dieses Programm ist der UDP-Rechenserver. Es bindet einen Datagram-Socket, empfängt Anfragen mit \texttt{recvfrom()}, berechnet das Ergebnis und sendet die Antwort mit \texttt{sendto()} an den Absender zurück. Ausgeführt wurde das Programm mit:
+
+\begin{verbatim}
+python3 -u calc_server_udp.py --ip 127.0.0.1 --port 50002 --seconds 60 \
+  2>&1 | tee log_calc_server_udp_local_clean.txt
+\end{verbatim}
+
+\subsubsection*{calc\_client\_probe.py}
+
+Dieses Programm wurde als Client für TCP und UDP verwendet. Es erzeugt die binäre Rechenanfrage mit \texttt{struct.pack()}, sendet sie an den Server, gibt die lokale Socket-Adresse und die Gegenstelle aus und parst danach die Antwort. Mit demselben Programm wurde auch untersucht, ob der lokale Client-Port automatisch vergeben wird oder mit \texttt{bind()} gesetzt werden kann.
+
+Ein lokaler TCP-Test wurde zum Beispiel so gestartet:
+
+\begin{verbatim}
+python3 calc_client_probe.py --proto tcp --server-ip 127.0.0.1 \
+  --server-port 50001 --op SUM --numbers 1 2 3 4 5 \
+  2>&1 | tee log_calc_client_tcp_sum_clean.txt
+\end{verbatim}
+
+Der UDP-Test wurde so gestartet:
+
+\begin{verbatim}
+python3 calc_client_probe.py --proto udp --server-ip 127.0.0.1 \
+  --server-port 50002 --op SUM --numbers 1 2 3 4 5 \
+  2>&1 | tee log_calc_client_udp_sum_clean.txt
+\end{verbatim}
+
+Im Hotspot-Versuch ohne explizites lokales Binding wurde folgender Befehl verwendet:
+
+\begin{verbatim}
+python3 calc_client_probe.py --proto tcp --server-ip 172.20.10.2 \
+  --server-port 50001 --op SUM --numbers 1 2 3 4 5 \
+  2>&1 | tee log_calc_client_tcp_hotspot_auto_port.txt
+\end{verbatim}
+
+Im Hotspot-Versuch mit explizitem lokalen Port wurde folgender Befehl verwendet:
+
+\begin{verbatim}
+python3 calc_client_probe.py --proto tcp --server-ip 172.20.10.2 \
+  --server-port 50001 --bind-ip 172.20.10.4 --bind-port 50010 \
+  --op SUM --numbers 1 2 3 4 5 \
+  2>&1 | tee log_calc_client_tcp_hotspot_bound_port.txt
+\end{verbatim}
+
+\subsubsection*{echo\_dual\_tcp\_udp\_server.py und echo\_client.py}
+
+Mit \texttt{echo\_dual\_tcp\_udp\_server.py} wurde getestet, ob TCP und UDP dieselbe numerische Portnummer gleichzeitig nutzen können. Das Programm bindet dazu einen TCP-Socket und einen UDP-Socket auf \texttt{127.0.0.1:50000}. Beide Dienste senden empfangene Daten wieder zurück.
+
+\begin{verbatim}
+python3 -u echo_dual_tcp_udp_server.py --ip 127.0.0.1 --port 50000 \
+  --seconds 60 2>&1 | tee log_echo_dual_server_clean.txt
+\end{verbatim}
+
+Die Tests wurden mit \texttt{echo\_client.py} durchgeführt. Der TCP-Test war:
+
+\begin{verbatim}
+python3 echo_client.py --proto tcp --server-ip 127.0.0.1 --server-port 50000 \
+  --message "Hello TCP" 2>&1 | tee log_echo_tcp_same_port_clean.txt
+\end{verbatim}
+
+Der UDP-Test war:
+
+\begin{verbatim}
+python3 echo_client.py --proto udp --server-ip 127.0.0.1 --server-port 50000 \
+  --message "Hello UDP" 2>&1 | tee log_echo_udp_same_port_clean.txt
+\end{verbatim}
+
+\subsubsection*{port\_scanner\_tcp\_udp.py}
+
+Dieses Programm ist der Portscanner. Für TCP wird mit \texttt{connect\_ex()} geprüft, ob ein Verbindungsaufbau möglich ist. Für UDP sendet das Programm ein Datagramm und wartet dann auf eine Antwort, einen Fehler oder einen Timeout. Die einzelnen Portanfragen laufen parallel.
+
+Der TCP-Scan wurde mit folgendem Befehl ausgeführt:
+
+\begin{verbatim}
+python3 port_scanner_tcp_udp.py --proto tcp --host 141.37.122.107 \
+  --start 1 --end 50 --timeout 1 --workers 50 \
+  2>&1 | tee log_scan_tcp_141_37_122_107.txt
+\end{verbatim}
+
+Der UDP-Scan wurde mit folgendem Befehl ausgeführt:
+
+\begin{verbatim}
+python3 port_scanner_tcp_udp.py --proto udp --host 141.37.168.26 \
+  --start 1 --end 50 --timeout 1 --workers 50 \
+  2>&1 | tee log_scan_udp_141_37_168_26.txt
+\end{verbatim}
+
+\subsubsection*{SMTP-Programme}
+
+Für den OpenSSL-Versuch wurde kein eigenes Python-Programm benutzt. Der Socket wurde direkt mit \texttt{openssl s\_client} geöffnet:
+
+\begin{verbatim}
+openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587
+\end{verbatim}
+
+Für den Python-Versuch wurde \texttt{smtp\_socket\_client.py} verwendet. Das Programm öffnet zuerst einen TCP-Socket zum SMTP-Server auf Port \texttt{587}, sendet \texttt{EHLO} und \texttt{STARTTLS}, wandelt den Socket mit \texttt{ssl.create\_default\_context()} in einen TLS-Socket um und führt danach den SMTP-Dialog mit \texttt{AUTH LOGIN}, \texttt{mail from}, \texttt{rcpt to} und \texttt{data} aus.
+
+\begin{verbatim}
+python3 smtp_socket_client.py --username pa871kru \
+  --from-envelope pa871kru@htwg-konstanz.de \
+  --from-header "Paul Kruessel <pa871kru@htwg-konstanz.de>" \
+  --to kruesselpaul@gmail.com \
+  --subject "RN Labor Python SMTP Test" \
+  --body "Testmail per Python-Socket" \
+  2>&1 | tee log_smtp_python.txt
+\end{verbatim}
+
 \subsection{Lokale Kommunikation}
 
 Für den lokalen Test des Rechenservers wurden Client und Server auf demselben Rechner
@@ -265,7 +395,7 @@ entspricht die Kommunikation dem vorgegebenen Nachrichtenformat.
 
 \subsection{Netzwerk-Kommunikation}
 
-Für den Versuch über ein Netzwerk wurde nicht NordVPN MeshNet verwendet. Stattdessen wurde ein Handy-Hotspot genutzt, sodass beide Geräte im gleichen lokalen Netz waren. Der Server lief auf dem Fedora-Laptop mit der IP-Adresse \texttt{172.20.10.2}. Der Client lief auf einem Windows-Gerät mit der IP-Adresse \texttt{172.20.10.4}. Vor dem eigentlichen Test wurde die Verbindung mit \texttt{ping} geprüft.
+Für den Versuch über ein Netzwerk wurde nicht NordVPN MeshNet verwendet. Stattdessen wurde ein Handy-Hotspot genutzt, sodass beide Geräte im gleichen lokalen Netz waren. Der Server lief auf dem Fedora-Laptop mit der IP-Adresse \texttt{172.20.10.2}. Der Client lief auf einem Windows-Gerät mit der IP-Adresse \texttt{172.20.10.4}. Vor dem eigentlichen Test wurde die Verbindung mit \texttt{ping} geprüft. Die dazu verwendeten Programme und Befehle sind im Abschnitt zu den verwendeten Python-Programmen aufgeführt.
 
 \begin{verbatim}
 Ping wird ausgeführt für 172.20.10.2 mit 32 Bytes Daten:
@@ -334,7 +464,7 @@ Mit \texttt{try ... except} kann man solche Fehler abfangen. Der Socket-Befehl s
 
 \subsubsection{TCP und UDP auf gleicher Portnummer}
 
-Für die Frage, ob TCP und UDP auf derselben Portnummer gleichzeitig verwendet werden können, wurde ein Echo-Server gestartet, der sowohl einen TCP- als auch einen UDP-Socket auf \texttt{127.0.0.1:50000} bindet.
+Für die Frage, ob TCP und UDP auf derselben Portnummer gleichzeitig verwendet werden können, wurde das Programm \texttt{echo\_dual\_tcp\_udp\_server.py} gestartet. Dieses Programm erzeugt einen TCP-Socket und einen UDP-Socket und bindet beide auf die Adresse \texttt{127.0.0.1:50000}. Die beiden Tests wurden danach mit \texttt{echo\_client.py} durchgeführt. Die genauen Befehle sind im Abschnitt zu den verwendeten Python-Programmen angegeben.
 
 Serverausgabe:
 
@@ -405,7 +535,7 @@ Der Server hat die Verbindungen auf unterschiedlichen lokalen Ports angenommen u
 
 \subsection{TCP Port Scanner}
 
-Für den TCP-Portscan wurde der Server \texttt{141.37.122.107} auf den Ports \texttt{1} bis \texttt{50} gescannt. Die Verbindung zur Hochschule wurde vorher über OpenVPN aufgebaut. Im VPN-Log war zu sehen, dass die Verbindung erfolgreich aufgebaut wurde:
+Für den TCP-Portscan wurde das Programm \texttt{port\_scanner\_tcp\_udp.py} verwendet. Dieses Programm startet für die einzelnen Ports parallele Anfragen. Bei TCP wird mit \texttt{connect\_ex()} geprüft, ob der Verbindungsaufbau erfolgreich ist. Gescannt wurde der Server \texttt{141.37.122.107} auf den Ports \texttt{1} bis \texttt{50}. Die Verbindung zur Hochschule wurde vorher über OpenVPN aufgebaut. Im VPN-Log war zu sehen, dass die Verbindung erfolgreich aufgebaut wurde:
 
 \begin{verbatim}
 Initialization Sequence Completed
@@ -417,7 +547,7 @@ Ein Ping auf den Server lieferte keine Antwort:
 4 packets transmitted, 0 received, 100% packet loss
 \end{verbatim}
 
-Das bedeutet aber nicht automatisch, dass der Server nicht erreichbar ist. ICMP kann blockiert sein. Deshalb wurde die Erreichbarkeit der Dienste mit TCP-Sockets getestet.
+Das bedeutet aber nicht automatisch, dass der Server nicht erreichbar ist. ICMP kann blockiert sein. Deshalb wurde die Erreichbarkeit der Dienste mit TCP-Sockets getestet. Der genaue Ausführungsbefehl für den Scanner ist im Abschnitt zu den verwendeten Python-Programmen angegeben.
 
 Der TCP-Scan lieferte folgende offenen Ports:
 
@@ -449,7 +579,7 @@ Alle anderen Ports zwischen 1 und 50 wurden als \texttt{closed\_or\_filtered} er
 
 \subsection{UDP Port Scanner}
 
-Für UDP wurde der Server \texttt{141.37.168.26} auf den Ports \texttt{1} bis \texttt{50} gescannt. In den Logs wurde für keinen der gescannten UDP-Ports eine Antwort empfangen. Alle Ports liefen in einen Timeout.
+Für UDP wurde ebenfalls \texttt{port\_scanner\_tcp\_udp.py} verwendet. In diesem Modus sendet das Programm ein UDP-Datagramm an jeden Port und wartet danach auf eine Antwort oder einen Fehler. Gescannt wurde der Server \texttt{141.37.168.26} auf den Ports \texttt{1} bis \texttt{50}. In den Logs wurde für keinen der gescannten UDP-Ports eine Antwort empfangen. Alle Ports liefen in einen Timeout.
 
 \begin{verbatim}
 [SCAN] proto=udp host=141.37.168.26 ports=1-50 timeout=1.0s workers=50
@@ -464,7 +594,7 @@ Auf Fedora/Linux wurde bei diesem Versuch kein Windows-Fehlercode \texttt{10054}
 
 \subsection{Echo-Dienst auf Port 7}
 
-Der Echo-Dienst wurde zuerst mit TCP getestet:
+Der Echo-Dienst wurde mit dem Programm \texttt{echo\_client.py} getestet. Dieses Programm baut je nach Parameter entweder eine TCP-Verbindung auf oder sendet ein UDP-Datagramm und gibt die Antwort aus. Zuerst wurde TCP getestet:
 
 \begin{verbatim}
 [TCP CLIENT] before connect local=('0.0.0.0', 0)
@@ -586,7 +716,7 @@ Auffällig ist dabei, dass der sichtbare Absender im Mailprogramm aus dem \textt
 
 \subsection{SMTP in Python}
 
-Für den Python-Versuch wurde ein eigener SMTP-Client geschrieben, der keine Mail-Bibliothek wie \texttt{smtplib} verwendet. Stattdessen werden direkt ein TCP-Socket und danach ein TLS-Socket verwendet. Der Ablauf ist:
+Für den Python-Versuch wurde das Programm \texttt{smtp\_socket\_client.py} geschrieben. Es verwendet keine Mail-Bibliothek wie \texttt{smtplib}. Stattdessen werden direkt ein TCP-Socket und danach ein TLS-Socket verwendet. Der genaue Ausführungsbefehl ist im Abschnitt zu den verwendeten Python-Programmen aufgeführt. Der Ablauf ist:
 
 \begin{enumerate}
     \item TCP-Verbindung zu \texttt{asmtp.htwg-konstanz.de:587} öffnen

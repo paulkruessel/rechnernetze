@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1778571240.05353 "/home/paul/studium/rechnernetze/uebungen/praxis/praxis04/praxis04.tex" "praxis04.pdf" "praxis04" 1778571240.64333 0
+["pdflatex"] 1778571507.92946 "/home/paul/studium/rechnernetze/uebungen/praxis/praxis04/praxis04.tex" "praxis04.pdf" "praxis04" 1778571508.55198 0
   "/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcecodepro/a_rzhnou.enc" 1744143336 2853 35e797fe15a6254cee914dbc5dbd5292 ""
   "/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc" 1772484591 2948 f0d59b248476e870a9c9562d25a2e12a ""
   "/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_5c2bot.enc" 1772484780 3036 e6d3d96ea4683617f1ac5a49291f9c64 ""
@@ -258,11 +258,11 @@
   "/home/paul/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774252742 550728 338bc93680df644f6060a53f6225aa2e ""
   "/home/paul/.TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1774252983 2482995 86f199ffa6791bfae6f58713599b70cf ""
   "/home/paul/.TinyTeX/texmf.cnf" 1774151833 637 edd806fb06a89761a6034e1968af9017 ""
-  "/home/paul/studium/rechnernetze/uebungen/praxis/praxis04/praxis04.tex" 1778571239.21701 23841 5e4a9ff72c0df7dc14fc1c8c4cbb37bd ""
+  "/home/paul/studium/rechnernetze/uebungen/praxis/praxis04/praxis04.tex" 1778571507.07813 31156 88e9849f1ab70220273062e2f7d5ed4c ""
   "kdiartcl.cls" 1778528367.2931 16667 ae94a3a52ed8c3cd44e8587ec88d49c5 ""
-  "praxis04.aux" 1778571240.57691 3335 66d7be6acdb307bede4798db11a71df6 "pdflatex"
-  "praxis04.out" 1778571240.57791 3805 58f114b0a30cc0bd8c34294651cc0e38 "pdflatex"
-  "praxis04.tex" 1778571239.21701 23841 5e4a9ff72c0df7dc14fc1c8c4cbb37bd ""
+  "praxis04.aux" 1778571508.48191 3490 8d6d0039ceecf72e81b6e61850a9c275 "pdflatex"
+  "praxis04.out" 1778571508.48291 4085 c06c33d2055717da0c2dd5fe51c8d9d6 "pdflatex"
+  "praxis04.tex" 1778571507.07813 31156 88e9849f1ab70220273062e2f7d5ed4c ""
   (generated)
   "praxis04.aux"
   "praxis04.log"

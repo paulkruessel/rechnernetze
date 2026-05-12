@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 09:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 09:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1181,17 +1181,17 @@ LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 26.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 27.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 28.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 27.
+(Font)              scaled to size 14.4pt on input line 28.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 27.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 28.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 27.
+(Font)              scaled to size 14.4pt on input line 28.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 27.
+(Font)              `T1/SourceSansThree-TLF/b/n' on input line 28.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 27.
+(Font)              scaled to size 14.4pt on input line 28.
 LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 30.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcecodepro/T1SourceCodePro-TLF.fd
 File: T1SourceCodePro-TLF.fd 2025/04/07 (autoinst) Font definitions for T1/SourceCodePro-TLF.
@@ -1201,154 +1201,244 @@ LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/regular/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 34.
+(Font)              `T1/SourceSansThree-TLF/b/n' on input line 32.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 34.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+(Font)              scaled to size 12.0pt on input line 32.
+
+Overfull \hbox (71.34612pt too wide) in paragraph at lines 39--39
+[]\T1/SourceCodePro-TLF/m/n/12 python3 -u calc_server_tcp_threaded.py --ip 127.0.0.1 --port 50001 \[] 
+ []
+
+
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 46--46
+[]\T1/SourceCodePro-TLF/m/n/12 python3 -u calc_server_tcp_threaded.py --ip 172.20.10.2 --port 50001 \[] 
+ []
+
+
+Overfull \hbox (100.1461pt too wide) in paragraph at lines 55--55
+[]\T1/SourceCodePro-TLF/m/n/12 python3 -u calc_server_udp.py --ip 127.0.0.1 --port 50002 --seconds 60 \[] 
+ []
+
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 60.
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 60.
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/sc' aliased to
+(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 60.
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 60.
+[1{/home/paul/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_ut5yim.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_blpqyz.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_5c2bot.enc}
+
+{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcecodepro/a_rzhnou.enc}]
+Overfull \hbox (42.54613pt too wide) in paragraph at lines 67--67
+[]\T1/SourceCodePro-TLF/m/n/12 python3 calc_client_probe.py --proto tcp --server-ip 127.0.0.1 \[] 
+ []
+
+
+Overfull \hbox (42.54613pt too wide) in paragraph at lines 75--75
+[]\T1/SourceCodePro-TLF/m/n/12 python3 calc_client_probe.py --proto udp --server-ip 127.0.0.1 \[] 
+ []
+
+
+Overfull \hbox (56.94612pt too wide) in paragraph at lines 83--83
+[]\T1/SourceCodePro-TLF/m/n/12 python3 calc_client_probe.py --proto tcp --server-ip 172.20.10.2 \[] 
+ []
+
+
+Overfull \hbox (56.94612pt too wide) in paragraph at lines 92--92
+[]\T1/SourceCodePro-TLF/m/n/12 python3 calc_client_probe.py --proto tcp --server-ip 172.20.10.2 \[] 
+ []
+
+
+Overfull \hbox (35.34613pt too wide) in paragraph at lines 92--92
+[]  \T1/SourceCodePro-TLF/m/n/12 --server-port 50001 --bind-ip 172.20.10.4 --bind-port 50010 \[] 
+ []
+
+
+Overfull \hbox (71.34612pt too wide) in paragraph at lines 101--101
+[]\T1/SourceCodePro-TLF/m/n/12 python3 -u echo_dual_tcp_udp_server.py --ip 127.0.0.1 --port 50000 \[] 
+ []
+
+
+Overfull \hbox (143.34608pt too wide) in paragraph at lines 108--108
+[]\T1/SourceCodePro-TLF/m/n/12 python3 echo_client.py --proto tcp --server-ip 127.0.0.1 --server-port 50000 \[] 
+ []
+
+
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 108--108
+[]  \T1/SourceCodePro-TLF/m/n/12 --message "Hello TCP" 2>&1 | tee log_echo_tcp_same_port_clean.txt[] 
+ []
+
+
+Overfull \hbox (143.34608pt too wide) in paragraph at lines 115--115
+[]\T1/SourceCodePro-TLF/m/n/12 python3 echo_client.py --proto udp --server-ip 127.0.0.1 --server-port 50000 \[] 
+ []
+
+[2]
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 115--115
+[]  \T1/SourceCodePro-TLF/m/n/12 --message "Hello UDP" 2>&1 | tee log_echo_udp_same_port_clean.txt[] 
+ []
+
+
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 127--127
+[]\T1/SourceCodePro-TLF/m/n/12 python3 port_scanner_tcp_udp.py --proto tcp --host 141.37.122.107 \[] 
+ []
+
+
+Overfull \hbox (56.94612pt too wide) in paragraph at lines 135--135
+[]\T1/SourceCodePro-TLF/m/n/12 python3 port_scanner_tcp_udp.py --proto udp --host 141.37.168.26 \[] 
+ []
+
+
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 143--143
+[]\T1/SourceCodePro-TLF/m/n/12 openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587[] 
+ []
+
+
+Overfull \hbox (14.73688pt too wide) in paragraph at lines 145--146
+\T1/SourceCodePro-TLF/m/n/12 (-20) EHLO \T1/SourceSerifFour-LF/m/n/12 (-20) und \T1/SourceCodePro-TLF/m/n/12 (-20) STARTTLS\T1/SourceSerifFour-LF/m/n/12 (-20) , wan-delt den Socket mit \T1/SourceCodePro-TLF/m/n/12 (-20) ssl.create_default_context()
+ []
+
+
+Overfull \hbox (20.94614pt too wide) in paragraph at lines 155--155
+[]  \T1/SourceCodePro-TLF/m/n/12 --from-header "Paul Kruessel <pa871kru@htwg-konstanz.de>" \[] 
+ []
+
+[3] (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 189.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 189.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 59.
+(Font)              scaled to size 8.0pt on input line 189.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 59.
+(Font)              scaled to size 6.0pt on input line 189.
+ [4] [5]
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 93.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 285.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 93.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/sc' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 93.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 93.
- [1{/home/paul/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_ut5yim.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_blpqyz.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_5c2bot.enc}
-
-{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcecodepro/a_rzhnou.enc}] [2]
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 155.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 155.
- [3] [4]
-Overfull \hbox (28.14613pt too wide) in paragraph at lines 298--298
+(Font)              scaled to size 10.95pt on input line 285.
+ [6] [7]
+Overfull \hbox (28.14613pt too wide) in paragraph at lines 428--428
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] before bind/connect getsockname=not available yet[] 
  []
 
 
-Overfull \hbox (64.14612pt too wide) in paragraph at lines 298--298
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 428--428
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] after connect local getsockname=('172.20.10.4', 62358)[] 
  []
 
 
-Overfull \hbox (172.14607pt too wide) in paragraph at lines 298--298
+Overfull \hbox (172.14607pt too wide) in paragraph at lines 428--428
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] TX 28 bytes: 0000138853554d050000000100000002000000030000000400000005[] 
  []
 
 
-Overfull \hbox (28.14613pt too wide) in paragraph at lines 313--313
+Overfull \hbox (28.14613pt too wide) in paragraph at lines 443--443
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] before bind/connect getsockname=not available yet[] 
  []
 
 
-Overfull \hbox (64.14612pt too wide) in paragraph at lines 313--313
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 443--443
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] after explicit bind getsockname=('172.20.10.4', 50010)[] 
  []
 
 
-Overfull \hbox (64.14612pt too wide) in paragraph at lines 313--313
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 443--443
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] after connect local getsockname=('172.20.10.4', 50010)[] 
  []
 
 
-Overfull \hbox (172.14607pt too wide) in paragraph at lines 313--313
+Overfull \hbox (172.14607pt too wide) in paragraph at lines 443--443
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] TX 28 bytes: 0000138853554d050000000100000002000000030000000400000005[] 
  []
 
-[5]
-Overfull \hbox (69.2951pt too wide) in paragraph at lines 331--332
+[8]
+Overfull \hbox (69.2951pt too wide) in paragraph at lines 461--462
 \T1/SourceSerifFour-LF/m/n/12 (-20) für neu er-zeug-te Sockets ge-setzt. Ein-zel-ne Sockets kön-nen auch mit \T1/SourceCodePro-TLF/m/n/12 (-20) sock.settimeout(...)
  []
 
 
-Overfull \hbox (42.54613pt too wide) in paragraph at lines 349--349
+Overfull \hbox (42.54613pt too wide) in paragraph at lines 479--479
 []\T1/SourceCodePro-TLF/m/n/12 [DUAL ECHO] TCP and UDP are bound to the same numeric port 50000[] 
  []
 
-[6]
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 358--358
+[9]
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 488--488
 []\T1/SourceCodePro-TLF/m/n/12 [TCP CLIENT] after connect local=('127.0.0.1', 34746) peer=('127.0.0.1', 50000)[] 
  []
 
-[7]
-Overfull \hbox (20.94614pt too wide) in paragraph at lines 446--446
+[10]
+Overfull \hbox (20.94614pt too wide) in paragraph at lines 576--576
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 7: open connect_ex=0 payload=b'RN-LAB-ECHO-TEST\r\n'[] 
  []
 
-
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 446--446
+[11]
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 576--576
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 13: open connect_ex=0 payload=b'Tue May 12 09:15:31 2026\r\n'[] 
  []
 
 
-Overfull \hbox (208.14606pt too wide) in paragraph at lines 446--446
+Overfull \hbox (208.14606pt too wide) in paragraph at lines 576--576
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 22: open connect_ex=0 payload=b'SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.16\r\n'[] 
  []
 
-[8]
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 461--461
+
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 591--591
 []\T1/SourceCodePro-TLF/m/n/12 [SCAN] proto=udp host=141.37.168.26 ports=1-50 timeout=1.0s workers=50[] 
  []
 
 
-Overfull \hbox (179.34607pt too wide) in paragraph at lines 474--474
+Overfull \hbox (179.34607pt too wide) in paragraph at lines 604--604
 []\T1/SourceCodePro-TLF/m/n/12 [TCP CLIENT] after connect local=('141.37.204.2', 59364) peer=('141.37.122.107', 7)[] 
  []
 
-[9]
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 507--507
+[12]
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 637--637
 []\T1/SourceCodePro-TLF/m/n/12 openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587[] 
  []
 
-[10] [11] [12]
-Overfull \hbox (56.94612pt too wide) in paragraph at lines 631--631
+[13] [14] [15]
+Overfull \hbox (56.94612pt too wide) in paragraph at lines 761--761
 []\T1/SourceCodePro-TLF/m/n/12 [S] 535 5.7.8 Error: authentication failed: authentication failure[] 
  []
 
 
-Overfull \hbox (164.94608pt too wide) in paragraph at lines 638--638
+Overfull \hbox (164.94608pt too wide) in paragraph at lines 768--768
 []\T1/SourceCodePro-TLF/m/n/12 [S] 554 5.7.1 <kruesselpaul@gmail.com>: Recipient address rejected: Access denied[] 
  []
 
-[13] (./praxis04.aux)
+[16] (./praxis04.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `praxis04.out' has not changed.
-(rerunfilecheck)             Checksum: 58F114B0A30CC0BD8C34294651CC0E38;3805.
+(rerunfilecheck)             Checksum: C06C33D2055717DA0C2DD5FE51C8D9D6;4085.
  ) 
 Here is how much of TeX's memory you used:
- 34890 strings out of 469444
- 672974 string characters out of 5467476
- 1122154 words of memory out of 5000000
- 62552 multiletter control sequences out of 15000+600000
- 1058789 words of font info for 292 fonts, out of 8000000 for 9000
+ 34919 strings out of 469444
+ 673655 string characters out of 5467476
+ 1121154 words of memory out of 5000000
+ 62553 multiletter control sequences out of 15000+600000
+ 1059479 words of font info for 304 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  99i,16n,131p,1062b,794s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on praxis04.pdf (13 pages, 366045 bytes).
+Output written on praxis04.pdf (16 pages, 373398 bytes).
 PDF statistics:
- 231 PDF objects out of 1000 (max. 8388607)
- 195 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 500000)
- 80069 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 255 PDF objects out of 1000 (max. 8388607)
+ 215 compressed objects within 3 object streams
+ 54 named destinations out of 1000 (max. 500000)
+ 80077 words of extra memory for PDF output out of 89155 (max. 10000000)
 
