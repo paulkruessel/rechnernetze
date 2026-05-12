@@ -1,0 +1,8 @@
+[CLIENT] socket.setdefaulttimeout=5.0
+[CLIENT] test=SUM([1, 2, 3]) task_id=1
+[CLIENT TCP] before bind/connect getsockname=('0.0.0.0', 0)
+[CLIENT TCP] connecting to ('127.0.0.1', 50001)
+[CLIENT TCP] after connect local getsockname=('127.0.0.1', 54376) peer=('127.0.0.1', 50001)
+[CLIENT TCP] TX 20 bytes: 0000000153554d03000000010000000200000003
+[CLIENT TCP] RX 8 bytes: 0000000100000006
+[CLIENT TCP] parsed response=(1, 6)

@@ -1,0 +1,11 @@
+[UDP CLIENT] before send local=('0.0.0.0', 0)
+[UDP CLIENT] TX: b'Echo-Test UDP'
+[UDP CLIENT] after send local=('0.0.0.0', 45389)
+Traceback (most recent call last):
+  File "/home/paul/studium/rechnernetze/uebungen/praxis/praxis04/scripts/echo_client.py", line 38, in <module>
+    main()
+    ~~~~^^
+  File "/home/paul/studium/rechnernetze/uebungen/praxis/praxis04/scripts/echo_client.py", line 33, in main
+    rx, addr = sock.recvfrom(1024)
+               ~~~~~~~~~~~~~^^^^^^
+TimeoutError: timed out

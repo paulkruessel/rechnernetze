@@ -1,0 +1,10 @@
+[UDP ECHO] Listening on ('127.0.0.1', 50000)
+[DUAL ECHO] TCP and UDP are bound to the same numeric port 50000
+[TCP ECHO] Listening on ('127.0.0.1', 50000)
+[TCP ECHO] accepted ('127.0.0.1', 43324)
+[TCP ECHO] RX from ('127.0.0.1', 43324): b'Hello TCP'
+[TCP ECHO] closed ('127.0.0.1', 43324)
+[UDP ECHO] RX from ('127.0.0.1', 33233): b'Hello UDP'
+[DUAL ECHO] Stopped
+^^^^^^^^^^^^^^^^^
+OSError: [Errno 98] Address already in use

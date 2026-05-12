@@ -1,0 +1,4 @@
+[TCP CLIENT] before connect local=('0.0.0.0', 0)
+[TCP CLIENT] after connect local=('141.37.204.2', 59364) peer=('141.37.122.107', 7)
+[TCP CLIENT] TX: b'Echo-Test TCP'
+[TCP CLIENT] RX: b'Echo-Test TCP'
