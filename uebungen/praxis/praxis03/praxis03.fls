@@ -372,6 +372,10 @@ INPUT /home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
 INPUT /home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex
 INPUT /home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 INPUT /home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
+INPUT /home/paul/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /home/paul/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+INPUT /home/paul/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+INPUT /home/paul/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 INPUT /home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT /home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 INPUT /home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex

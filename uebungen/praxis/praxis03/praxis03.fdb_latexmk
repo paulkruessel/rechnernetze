@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1777329646.31296 "/home/paul/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex" "praxis03.pdf" "praxis03" 1777329646.91534 0
+["pdflatex"] 1778592726.72205 "/home/paul/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex" "praxis03.pdf" "praxis03" 1778592727.25916 0
   "/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcecodepro/a_rzhnou.enc" 1744143336 2853 35e797fe15a6254cee914dbc5dbd5292 ""
   "/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc" 1772484591 2948 f0d59b248476e870a9c9562d25a2e12a ""
   "/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_5c2bot.enc" 1772484780 3036 e6d3d96ea4683617f1ac5a49291f9c64 ""
@@ -209,6 +209,7 @@
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/pict2e/p2e-pdftex.def" 1454715303 1168 efb94e82cc1584d4f62679f3487b5339 ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.cfg" 1454715303 1920 2185073db458618f4a8a794158cf3681 ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.sty" 1601586370 30933 ccdcd551eb516817cc8f41862254e6e7 ""
+  "/home/paul/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty" 1687466457 10085 3dececaeed388e31285c366e124c0c4e ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty" 1576624809 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/relsize/relsize.sty" 1369619135 15542 c4cc3164fe24f2f2fbb06eb71b1da4c4 ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1750533675 9684 a33a14b82ce60d6e77cb9be689d79ee6 ""
@@ -229,6 +230,7 @@
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/textpos/textpos.sty" 1658612320 12842 35403bda336a71a37a5edc37b78e3ec3 ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/titling/titling.sty" 1252107870 7358 95ac619994bd30d405a74f3eca431c84 ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/array.sty" 1761946296 15651 9d7c62df82cb29a555c00550babfe364 ""
+  "/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty" 1748806692 7243 a2c17f18e2c9b702b84fad03d5f9c78b ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/xspace.sty" 1748806692 4545 d7bb86d489a8ad5263e4c34304c03aee ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/home/paul/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty" 1727642399 55384 b454dec21c2d9f45ec0b793f0995b992 ""
@@ -237,11 +239,11 @@
   "/home/paul/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1774252742 550728 338bc93680df644f6060a53f6225aa2e ""
   "/home/paul/.TinyTeX/texmf-var/web2c/pdftex/pdflatex.fmt" 1774252983 2482995 86f199ffa6791bfae6f58713599b70cf ""
   "/home/paul/.TinyTeX/texmf.cnf" 1774151833 637 edd806fb06a89761a6034e1968af9017 ""
-  "/home/paul/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex" 1777329645.55022 25798 0c6eeaa28767b4fe62fa4ee492b155b8 ""
+  "/home/paul/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex" 1778592726.56654 25937 e84b4e21f12d5ac0c94ae6adf281bb1d ""
   "kdiartcl.cls" 1777324342.19146 16667 ae94a3a52ed8c3cd44e8587ec88d49c5 ""
-  "praxis03.aux" 1777329646.83044 3717 899dceddd8673499a769dae5c598749f "pdflatex"
-  "praxis03.out" 1777329646.83144 8870 2f048d26095bfc0312c1dc5b2632f3d1 "pdflatex"
-  "praxis03.tex" 1777329645.55022 25798 0c6eeaa28767b4fe62fa4ee492b155b8 ""
+  "praxis03.aux" 1778592727.18251 3717 899dceddd8673499a769dae5c598749f "pdflatex"
+  "praxis03.out" 1778592727.18251 8870 2f048d26095bfc0312c1dc5b2632f3d1 "pdflatex"
+  "praxis03.tex" 1778592726.56654 25937 e84b4e21f12d5ac0c94ae6adf281bb1d ""
   (generated)
   "praxis03.aux"
   "praxis03.log"

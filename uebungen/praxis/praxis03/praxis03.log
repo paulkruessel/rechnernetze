@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  28 APR 2026 00:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 15:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,21 +991,46 @@ File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex))) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen323
+\TX@old@table=\dimen324
+\TX@old@col=\dimen325
+\TX@target=\dimen326
+\TX@delta=\dimen327
+\TX@cols=\count365
+\TX@ftn=\toks60
+) (/home/paul/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip108
+\RaggedLeftLeftskip=\skip109
+\RaggedRightLeftskip=\skip110
+\CenteringRightskip=\skip111
+\RaggedLeftRightskip=\skip112
+\RaggedRightRightskip=\skip113
+\CenteringParfillskip=\skip114
+\RaggedLeftParfillskip=\skip115
+\RaggedRightParfillskip=\skip116
+\JustifyingParfillskip=\skip117
+\CenteringParindent=\skip118
+\RaggedLeftParindent=\skip119
+\RaggedRightParindent=\skip120
+\JustifyingParindent=\skip121
+) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen323
-\pgfarrowlength=\dimen324
-\pgfarrowwidth=\dimen325
-\pgfarrowlinewidth=\dimen326
+\pgfarrowinset=\dimen328
+\pgfarrowlength=\dimen329
+\pgfarrowwidth=\dimen330
+\pgfarrowlinewidth=\dimen331
 ) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen327
-\pgfdecoratedremainingdistance=\dimen328
-\pgfdecoratedinputsegmentcompleteddistance=\dimen329
-\pgfdecoratedinputsegmentremainingdistance=\dimen330
-\pgf@decorate@distancetomove=\dimen331
-\pgf@decorate@repeatstate=\count365
-\pgfdecorationsegmentamplitude=\dimen332
-\pgfdecorationsegmentlength=\dimen333
+\pgfdecoratedcompleteddistance=\dimen332
+\pgfdecoratedremainingdistance=\dimen333
+\pgfdecoratedinputsegmentcompleteddistance=\dimen334
+\pgfdecoratedinputsegmentremainingdistance=\dimen335
+\pgf@decorate@distancetomove=\dimen336
+\pgf@decorate@repeatstate=\count366
+\pgfdecorationsegmentamplitude=\dimen337
+\pgfdecorationsegmentlength=\dimen338
 )
 \tikz@lib@dec@box=\box105
 ) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
@@ -1013,37 +1038,37 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count366
+\l__color_backend_stack_int=\count367
 ) (./praxis03.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 9.
 )
 \openout1 = `praxis03.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 17.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 25.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 25.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1079,13 +1104,13 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 17.
-Package microtype Info: Applying patch `item' on input line 17.
-Package microtype Info: Applying patch `toc' on input line 17.
-Package microtype Info: Applying patch `eqnum' on input line 17.
-Package microtype Info: Applying patch `footnote' on input line 17.
-Package microtype Info: Applying patch `verbatim' on input line 17.
-LaTeX Info: Redefining \microtypesetup on input line 17.
+LaTeX Info: Redefining \microtypecontext on input line 25.
+Package microtype Info: Applying patch `item' on input line 25.
+Package microtype Info: Applying patch `toc' on input line 25.
+Package microtype Info: Applying patch `eqnum' on input line 25.
+Package microtype Info: Applying patch `footnote' on input line 25.
+Package microtype Info: Applying patch `verbatim' on input line 25.
+LaTeX Info: Redefining \microtypesetup on input line 25.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `alltext-nott'.
@@ -1103,24 +1128,24 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 (/home/paul/.TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count367
-\scratchdimen=\dimen334
+\scratchcounter=\count368
+\scratchdimen=\dimen339
 \scratchbox=\box106
-\nofMPsegments=\count368
-\nofMParguments=\count369
-\everyMPshowfont=\toks60
-\MPscratchCnt=\count370
-\MPscratchDim=\dimen335
-\MPnumerator=\count371
-\makeMPintoPDFobject=\count372
-\everyMPtoPDFconversion=\toks61
+\nofMPsegments=\count369
+\nofMParguments=\count370
+\everyMPshowfont=\toks61
+\MPscratchCnt=\count371
+\MPscratchDim=\dimen340
+\MPnumerator=\count372
+\makeMPintoPDFobject=\count373
+\everyMPtoPDFconversion=\toks62
 ) (/home/paul/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 17.
+Package hyperref Info: Link coloring ON on input line 25.
  (./praxis03.out) (./praxis03.out)
 \@outlinefile=\write4
 \openout4 = `praxis03.out'.
@@ -1128,903 +1153,903 @@ Package hyperref Info: Link coloring ON on input line 17.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count373
+\c@lstlisting=\count374
 
 !!! switch to italics
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 19.
+(Font)              scaled to size 12.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 19.
+(Font)              scaled to size 17.28pt on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 19.
+(Font)              scaled to size 20.74pt on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 19.
-LaTeX Font Info:    Trying to load font information for T1+SourceSansThree-TLF on input line 19.
+(Font)              scaled to size 20.74pt on input line 27.
+LaTeX Font Info:    Trying to load font information for T1+SourceSansThree-TLF on input line 27.
 (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcesans/T1SourceSansThree-TLF.fd
 File: T1SourceSansThree-TLF.fd 2026/03/01 (autoinst) Font definitions for T1/SourceSansThree-TLF.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 19.
+(Font)              `T1/SourceSansThree-TLF/b/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 19.
+(Font)              scaled to size 20.74pt on input line 27.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceSansThree-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/it' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/it' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/m/it' on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 19.
+(Font)              scaled to size 12.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 22.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 22.
+(Font)              scaled to size 17.28pt on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 22.
+(Font)              `T1/SourceSansThree-TLF/b/n' on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 22.
+(Font)              scaled to size 17.28pt on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 26.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 34.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 26.
+(Font)              scaled to size 14.4pt on input line 34.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 26.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 34.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 26.
+(Font)              scaled to size 14.4pt on input line 34.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 26.
+(Font)              `T1/SourceSansThree-TLF/b/n' on input line 34.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 26.
-LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 31.
+(Font)              scaled to size 14.4pt on input line 34.
+LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 39.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcecodepro/T1SourceCodePro-TLF.fd
 File: T1SourceCodePro-TLF.fd 2025/04/07 (autoinst) Font definitions for T1/SourceCodePro-TLF.
 )
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/regular/n' aliased to
-(Font)              `T1/SourceCodePro-TLF/m/n' on input line 31.
+(Font)              `T1/SourceCodePro-TLF/m/n' on input line 39.
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 31.
+(Font)              scaled to size 12.0pt on input line 39.
 
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:32973         0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:2680          0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:8384          0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:27182         0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40882         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         127.0.0.1:55196         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:55196         127.0.0.1:46137         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:52680    34.107.243.93:443       ESTABLISHED[] 
  []
 
 
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 85--85
+Overfull \hbox (136.14609pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:35622    172.64.155.209:443      TIME_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40872         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:51800    13.69.68.64:443         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40918         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40872         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40882         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40890         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40902         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40918         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40930         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40930         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40902         ESTABLISHED[] 
  []
 
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 85.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 93.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 85.
+(Font)              scaled to size 10.0pt on input line 93.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/sc' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 85.
+(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 93.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 85.
+(Font)              scaled to size 10.0pt on input line 93.
 [1{/home/paul/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_ut5yim.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_blpqyz.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_5c2bot.enc}
 
 {/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcecodepro/a_rzhnou.enc}]
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:36624    51.104.15.253:443       ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46658         127.0.0.1:35169         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40890         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::5355                 :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::22000                :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 85--85
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 ::1:631                 :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50146 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50366 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (143.34608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (143.34608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:39014 2600:1901:1:4be:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:37036 2603:1061:14:63::1:443  ESTABLISHED[] 
  []
 
 
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 85--85
+Overfull \hbox (136.14609pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:37260 2600:1901:1:7c5:::443   TIME_WAIT[] 
  []
 
 
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 85--85
+Overfull \hbox (136.14609pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:37276 2600:1901:1:7c5:::443   TIME_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         127.0.0.1:46658         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43506 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50412 2a04:4e42:6f::762:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51382 2603:1061:13f1:182c:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:32774 2603:1026:3000:a8:::443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 85--85
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:33476 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 110--110
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 118--118
 []\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 110--110
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 118--118
 []\T1/SourceCodePro-TLF/m/n/12 udp        0      0 192.168.178.98:68       192.168.178.1:67        ESTABLISHED[] 
  []
 
 [2]
-LaTeX Font Info:    Trying to load font information for TS1+SourceSerifFour-LF on input line 114.
+LaTeX Font Info:    Trying to load font information for TS1+SourceSerifFour-LF on input line 122.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourceserif/TS1SourceSerifFour-LF.fd
 File: TS1SourceSerifFour-LF.fd 2026/03/01 (autoinst) Font definitions for TS1/SourceSerifFour-LF.
 )
 LaTeX Font Info:    Font shape `TS1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `TS1/SourceSerifFour-LF/m/n' on input line 114.
+(Font)              `TS1/SourceSerifFour-LF/m/n' on input line 122.
 LaTeX Font Info:    Font shape `TS1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 114.
+(Font)              scaled to size 12.0pt on input line 122.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceSerifFour-LF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (8.00368pt too wide) in paragraph at lines 121--121
+Overfull \hbox (8.00368pt too wide) in paragraph at lines 129--129
 []\T1/SourceSansThree-TLF/b/n/14.4 (-20) Was be-deu-ten die Ein-trä-ge in der Spal-te ^^RState^^P bei TCP Sockets? 
  []
 
 
-Overfull \hbox (10.71033pt too wide) in paragraph at lines 124--124
+Overfull \hbox (10.71033pt too wide) in paragraph at lines 132--132
 []\T1/SourceSansThree-TLF/b/n/14.4 (-20) Wie vie-le Ser-ver Ports hat ihr Rech-ner ge-öff-net (state=Listening)?
  []
 
 [3{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_hfktdb.enc}]
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:32973         0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:2680          0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:8384          0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:27182         0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40882         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:33298    34.107.243.93:443       ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         127.0.0.1:55196         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:55196         127.0.0.1:46137         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:45420    20.189.173.27:443       ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40872         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 197--197
+Overfull \hbox (136.14609pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:42026    172.64.155.209:443      TIME_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40918         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:60926    13.69.68.64:443         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40872         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40882         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40890         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40902         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40918         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40930         127.0.0.1:5054          ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40930         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40902         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46658         127.0.0.1:35169         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40890         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::5355                 :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::22000                :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 197--197
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 ::1:631                 :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36298 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36306 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (143.34608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (143.34608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36878 2606:4700:7::175:443    ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:39014 2600:1901:1:4be:::443   ESTABLISHED[] 
  []
 
 [4]
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:35288 2600:1480:2000:23:::443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:44138 2600:1480:2000:23:::443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51582 2603:1061:13f1:181a:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 197--197
+Overfull \hbox (136.14609pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42646 2600:1901:1:7c5:::443   TIME_WAIT[] 
  []
 
 
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 197--197
+Overfull \hbox (136.14609pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42668 2600:1901:1:7c5:::443   TIME_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         127.0.0.1:46658         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51606 2600:1901:1:7c5:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51618 2600:1901:1:7c5:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43538 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43540 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50200 2a04:4e42:6f::762:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 197--197
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:38170    34.107.243.93:443       ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:45420    20.189.173.27:443       ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:60926    13.69.68.64:443         ESTABLISHED[] 
  []
 
 
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 238--238
+Overfull \hbox (136.14609pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:40334    104.18.32.47:443        TIME_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED[] 
  []
 
 [5]
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::5355                 :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::22000                :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 238--238
+Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 ::1:631                 :::*                    LISTEN[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51774 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (143.34608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (143.34608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:56110 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:58232 2a04:4e42:6f::347:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:60640 2600:1901:1:4be:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:60594 2600:1480:2000:23:::443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51582 2603:1061:13f1:181a:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:44988 2603:1061:14:63::1:443  ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:53942 2600:1901:1:7c5:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:53952 2600:1901:1:7c5:::443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43540 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36134 2a04:4e42:6f::762:443   ESTABLISHED[] 
  []
 
 
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 238--238
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
 []\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED[] 
  []
 
 [6]
-Overfull \hbox (25.39545pt too wide) in paragraph at lines 271--271
+Overfull \hbox (25.39545pt too wide) in paragraph at lines 279--279
 []\T1/SourceSansThree-TLF/b/n/14.4 (-20) In wel-chem Netz be-fin-det sich der Web-Server der ers-ten Wireshark-
  []
 
 
-Overfull \hbox (56.94612pt too wide) in paragraph at lines 276--276
+Overfull \hbox (56.94612pt too wide) in paragraph at lines 284--284
 []\T1/SourceCodePro-TLF/m/n/12 http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html[] 
  []
 
 
-Overfull \hbox (265.74603pt too wide) in paragraph at lines 282--282
+Overfull \hbox (265.74603pt too wide) in paragraph at lines 290--290
 []\T1/SourceCodePro-TLF/m/n/12 curl -4 -v http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html -o /tmp/gaia.html[] 
  []
 
 
-Overfull \hbox (29.48361pt too wide) in paragraph at lines 284--285
+Overfull \hbox (29.48361pt too wide) in paragraph at lines 292--293
 []\T1/SourceSerifFour-LF/m/n/12 (-20) Die Aus-ga-be zeigt, dass \T1/SourceCodePro-TLF/m/n/12 (-20) gaia.cs.umass.edu \T1/SourceSerifFour-LF/m/n/12 (-20) auf die IPv4-Adresse \T1/SourceCodePro-TLF/m/n/12 (-20) 128.119.245.12
  []
 
 [7]
-Overfull \hbox (36.53961pt too wide) in paragraph at lines 323--324
+Overfull \hbox (36.53961pt too wide) in paragraph at lines 331--332
 []\T1/SourceSerifFour-LF/m/n/12 (-20) Die Aus-ga-be zeigt, dass \T1/SourceCodePro-TLF/m/n/12 (-20) www.htwg-konstanz.de \T1/SourceSerifFour-LF/m/n/12 (-20) auf die IPv4-Adresse \T1/SourceCodePro-TLF/m/n/12 (-20) 141.37.20.31
  []
 
 
-Overfull \hbox (6.54614pt too wide) in paragraph at lines 328--328
+Overfull \hbox (6.54614pt too wide) in paragraph at lines 336--336
 []\T1/SourceCodePro-TLF/m/n/12 * Connected to www.htwg-konstanz.de (141.37.20.31) port 443[] 
  []
 
 
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 353--353
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 361--361
 []\T1/SourceCodePro-TLF/m/n/12 org-name:       Hochschule Konstanz Technik, Wirtschaft und Gestaltung[] 
  []
 
 [8]
-Overfull \hbox (33.93121pt too wide) in paragraph at lines 355--356
+Overfull \hbox (33.93121pt too wide) in paragraph at lines 363--364
 []\T1/SourceSerifFour-LF/m/n/12 (-20) Über die HT-WG fin-det man al-so, dass die Web-sei-te un-ter der IP-Adresse \T1/SourceCodePro-TLF/m/n/12 (-20) 141.37.20.31
  []
 
 
-Overfull \hbox (32.79904pt too wide) in paragraph at lines 355--356
+Overfull \hbox (32.79904pt too wide) in paragraph at lines 363--364
 \T1/SourceSerifFour-LF/m/n/12 (-20) me ist \T1/SourceCodePro-TLF/m/n/12 (-20) FH-KN\T1/SourceSerifFour-LF/m/n/12 (-20) . Als Or-ga-ni-sa-ti-on ist \T1/SourceCodePro-TLF/m/n/12 (-20) Hochschule Konstanz Technik, Wirtschaft
  []
 
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/bold/n' aliased to
-(Font)              `T1/SourceCodePro-TLF/b/n' on input line 365.
+(Font)              `T1/SourceCodePro-TLF/b/n' on input line 373.
 LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 365.
+(Font)              scaled to size 14.4pt on input line 373.
 
-Overfull \hbox (229.74605pt too wide) in paragraph at lines 372--372
+Overfull \hbox (229.74605pt too wide) in paragraph at lines 380--380
 []\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ ss -H -tan state established | grep -Ev '127\.|::1|192\.168\.178\.' | wc -l[] 
  []
 
 
-Overfull \hbox (11.0059pt too wide) in paragraph at lines 378--378
+Overfull \hbox (11.0059pt too wide) in paragraph at lines 386--386
 []\T1/SourceSansThree-TLF/b/n/14.4 (-20) Was ist die ma-xi-ma-le An-zahl von Sockets pro Remote-IP-Adresse? 
  []
 
 
-Overfull \hbox (193.74606pt too wide) in paragraph at lines 390--390
+Overfull \hbox (193.74606pt too wide) in paragraph at lines 398--398
 []\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/01_spiegel_established.txt \[] 
  []
 
 [9]
-Overfull \hbox (49.74612pt too wide) in paragraph at lines 390--390
+Overfull \hbox (49.74612pt too wide) in paragraph at lines 398--398
 []\T1/SourceCodePro-TLF/m/n/12 > | sed -E 's/^\[([^]]+)\]:[0-9]+$/\1/; s/^([^:]+):[0-9]+$/\1/' \[] 
  []
 
 
-Overfull \hbox (4.86716pt too wide) in paragraph at lines 394--395
+Overfull \hbox (4.86716pt too wide) in paragraph at lines 402--403
 \T1/SourceSerifFour-LF/m/n/12 (-20) Der zwei-te Teil ist für nor-ma-le IPv4-Adressen mit Port ge-dacht, z.B. \T1/SourceCodePro-TLF/m/n/12 (-20) 1.2.3.4:443\T1/SourceSerifFour-LF/m/n/12 (-20) .
  []
 
 
-Overfull \hbox (193.74606pt too wide) in paragraph at lines 406--406
+Overfull \hbox (193.74606pt too wide) in paragraph at lines 414--414
 []\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/01_spiegel_established.txt \[] 
  []
 
 
-Overfull \hbox (42.54613pt too wide) in paragraph at lines 418--418
+Overfull \hbox (42.54613pt too wide) in paragraph at lines 426--426
 []\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ cat socket_webseiten_analyse/06_spiegel_whois.csv[] 
  []
 
 [10]
-Overfull \hbox (229.74605pt too wide) in paragraph at lines 441--441
+Overfull \hbox (229.74605pt too wide) in paragraph at lines 449--449
 []\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ ss -H -tan state established | grep -Ev '127\.|::1|192\.168\.178\.' | wc -l[] 
  []
 
 
-Overfull \hbox (208.14606pt too wide) in paragraph at lines 452--452
+Overfull \hbox (208.14606pt too wide) in paragraph at lines 460--460
 []\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/07_vergleich_established.txt \[] 
  []
 
 
-Overfull \hbox (208.14606pt too wide) in paragraph at lines 463--463
+Overfull \hbox (208.14606pt too wide) in paragraph at lines 471--471
 []\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/07_vergleich_established.txt \[] 
  []
 
 
-Overfull \hbox (49.74612pt too wide) in paragraph at lines 463--463
+Overfull \hbox (49.74612pt too wide) in paragraph at lines 471--471
 []\T1/SourceCodePro-TLF/m/n/12 > | sed -E 's/^\[([^]]+)\]:[0-9]+$/\1/; s/^([^:]+):[0-9]+$/\1/' \[] 
  []
 
@@ -2037,15 +2062,15 @@ Package rerunfilecheck Info: File `praxis03.out' has not changed.
 (rerunfilecheck)             Checksum: 2F048D26095BFC0312C1DC5B2632F3D1;8870.
  ) 
 Here is how much of TeX's memory you used:
- 34558 strings out of 469444
- 666470 string characters out of 5467476
- 1139016 words of memory out of 5000000
- 62368 multiletter control sequences out of 15000+600000
+ 34701 strings out of 469444
+ 669251 string characters out of 5467476
+ 1140716 words of memory out of 5000000
+ 62504 multiletter control sequences out of 15000+600000
  928633 words of font info for 199 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  99i,16n,131p,1062b,868s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb>
-Output written on praxis03.pdf (11 pages, 306307 bytes).
+Output written on praxis03.pdf (11 pages, 306306 bytes).
 PDF statistics:
  174 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams

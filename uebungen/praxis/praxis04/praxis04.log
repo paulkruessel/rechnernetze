@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 10:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1409,21 +1409,21 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `praxis04.out' has not changed.
-(rerunfilecheck)             Checksum: DDB0F2CB6A3A8223FD9FE5E180B552DD;4815.
+(rerunfilecheck)             Checksum: 68091D9B933C40359FD38B30F254AEE3;4535.
  ) 
 Here is how much of TeX's memory you used:
- 34934 strings out of 469444
- 674195 string characters out of 5467476
+ 34933 strings out of 469444
+ 674175 string characters out of 5467476
  1121163 words of memory out of 5000000
- 62554 multiletter control sequences out of 15000+600000
+ 62553 multiletter control sequences out of 15000+600000
  1060878 words of font info for 315 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  99i,16n,131p,1062b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on praxis04.pdf (18 pages, 380013 bytes).
+Output written on praxis04.pdf (18 pages, 379933 bytes).
 PDF statistics:
- 268 PDF objects out of 1000 (max. 8388607)
- 226 compressed objects within 3 object streams
+ 265 PDF objects out of 1000 (max. 8388607)
+ 223 compressed objects within 3 object streams
  52 named destinations out of 1000 (max. 500000)
- 80101 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 80093 words of extra memory for PDF output out of 89155 (max. 10000000)
 
