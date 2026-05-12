@@ -79,7 +79,6 @@ def main():
         f"{args.body}\r\n"
         "."
     )
-    # Message body intentionally printed because it contains no password.
     send_line(sock, msg)
     recv_print(sock)
 

@@ -2,7 +2,6 @@
 import argparse
 import socket
 import struct
-import time
 
 def create_request(task_id: int, operation: str, numbers: list[int]) -> bytes:
     if len(operation) != 3:

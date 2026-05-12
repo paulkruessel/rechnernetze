@@ -1,5 +1,0 @@
-PING 141.37.122.107 (141.37.122.107) 56(84) bytes of data.
-
---- 141.37.122.107 ping statistics ---
-4 packets transmitted, 0 received, 100% packet loss, time 3089ms
-

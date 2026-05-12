@@ -42,7 +42,7 @@ def scan_udp(host: str, port: int, timeout: float):
         except OSError as exc:
             # Linux may expose ICMP errors differently depending on platform.
             return port, "os_error_probably_closed", f"{type(exc).__name__}: {exc}", b""
-        except socket.timeout:
+        except socket.timeout: # type: ignore
             return port, "no_response_open_or_filtered", "timeout", b""
     finally:
         sock.close()
