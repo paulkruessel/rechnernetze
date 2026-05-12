@@ -1,0 +1,40 @@
+[CLIENT] socket.setdefaulttimeout=5.0
+[CLIENT] test=SUM([1, 2, 3]) task_id=1
+[CLIENT TCP] before bind/connect getsockname=('0.0.0.0', 0)
+[CLIENT TCP] connecting to ('127.0.0.1', 50001)
+[CLIENT TCP] after connect local getsockname=('127.0.0.1', 54376) peer=('127.0.0.1', 50001)
+[CLIENT TCP] TX 20 bytes: 0000000153554d03000000010000000200000003
+[CLIENT TCP] RX 8 bytes: 0000000100000006
+[CLIENT TCP] parsed response=(1, 6)
+[CLIENT] socket.setdefaulttimeout=5.0
+[CLIENT] test=SUM([2, 2, 3]) task_id=2
+[CLIENT TCP] before bind/connect getsockname=('0.0.0.0', 0)
+[CLIENT TCP] connecting to ('127.0.0.1', 50001)
+[CLIENT TCP] after connect local getsockname=('127.0.0.1', 54392) peer=('127.0.0.1', 50001)
+[CLIENT TCP] TX 20 bytes: 0000000253554d03000000020000000200000003
+[CLIENT TCP] RX 8 bytes: 0000000200000007
+[CLIENT TCP] parsed response=(2, 7)
+[CLIENT] socket.setdefaulttimeout=5.0
+[CLIENT] test=SUM([3, 2, 3]) task_id=3
+[CLIENT TCP] before bind/connect getsockname=('0.0.0.0', 0)
+[CLIENT TCP] connecting to ('127.0.0.1', 50001)
+[CLIENT TCP] after connect local getsockname=('127.0.0.1', 54394) peer=('127.0.0.1', 50001)
+[CLIENT TCP] TX 20 bytes: 0000000353554d03000000030000000200000003
+[CLIENT TCP] RX 8 bytes: 0000000300000008
+[CLIENT TCP] parsed response=(3, 8)
+[CLIENT] socket.setdefaulttimeout=5.0
+[CLIENT] test=SUM([4, 2, 3]) task_id=4
+[CLIENT TCP] before bind/connect getsockname=('0.0.0.0', 0)
+[CLIENT TCP] connecting to ('127.0.0.1', 50001)
+[CLIENT TCP] after connect local getsockname=('127.0.0.1', 54396) peer=('127.0.0.1', 50001)
+[CLIENT TCP] TX 20 bytes: 0000000453554d03000000040000000200000003
+[CLIENT TCP] RX 8 bytes: 0000000400000009
+[CLIENT TCP] parsed response=(4, 9)
+[CLIENT] socket.setdefaulttimeout=5.0
+[CLIENT] test=SUM([5, 2, 3]) task_id=5
+[CLIENT TCP] before bind/connect getsockname=('0.0.0.0', 0)
+[CLIENT TCP] connecting to ('127.0.0.1', 50001)
+[CLIENT TCP] after connect local getsockname=('127.0.0.1', 54360) peer=('127.0.0.1', 50001)
+[CLIENT TCP] TX 20 bytes: 0000000553554d03000000050000000200000003
+[CLIENT TCP] RX 8 bytes: 000000050000000a
+[CLIENT TCP] parsed response=(5, 10)

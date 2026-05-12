@@ -1,7 +1,11 @@
 \documentclass{kdiartcl}
 
 \usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{array}
+
 \usetikzlibrary{arrows.meta,decorations.pathreplacing}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
 \university{HTWG Konstanz}
 \institute{Fachbereich Angewandte Informatik}
@@ -19,7 +23,621 @@
 
 \setcounter{section}{2}
 
+\section{Rechen-Server}
+\subsection{Lokale Kommunikation}
 
+Für den lokalen Test des Rechenservers wurden Client und Server auf demselben Rechner
+ausgeführt. Als Serveradresse wurde die Loopback-Adresse \texttt{127.0.0.1} verwendet.
+Der Server lauschte auf Port \texttt{50001}. Dadurch findet die Kommunikation vollständig
+lokal über die Loopback-Schnittstelle statt.
+
+\subsubsection{Versuchsaufbau}
+
+Zunächst wurde das Server-Skript gestartet. Der Server erzeugt einen TCP-Socket, bindet
+diesen an die Adresse \texttt{127.0.0.1:50001} und wartet anschließend auf eingehende
+Verbindungen:
+
+\begin{verbatim}
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.bind(("127.0.0.1", 50001))
+sock.listen(5)
+conn, addr = sock.accept()
+\end{verbatim}
+
+Danach wurde das Client-Skript gestartet. Der Client erzeugt ebenfalls einen TCP-Socket
+und verbindet sich mit dem Server:
+
+\begin{verbatim}
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+sock.connect(("127.0.0.1", 50001))
+\end{verbatim}
+
+Als Testanfrage wurde die Operation \texttt{SUM} mit den Zahlen
+\texttt{1, 2, 3, 4, 5} verwendet. Die Task-ID war \texttt{5000}. Das erwartete Ergebnis
+ist somit:
+
+\[
+1 + 2 + 3 + 4 + 5 = 15
+\]
+
+\subsubsection{Nachrichtenformat}
+
+Die Anfrage des Clients hat nach Aufgabenstellung folgendes Format:
+
+\[
+<ID><Operation><N><z_1><z_2>\dots<z_N>
+\]
+
+Dabei wird die ID als unsigned Integer mit 4 Byte übertragen. Die Rechenoperation wird
+als UTF-8-Zeichenkette übertragen. Die Anzahl der Zahlen wird als unsigned char mit
+1 Byte übertragen. Die Zahlen selbst werden jeweils als signed Integer mit 4 Byte
+übertragen.
+
+Für den Testfall ergibt sich folgende Nachricht:
+
+\begin{center}
+\begin{tabular}{|l|l|l|l|}
+\hline
+Feld & Wert & Kodierung & Länge \\
+\hline
+ID & 5000 & unsigned int & 4 Byte \\
+Operation & SUM & UTF-8 & 3 Byte \\
+N & 5 & unsigned char & 1 Byte \\
+$z_1$ & 1 & signed int & 4 Byte \\
+$z_2$ & 2 & signed int & 4 Byte \\
+$z_3$ & 3 & signed int & 4 Byte \\
+$z_4$ & 4 & signed int & 4 Byte \\
+$z_5$ & 5 & signed int & 4 Byte \\
+\hline
+\end{tabular}
+\end{center}
+
+Die vom Client erzeugte Bytefolge war:
+
+\begin{verbatim}
+b'\x00\x00\x13\x88SUM\x05
+  \x00\x00\x00\x01
+  \x00\x00\x00\x02
+  \x00\x00\x00\x03
+  \x00\x00\x00\x04
+  \x00\x00\x00\x05'
+\end{verbatim}
+
+In hexadezimaler Schreibweise entspricht dies:
+
+\begin{verbatim}
+0000138853554d050000000100000002000000030000000400000005
+\end{verbatim}
+
+Die Antwort des Servers hat das Format:
+
+\[
+<ID><Ergebnis>
+\]
+
+Für die ID \texttt{5000} und das Ergebnis \texttt{15} wurde folgende Antwort empfangen:
+
+\begin{verbatim}
+000013880000000f
+\end{verbatim}
+
+Dabei entspricht \texttt{00001388} der Task-ID \texttt{5000} und
+\texttt{0000000f} dem dezimalen Ergebnis \texttt{15}.
+
+\subsubsection{Programmausgabe}
+
+Beim Ausführen des Clients wurde folgende Ausgabe erzeugt:
+
+\begin{verbatim}
+Parsed Message: b'\x00\x00\x13\x88SUM\x05
+\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x03
+\x00\x00\x00\x04\x00\x00\x00\x05'
+sent: 000013880000000f
+received: 000013880000000f
+(5000, 15)
+\end{verbatim}
+
+Die Ausgabe zeigt, dass der Client die Antwort des Servers korrekt empfangen und geparst
+hat. Die Antwort enthält die ursprüngliche Task-ID \texttt{5000} und das Ergebnis
+\texttt{15}.
+
+\subsubsection{Beobachtung in Wireshark}
+
+Die Kommunikation wurde mit Wireshark auf der Loopback-Schnittstelle aufgezeichnet.
+Bei der TCP-Kommunikation waren zunächst die Pakete des TCP-Verbindungsaufbaus zu
+sehen. Danach wurde die eigentliche Nutzlast übertragen. Anschließend sendete der
+Server die Antwort an den Client zurück.
+
+Die beobachtete Paketfolge lässt sich wie folgt erklären:
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|l|Y|Y|}
+\hline
+\textbf{Paket} & \textbf{Richtung} & \textbf{Bedeutung} & \textbf{Verantwortlicher Python-Befehl} \\
+\hline
+SYN & Client $\rightarrow$ Server &
+Beginn des TCP-Verbindungsaufbaus &
+\texttt{sock.connect(...)} im Client \\
+\hline
+SYN, ACK & Server $\rightarrow$ Client &
+Bestätigung der Verbindungsanfrage &
+Betriebssystem des Servers nach \texttt{listen(...)} \\
+\hline
+ACK & Client $\rightarrow$ Server &
+Abschluss des Three-Way-Handshakes &
+Betriebssystem des Clients \\
+\hline
+PSH, ACK & Client $\rightarrow$ Server &
+Übertragung der Rechenanfrage &
+\texttt{sock.send(...)} im Client \\
+\hline
+PSH, ACK & Server $\rightarrow$ Client &
+Übertragung des Ergebnisses &
+\texttt{conn.sendall(...)} im Server \\
+\hline
+FIN, ACK & Client $\rightarrow$ Server &
+Verbindungsabbau &
+\texttt{sock.close()} im Client \\
+\hline
+FIN, ACK & Server $\rightarrow$ Client &
+Bestätigung des Verbindungsabbaus &
+\texttt{conn.close()} im Server \\
+\hline
+\end{tabularx}
+\end{center}
+
+\subsubsection{Zuordnung der blockierenden Befehle}
+
+Mehrere Socket-Befehle blockieren, bis bestimmte Netzwerkereignisse eintreten.
+Im Versuch waren insbesondere \texttt{connect}, \texttt{accept} und \texttt{recv}
+relevant.
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|l|Y|}
+\hline
+\textbf{Befehl} & \textbf{Skript} & \textbf{Wird fortgesetzt durch} \\
+\hline
+\texttt{sock.connect(...)} & Client &
+Abschluss des TCP-Verbindungsaufbaus durch SYN, SYN-ACK und ACK \\
+\hline
+\texttt{sock.accept()} & Server &
+Eintreffen einer neuen TCP-Verbindungsanfrage vom Client \\
+\hline
+\texttt{conn.recv(...)} & Server &
+Eintreffen der vom Client gesendeten Rechenanfrage \\
+\hline
+\texttt{sock.recv(...)} & Client &
+Eintreffen der Serverantwort mit ID und Ergebnis \\
+\hline
+\end{tabularx}
+\end{center}
+
+Der Befehl \texttt{accept()} im Server wartet so lange, bis ein Client eine Verbindung
+aufbaut. Der Befehl \texttt{recv()} im Server wartet anschließend auf die Nutzdaten des
+Clients. Im Client blockiert \texttt{recv()}, bis der Server das Ergebnis der Berechnung
+zurückgeschickt hat.
+
+\subsubsection{Test mit Telnet}
+
+Zusätzlich wurde der Server mit Telnet getestet. Der Aufruf lautet:
+
+\begin{verbatim}
+telnet 127.0.0.1 50001
+\end{verbatim}
+
+Damit kann eine TCP-Verbindung zum Server aufgebaut werden. Telnet eignet sich, um
+grundsätzlich zu prüfen, ob der Server auf dem angegebenen Port erreichbar ist. Für die
+eigentliche Rechenanfrage ist Telnet jedoch nur eingeschränkt geeignet, da das Protokoll
+binäre Daten erwartet. Die Anfrage enthält beispielsweise Integer-Werte im Binärformat,
+die sich über die Tastatur nicht sinnvoll direkt eingeben lassen.
+
+Der Telnet-Test zeigt daher vor allem, dass der TCP-Port geöffnet ist und der Server
+Verbindungen annimmt. Die korrekte Berechnung wurde mit dem Python-Client geprüft,
+da dieser das geforderte Binärformat mit \texttt{struct.pack()} erzeugt.
+
+\subsubsection{Ergebnis}
+
+Der lokale Test war erfolgreich. Der Client konnte über TCP eine Verbindung zum Server
+unter \texttt{127.0.0.1:50001} aufbauen, eine korrekt kodierte Rechenanfrage senden und
+die Antwort empfangen. Für die Anfrage
+
+\[
+SUM(1,2,3,4,5)
+\]
+
+lieferte der Server korrekt das Ergebnis
+
+\[
+15
+\]
+
+zurück. Die empfangene Antwort
+
+\begin{verbatim}
+000013880000000f
+\end{verbatim}
+
+enthält die ursprüngliche Task-ID \texttt{5000} sowie das Ergebnis \texttt{15}. Damit
+entspricht die Kommunikation dem vorgegebenen Nachrichtenformat.
+
+
+\subsection{Netzwerk-Kommunikation}
+
+Für den Versuch über ein Netzwerk wurde nicht NordVPN MeshNet verwendet. Stattdessen wurde ein Handy-Hotspot genutzt, sodass beide Geräte im gleichen lokalen Netz waren. Der Server lief auf dem Fedora-Laptop mit der IP-Adresse \texttt{172.20.10.2}. Der Client lief auf einem Windows-Gerät mit der IP-Adresse \texttt{172.20.10.4}. Vor dem eigentlichen Test wurde die Verbindung mit \texttt{ping} geprüft.
+
+\begin{verbatim}
+Ping wird ausgeführt für 172.20.10.2 mit 32 Bytes Daten:
+Antwort von 172.20.10.2: Bytes=32 Zeit=4ms TTL=64
+Antwort von 172.20.10.2: Bytes=32 Zeit=4ms TTL=64
+Antwort von 172.20.10.2: Bytes=32 Zeit=3ms TTL=64
+Antwort von 172.20.10.2: Bytes=32 Zeit=83ms TTL=64
+
+Ping-Statistik für 172.20.10.2:
+    Pakete: Gesendet = 4, Empfangen = 4, Verloren = 0
+    (0% Verlust),
+Ca. Zeitangaben in Millisek.:
+    Minimum = 3ms, Maximum = 83ms, Mittelwert = 23ms
+\end{verbatim}
+
+Der Ping-Test zeigt, dass der Server vom Client aus erreichbar war. Es wurden alle vier Pakete beantwortet und es gab keinen Paketverlust.
+
+\subsubsection{Lokale Adresse und lokaler Port des Clients}
+
+Im ersten Versuch wurde der Client ohne explizites \texttt{bind()} gestartet. Der Client verbindet sich also nur mit dem Server. Die lokale Adresse wird dann vom Betriebssystem gewählt.
+
+\begin{verbatim}
+[CLIENT TCP] before bind/connect getsockname=not available yet
+[CLIENT TCP] connecting to ('172.20.10.2', 50001)
+[CLIENT TCP] after connect local getsockname=('172.20.10.4', 62358)
+[CLIENT TCP] after connect peer=('172.20.10.2', 50001)
+[CLIENT TCP] TX 28 bytes: 0000138853554d050000000100000002000000030000000400000005
+[CLIENT TCP] RX 8 bytes: 000013880000000f
+[CLIENT TCP] parsed response=(5000, 15)
+\end{verbatim}
+
+Mit \texttt{getsockname()} kann man im Client die lokale IP-Adresse und den lokalen Port des Sockets herausfinden. Auf Windows lieferte \texttt{getsockname()} vor \texttt{connect()} noch einen Fehler, weil der Socket noch nicht gebunden bzw. verbunden war. Nach \texttt{connect()} war die lokale Adresse aber bestimmt. In diesem Fall war dies \texttt{172.20.10.4:62358}. Der Port \texttt{62358} wurde also automatisch vom Betriebssystem vergeben.
+
+Im zweiten Versuch wurde der lokale Socket vor dem \texttt{connect()} explizit gebunden:
+
+\begin{verbatim}
+[CLIENT TCP] before bind/connect getsockname=not available yet
+[CLIENT TCP] after explicit bind getsockname=('172.20.10.4', 50010)
+[CLIENT TCP] connecting to ('172.20.10.2', 50001)
+[CLIENT TCP] after connect local getsockname=('172.20.10.4', 50010)
+[CLIENT TCP] after connect peer=('172.20.10.2', 50001)
+[CLIENT TCP] TX 28 bytes: 0000138853554d050000000100000002000000030000000400000005
+[CLIENT TCP] RX 8 bytes: 000013880000000f
+[CLIENT TCP] parsed response=(5000, 15)
+\end{verbatim}
+
+Hier sieht man, dass der Client lokal auf \texttt{172.20.10.4:50010} gebunden wurde. Nach dem Verbindungsaufbau blieb diese lokale Adresse erhalten. Der Client kann seine lokale IP-Adresse und Portnummer also mit folgendem Befehl setzen:
+
+\begin{verbatim}
+sock.bind(("172.20.10.4", 50010))
+\end{verbatim}
+
+Ohne \texttt{bind()} erhält der Client seine lokale IP-Adresse und Portnummer beim Verbindungsaufbau durch \texttt{connect()}. Die IP-Adresse wird passend zur Route zum Server gewählt. Der lokale Port wird als freier kurzlebiger Port vom Betriebssystem vergeben. Bei UDP passiert dies spätestens beim ersten \texttt{sendto()}.
+
+\subsubsection{Timeouts und try/except}
+
+Timeouts sind wichtig, da Socket-Befehle wie \texttt{accept()}, \texttt{connect()}, \texttt{recv()} oder \texttt{recvfrom()} blockieren können. Ohne Timeout kann ein Programm hängen bleiben, wenn ein Paket verloren geht oder wenn die Gegenstelle nicht antwortet. Im Versuch wurde zum Beispiel ein Timeout von 5 Sekunden gesetzt:
+
+\begin{verbatim}
+socket.setdefaulttimeout(5.0)
+\end{verbatim}
+
+Mit \texttt{socket.setdefaulttimeout()} wird ein gemeinsamer Standard-Timeout für neu erzeugte Sockets gesetzt. Einzelne Sockets können auch mit \texttt{sock.settimeout(...)} konfiguriert werden.
+
+Mit \texttt{try ... except} kann man solche Fehler abfangen. Der Socket-Befehl steht im \texttt{try}-Block. Tritt z.B. ein Timeout auf, wird der Programmfluss im passenden \texttt{except}-Block fortgesetzt. Dadurch kann man eine Fehlermeldung ausgeben oder sauber abbrechen, anstatt dass das Programm unkontrolliert endet.
+
+\subsubsection{TCP und UDP auf gleicher Portnummer}
+
+Für die Frage, ob TCP und UDP auf derselben Portnummer gleichzeitig verwendet werden können, wurde ein Echo-Server gestartet, der sowohl einen TCP- als auch einen UDP-Socket auf \texttt{127.0.0.1:50000} bindet.
+
+Serverausgabe:
+
+\begin{verbatim}
+[TCP ECHO] Listening on ('127.0.0.1', 50000)
+[UDP ECHO] Listening on ('127.0.0.1', 50000)
+[DUAL ECHO] TCP and UDP are bound to the same numeric port 50000
+[TCP ECHO] accepted ('127.0.0.1', 34746)
+[TCP ECHO] RX from ('127.0.0.1', 34746): b'Hello TCP'
+[TCP ECHO] closed ('127.0.0.1', 34746)
+[UDP ECHO] RX from ('127.0.0.1', 57220): b'Hello UDP'
+\end{verbatim}
+
+TCP-Client:
+
+\begin{verbatim}
+[TCP CLIENT] before connect local=('0.0.0.0', 0)
+[TCP CLIENT] after connect local=('127.0.0.1', 34746) peer=('127.0.0.1', 50000)
+[TCP CLIENT] TX: b'Hello TCP'
+[TCP CLIENT] RX: b'Hello TCP'
+\end{verbatim}
+
+UDP-Client:
+
+\begin{verbatim}
+[UDP CLIENT] before send local=('0.0.0.0', 0)
+[UDP CLIENT] TX: b'Hello UDP'
+[UDP CLIENT] after send local=('0.0.0.0', 57220)
+[UDP CLIENT] RX from ('127.0.0.1', 50000): b'Hello UDP'
+\end{verbatim}
+
+Der Versuch zeigt, dass TCP und UDP auf derselben numerischen Portnummer gleichzeitig betrieben werden können. Das funktioniert, weil TCP-Ports und UDP-Ports getrennte Namensräume sind. \texttt{127.0.0.1:50000/TCP} und \texttt{127.0.0.1:50000/UDP} sind für das Betriebssystem also verschiedene Endpunkte.
+
+\subsection{Unterstützung für mehrere Clients}
+
+Der TCP-Server wurde so erweitert, dass er für jede neue Verbindung einen eigenen Thread startet. Die Funktion \texttt{listen(sock)} wartet auf neue Verbindungen. Sobald \texttt{accept()} einen verbundenen Socket liefert, wird ein neuer Thread mit der Funktion \texttt{receive(conn, addr)} gestartet.
+
+Der relevante Ablauf ist:
+
+\begin{verbatim}
+conn, addr = sock.accept()
+thread = Thread(target=receive, args=(conn, addr))
+thread.start()
+\end{verbatim}
+
+Die Funktion \texttt{receive()} bearbeitet dann die Nachrichten genau dieses Clients. Dadurch kann der Server mehrere Clients gleichzeitig bedienen. Getestet wurde dies mit fünf parallel gestarteten Clients.
+
+\begin{verbatim}
+[CLIENT] test=SUM([1, 2, 3]) task_id=1
+[CLIENT TCP] parsed response=(1, 6)
+
+[CLIENT] test=SUM([2, 2, 3]) task_id=2
+[CLIENT TCP] parsed response=(2, 7)
+
+[CLIENT] test=SUM([3, 2, 3]) task_id=3
+[CLIENT TCP] parsed response=(3, 8)
+
+[CLIENT] test=SUM([4, 2, 3]) task_id=4
+[CLIENT TCP] parsed response=(4, 9)
+
+[CLIENT] test=SUM([5, 2, 3]) task_id=5
+[CLIENT TCP] parsed response=(5, 10)
+\end{verbatim}
+
+Der Server hat die Verbindungen auf unterschiedlichen lokalen Ports angenommen und jeweils die richtige Antwort zurückgeschickt. Damit ist gezeigt, dass mehrere Clients gleichzeitig verarbeitet werden können.
+
+\section{Port Scan}
+
+\subsection{TCP Port Scanner}
+
+Für den TCP-Portscan wurde der Server \texttt{141.37.122.107} auf den Ports \texttt{1} bis \texttt{50} gescannt. Die Verbindung zur Hochschule wurde vorher über OpenVPN aufgebaut. Im VPN-Log war zu sehen, dass die Verbindung erfolgreich aufgebaut wurde:
+
+\begin{verbatim}
+Initialization Sequence Completed
+\end{verbatim}
+
+Ein Ping auf den Server lieferte keine Antwort:
+
+\begin{verbatim}
+4 packets transmitted, 0 received, 100% packet loss
+\end{verbatim}
+
+Das bedeutet aber nicht automatisch, dass der Server nicht erreichbar ist. ICMP kann blockiert sein. Deshalb wurde die Erreichbarkeit der Dienste mit TCP-Sockets getestet.
+
+Der TCP-Scan lieferte folgende offenen Ports:
+
+\begin{center}
+\begin{tabular}{|l|l|l|}
+\hline
+Port & Status & Beobachtung \\
+\hline
+7 & offen & Echo-Dienst, Nutzdaten wurden zurückgesendet \\
+9 & offen & Verbindung wurde akzeptiert, keine Nutzdaten empfangen \\
+13 & offen & Daytime-Dienst, Datum/Uhrzeit wurde gesendet \\
+19 & offen & Chargen-Dienst, viele Testzeichen wurden gesendet \\
+22 & offen & SSH-Banner wurde gesendet \\
+\hline
+\end{tabular}
+\end{center}
+
+Auszug aus dem Log:
+
+\begin{verbatim}
+TCP port 7: open connect_ex=0 payload=b'RN-LAB-ECHO-TEST\r\n'
+TCP port 9: open connect_ex=0 payload=b''
+TCP port 13: open connect_ex=0 payload=b'Tue May 12 09:15:31 2026\r\n'
+TCP port 19: open connect_ex=0 payload=b' ... '
+TCP port 22: open connect_ex=0 payload=b'SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.16\r\n'
+\end{verbatim}
+
+Alle anderen Ports zwischen 1 und 50 wurden als \texttt{closed\_or\_filtered} erkannt. Im Wireshark-Mitschnitt ist für einen offenen TCP-Port wie Port 7 der normale Verbindungsaufbau zu sehen: Der Client sendet ein SYN, der Server antwortet mit SYN/ACK und der Client bestätigt mit ACK. Danach werden die Nutzdaten übertragen. Bei einem geschlossenen Port ist dagegen keine erfolgreiche Verbindung möglich. Je nach Port sieht man einen Reset oder es kommt bis zum Timeout keine verwertbare Antwort.
+
+\subsection{UDP Port Scanner}
+
+Für UDP wurde der Server \texttt{141.37.168.26} auf den Ports \texttt{1} bis \texttt{50} gescannt. In den Logs wurde für keinen der gescannten UDP-Ports eine Antwort empfangen. Alle Ports liefen in einen Timeout.
+
+\begin{verbatim}
+[SCAN] proto=udp host=141.37.168.26 ports=1-50 timeout=1.0s workers=50
+1;os_error_probably_closed;TimeoutError: timed out;;
+2;os_error_probably_closed;TimeoutError: timed out;;
+...
+50;os_error_probably_closed;TimeoutError: timed out;;
+[SUMMARY]
+\end{verbatim}
+
+Auf Fedora/Linux wurde bei diesem Versuch kein Windows-Fehlercode \texttt{10054} angezeigt. Stattdessen wurde für die Ports ein \texttt{TimeoutError} ausgegeben. Das bedeutet bei UDP nicht sicher, dass der Port geschlossen ist. Bei UDP kann ein offener Port ebenfalls nicht antworten, wenn der Dienst auf die gesendeten Daten nicht reagiert. Man kann daher nur sagen, dass im Versuch keine UDP-Antwort empfangen wurde.
+
+\subsection{Echo-Dienst auf Port 7}
+
+Der Echo-Dienst wurde zuerst mit TCP getestet:
+
+\begin{verbatim}
+[TCP CLIENT] before connect local=('0.0.0.0', 0)
+[TCP CLIENT] after connect local=('141.37.204.2', 59364) peer=('141.37.122.107', 7)
+[TCP CLIENT] TX: b'Echo-Test TCP'
+[TCP CLIENT] RX: b'Echo-Test TCP'
+\end{verbatim}
+
+Der TCP-Echo-Test war erfolgreich. Der Client sendete die Nachricht \texttt{Echo-Test TCP} und empfing dieselbe Nachricht zurück.
+
+Der UDP-Echo-Test gegen \texttt{141.37.168.26:7} lieferte dagegen keine Antwort:
+
+\begin{verbatim}
+[UDP CLIENT] before send local=('0.0.0.0', 0)
+[UDP CLIENT] TX: b'Echo-Test UDP'
+[UDP CLIENT] after send local=('0.0.0.0', 45389)
+TimeoutError: timed out
+\end{verbatim}
+
+Für TCP kann man im Wireshark-Mitschnitt den Verbindungsaufbau und die Echo-Antwort sehen. Für UDP wird nur ein Datagramm vom Client zum Server gesendet. Da keine Antwort kam, lief der \texttt{recvfrom()}-Aufruf in einen Timeout.
+
+\subsection{Ergebnis Port Scan}
+
+Die offenen TCP-Ports im Bereich 1 bis 50 waren im Versuch:
+
+\begin{verbatim}
+7, 9, 13, 19, 22
+\end{verbatim}
+
+Für UDP wurde in diesem Versuch im Bereich 1 bis 50 kein Port gefunden, der eine Antwort geliefert hat. Daher konnte experimentell kein sicher offener UDP-Port bestimmt werden.
+
+\section{Mail}
+
+\subsection{SMTP über OpenSSL}
+
+Für den SMTP-Test wurde mit OpenSSL eine Verbindung zum ASmtp-Server der HTWG auf Port \texttt{587} aufgebaut:
+
+\begin{verbatim}
+openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587
+\end{verbatim}
+
+Der Server wurde zu \texttt{141.37.20.66} aufgelöst und die TLS-Verbindung wurde erfolgreich aufgebaut. Im Log war unter anderem zu sehen:
+
+\begin{verbatim}
+CONNECTED(00000003)
+Verification: OK
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Verify return code: 0 (ok)
+\end{verbatim}
+
+Nach \texttt{AUTH LOGIN} wurden Benutzername und Passwort Base64-kodiert übertragen. Diese Werte werden hier nicht abgedruckt. Der Login war erfolgreich:
+
+\begin{verbatim}
+334 VXNlcm5hbWU6
+334 UGFzc3dvcmQ6
+235 2.7.0 Authentication successful
+\end{verbatim}
+
+Danach wurde eine Mail an meinen eigenen Gmail-Account gesendet. Die SMTP-Kommandos waren im Prinzip:
+
+\begin{verbatim}
+ehlo localhost
+auth login
+<BASE64_USERNAME>
+<BASE64_PASSWORD>
+mail from:<pa871kru@htwg-konstanz.de>
+rcpt to:<kruesselpaul@gmail.com>
+data
+from: pa871kru@htwg-konstanz.de
+to: kruesselpaul@gmail.com
+subject: RN Labor OpenSSL Test
+
+Dies ist eine Testmail per OpenSSL.
+.
+quit
+\end{verbatim}
+
+Der Server nahm die Mail an:
+
+\begin{verbatim}
+250 2.1.0 Ok
+250 2.1.5 Ok
+354 End data with <CR><LF>.<CR><LF>
+250 2.0.0 Ok: queued as 4D81D100037
+221 2.0.0 Bye
+\end{verbatim}
+
+Damit wurde gezeigt, dass die Mail über SMTP mit STARTTLS und Authentifizierung verschickt werden konnte.
+
+\subsection{Test mit anderem Absender}
+
+Anschließend wurde noch eine Mail an meinen eigenen Account gesendet, bei der der Envelope-Absender und der sichtbare Header-Absender willkürlich gesetzt wurden. Die sensiblen Login-Daten werden auch hier nicht abgedruckt.
+
+\begin{verbatim}
+mail from:<beliebig@example.com>
+rcpt to:<kruesselpaul@gmail.com>
+data
+from: Fantasie Name <fake.absender@example.com>
+to: kruesselpaul@gmail.com
+subject: RN Labor Fake From Test
+
+Dies ist ein kontrollierter Test an mich selbst.
+.
+quit
+\end{verbatim}
+
+Auch diese Mail wurde vom SMTP-Server angenommen:
+
+\begin{verbatim}
+235 2.7.0 Authentication successful
+250 2.1.0 Ok
+250 2.1.5 Ok
+354 End data with <CR><LF>.<CR><LF>
+250 2.0.0 Ok: queued as 2B82A100037
+221 2.0.0 Bye
+\end{verbatim}
+
+Auffällig ist dabei, dass der sichtbare Absender im Mailprogramm aus dem \texttt{from:}-Header stammt und nicht zwingend dem Benutzer entspricht, der sich am SMTP-Server authentifiziert hat. Das zeigt, warum man Absenderangaben in E-Mails nicht blind vertrauen sollte. Moderne Mailserver und Mailprogramme können solche Mails zusätzlich durch SPF, DKIM oder DMARC bewerten und gegebenenfalls als verdächtig markieren.
+
+\subsection{SMTP in Python}
+
+Für den Python-Versuch wurde ein eigener SMTP-Client geschrieben, der keine Mail-Bibliothek wie \texttt{smtplib} verwendet. Stattdessen werden direkt ein TCP-Socket und danach ein TLS-Socket verwendet. Der Ablauf ist:
+
+\begin{enumerate}
+    \item TCP-Verbindung zu \texttt{asmtp.htwg-konstanz.de:587} öffnen
+    \item \texttt{EHLO} senden
+    \item \texttt{STARTTLS} senden
+    \item Socket mit \texttt{ssl.create\_default\_context()} in einen TLS-Socket umwandeln
+    \item erneut \texttt{EHLO} senden
+    \item mit \texttt{AUTH LOGIN} anmelden
+    \item \texttt{mail from}, \texttt{rcpt to}, \texttt{data} und \texttt{quit} senden
+\end{enumerate}
+
+Der Verbindungsaufbau und der Wechsel auf TLS funktionierten im Versuch:
+
+\begin{verbatim}
+[INFO] connect ('asmtp.htwg-konstanz.de', 587)
+[S] 220 mailgate3.htwg-konstanz.de ESMTP Postfix (Ubuntu)
+[C] ehlo localhost
+[S] 250-mailgate3.htwg-konstanz.de
+250-STARTTLS
+[C] starttls
+[S] 220 2.0.0 Ready to start TLS
+[INFO] TLS established
+[C] ehlo localhost
+[S] 250-mailgate3.htwg-konstanz.de
+250-AUTH PLAIN LOGIN
+\end{verbatim}
+
+Die Login-Daten wurden im Skript maskiert ausgegeben:
+
+\begin{verbatim}
+[C] auth login
+[S] 334 VXNlcm5hbWU6
+[C] ***
+[S] 334 UGFzc3dvcmQ6
+[C] ***
+\end{verbatim}
+
+In den aufgezeichneten Python-Läufen ist die Authentifizierung allerdings fehlgeschlagen:
+
+\begin{verbatim}
+[S] 535 5.7.8 Error: authentication failed: authentication failure
+\end{verbatim}
+
+Danach wurde der Empfänger vom Server abgelehnt, da ohne erfolgreiche Authentifizierung kein Versand an externe Empfänger erlaubt war:
+
+\begin{verbatim}
+[S] 554 5.7.1 <kruesselpaul@gmail.com>: Recipient address rejected: Access denied
+[S] 554 5.5.1 Error: no valid recipients
+\end{verbatim}
+
+Der Python-Client zeigt damit trotzdem den Protokollablauf bis einschließlich STARTTLS und AUTH LOGIN. Für einen erfolgreichen Versand müsste der Python-Lauf noch einmal mit den korrekten Zugangsdaten wiederholt werden. Der OpenSSL-Versuch zeigt, dass der SMTP-Server grundsätzlich erreichbar ist und der Versand mit gültiger Authentifizierung funktioniert.
 
 \end{document}
 

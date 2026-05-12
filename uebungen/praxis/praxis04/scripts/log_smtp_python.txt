@@ -1,0 +1,50 @@
+[INFO] connect ('asmtp.htwg-konstanz.de', 587)
+[S] 220 mailgate3.htwg-konstanz.de ESMTP Postfix (Ubuntu)
+[C] ehlo localhost
+[S] 250-mailgate3.htwg-konstanz.de
+250-PIPELINING
+250-SIZE 54525952
+250-ETRN
+250-STARTTLS
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+[C] starttls
+[S] 220 2.0.0 Ready to start TLS
+[INFO] TLS established
+[C] ehlo localhost
+[S] 250-mailgate3.htwg-konstanz.de
+250-PIPELINING
+250-SIZE 54525952
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-AUTH=PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+[C] auth login
+[S] 334 VXNlcm5hbWU6
+[C] ***
+[S] 334 UGFzc3dvcmQ6
+[C] ***
+[S] 535 5.7.8 Error: authentication failed: authentication failure
+[C] mail from:<deine.htwg.adresse@htwg-konstanz.de>
+[S] 250 2.1.0 Ok
+[C] rcpt to:<kruesselpaul@gmail.com>
+[S] 554 5.7.1 <kruesselpaul@gmail.com>: Recipient address rejected: Access denied
+[C] data
+[S] 554 5.5.1 Error: no valid recipients
+[C] from: Dein Name pa871kru@htwg-konstanz.de
+to: kruesselpaul@gmail.com
+subject: RN Labor Python SMTP Test
+
+Testmail per Python-Socket
+.
+[S] 221 2.7.0 Error: I can break rules, too. Goodbye.
+[C] quit
+[S] 
+[INFO] done

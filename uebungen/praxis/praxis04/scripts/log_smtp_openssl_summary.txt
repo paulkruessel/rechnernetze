@@ -1,0 +1,158 @@
+paul@fedora:~/studium/rechnernetze/uebungen/praxis/praxis04/scripts$ openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587
+Connecting to 141.37.20.66
+CONNECTED(00000003)
+depth=2 C=GR, O=Hellenic Academic and Research Institutions CA, CN=HARICA TLS RSA Root CA 2021
+verify return:1
+depth=1 C=GR, O=Hellenic Academic and Research Institutions CA, CN=GEANT TLS RSA 1
+verify return:1
+depth=0 C=DE, ST=Baden-Wuerttemberg, O=Hochschule Konstanz Technik Wirtschaft und Gestaltung, CN=mailgate3.htwg-konstanz.de
+verify return:1
+---
+Certificate chain
+ 0 s:C=DE, ST=Baden-Wuerttemberg, O=Hochschule Konstanz Technik Wirtschaft und Gestaltung, CN=mailgate3.htwg-konstanz.de
+   i:C=GR, O=Hellenic Academic and Research Institutions CA, CN=GEANT TLS RSA 1
+   a:PKEY: RSA, 3072 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Nov 17 06:38:08 2025 GMT; NotAfter: Nov 17 06:38:08 2026 GMT
+ 1 s:C=GR, O=Hellenic Academic and Research Institutions CA, CN=GEANT TLS RSA 1
+   i:C=GR, O=Hellenic Academic and Research Institutions CA, CN=HARICA TLS RSA Root CA 2021
+   a:PKEY: RSA, 3072 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Jan  3 11:15:00 2025 GMT; NotAfter: Dec 31 11:14:59 2039 GMT
+ 2 s:C=GR, O=Hellenic Academic and Research Institutions CA, CN=HARICA TLS RSA Root CA 2021
+   i:C=GR, L=Athens, O=Hellenic Academic and Research Institutions Cert. Authority, CN=Hellenic Academic and Research Institutions RootCA 2015
+   a:PKEY: RSA, 4096 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Sep  2 07:41:55 2021 GMT; NotAfter: Aug 31 07:41:54 2029 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIHpzCCBg+gAwIBAgIQVlUhbkI6zJHTgaWesszztTANBgkqhkiG9w0BAQsFADBg
+MQswCQYDVQQGEwJHUjE3MDUGA1UECgwuSGVsbGVuaWMgQWNhZGVtaWMgYW5kIFJl
+c2VhcmNoIEluc3RpdHV0aW9ucyBDQTEYMBYGA1UEAwwPR0VBTlQgVExTIFJTQSAx
+MB4XDTI1MTExNzA2MzgwOFoXDTI2MTExNzA2MzgwOFowgY8xCzAJBgNVBAYTAkRF
+MRswGQYDVQQIDBJCYWRlbi1XdWVydHRlbWJlcmcxPjA8BgNVBAoMNUhvY2hzY2h1
+bGUgS29uc3RhbnogVGVjaG5payBXaXJ0c2NoYWZ0IHVuZCBHZXN0YWx0dW5nMSMw
+IQYDVQQDDBptYWlsZ2F0ZTMuaHR3Zy1rb25zdGFuei5kZTCCAaIwDQYJKoZIhvcN
+AQEBBQADggGPADCCAYoCggGBAPZSIl23fgYq/8kyBqcElYyc9hcLnA4D8P6QV7rq
+bM9vR9W18JZFKQ5OLhhzb6ZflSNZgHOKtNHMs5Ax9sYNQIxi04JL2yIOemUwEoBI
+Z3/oH2+BRy+SUvEj60PenmWJMQfHcTcwwH785peS+2lhm4bLS6X5XhDioaNaeyR9
+FQ8GKg/BebiPZRfKsF4s5V/4A93KVV7/Tj8rFiJb01yW6YOazV+xWXFWrIQIgOIT
+grYfbRtoCW67fbfh+6YENGXjg7Dr8yp9/Jc0VVSU5TAWgyF1Zv4FBvymw3qSumue
+fN6tFKpkHYour1K56EJwo1kIo+SrRA+VFZC7TfocE9l2Sa1bIDauBvUDuDN1i3AD
+c327NcKlToB54YXb1NFXd9y69x5cxTkKSoReczKfYPlwTXbWb++vgDdOLz2PTEOG
+NXiozdOKEVzYWSDXVKMakOZZOTl0HOnUuLaTWkn1Csn5P9Ec1LSEWv5/CuJ+GMd+
+Qu17HF2P7KiQBZja0Q22tAq+HQIDAQABo4IDKzCCAycwHwYDVR0jBBgwFoAUhgFy
+P4ypcOIxBlMWzgFfW3nIPDswbwYIKwYBBQUHAQEEYzBhMDgGCCsGAQUFBzAChixo
+dHRwOi8vY3J0LmhhcmljYS5nci9IQVJJQ0EtR0VBTlQtVExTLVIxLmNlcjAlBggr
+BgEFBQcwAYYZaHR0cDovL29jc3AtdGxzLmhhcmljYS5ncjBUBgNVHREETTBLghpt
+YWlsZ2F0ZTMuaHR3Zy1rb25zdGFuei5kZYIVc210cC5odHdnLWtvbnN0YW56LmRl
+ghZhc210cC5odHdnLWtvbnN0YW56LmRlMC0GA1UdIAQmMCQwCAYGZ4EMAQICMAgG
+BgQAj3oBBzAOBgwrBgEEAYHPEQEBAQIwHQYDVR0lBBYwFAYIKwYBBQUHAwIGCCsG
+AQUFBwMBMD0GA1UdHwQ2MDQwMqAwoC6GLGh0dHA6Ly9jcmwuaGFyaWNhLmdyL0hB
+UklDQS1HRUFOVC1UTFMtUjEuY3JsMB0GA1UdDgQWBBSHCzyzE+RALgKxaAveWX8W
+VSGLIzAOBgNVHQ8BAf8EBAMCBaAwggF/BgorBgEEAdZ5AgQCBIIBbwSCAWsBaQB2
+AJROQ4f67MHvgfMZJCaoGGUBx9NfOAIBP3JnfVU3LhnYAAABmpCSLLgAAAQDAEcw
+RQIgBMmKFsIQBKsEi4DNtxZXXuhpuJpbZQTZE5XMNi1oI4QCIQCEkqWTTi19Z02A
+EWu9UiYsvCLSoWo7HtwZ3ts4eJue2AB3ANgJVTuUT3r/yBYZb5RPhauw+Pxeh1Um
+DxXRLnK7RUsUAAABmpCSLIEAAAQDAEgwRgIhALJepgmpwm0leercaO/Tt9bJg+ef
+IIcEpsvB5iW/g9TYAiEAmqnk80+SsvR5LZq2GEMaLxSsQFpI9qn7p0nVPG24jdgA
+dgCsqzBwbOvshDH0E9L0kV8RHkIkQ7HypoxPPCs7px4CwwAAAZqQkiy0AAAEAwBH
+MEUCIQDx2KW3LmnGuCJzT9ZPtFx3VITLhdodvWP0V32jvLiB5wIgRT/XrP4stxcM
+4SLRwqbK0YeUtQzDNLA29Bt8QdmqF+owDQYJKoZIhvcNAQELBQADggGBAEBgArS/
+PUJCGWph2GGcxzoMQuUUxTOatqo/yhgi9gmPw3mJnyqo6nkgIAtz05bsuo6g/87C
+RCIDhte99UQyD74tEqFLe6AKYY/qO7XymMXsk4djsiyVyBTantFsM8f8cJOpYqgP
+h9RbmSoreOoi9xQZeQmlOeLu6eFUNdMODgRPfHkrxpmXfsX/oPGLkYdGOi3EfME/
+D/p2Qpbu1EEuhNVGgbFVqT3Gevp62M5If5CkOvFqJu3HYIf+RWFywcPIFvXcaTWn
+KHlkX8+l2KP1tJiIBYe2tDCbxAwqCurrcheoepF9YX5BY2YA+Jt/rjhNrgLOa59Q
+3b2fcmGa/h54V3wTgXm2sniXW4I3+HMjhKAYKj7rBZeILGmF+qc4s2lT4NSbZWpd
+243jS/fzI5+yQIRdJDfoKZpZDfBXxyZU/Us+IgU7gsjNa0q4ncOJHHo2IZFIHkZf
+YEX52bdvd3eisASb0Y31xw+WoRSKJIK/i8qFwYCZzSVoovaE3Vk1wRNuwg==
+-----END CERTIFICATE-----
+subject=C=DE, ST=Baden-Wuerttemberg, O=Hochschule Konstanz Technik Wirtschaft und Gestaltung, CN=mailgate3.htwg-konstanz.de
+issuer=C=GR, O=Hellenic Academic and Research Institutions CA, CN=GEANT TLS RSA 1
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Peer Temp Key: X25519, 253 bits
+---
+SSL handshake has read 6186 bytes and written 1681 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 3072 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+250 CHUNKING
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: C26390B20DB81B62D04C5B563B14B54451659508257E1FFB34CDB9A1BCEDFE37
+    Session-ID-ctx: 
+    Resumption PSK: DE0D1411744671146F9B6F541CCC049FBCB4CDC95C046252184E753EC69DE6D7989E83892B02219E3579EA64BFC442A1
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - 21 11 1f 66 f0 16 ea 64-26 90 6a 92 d1 06 1e 5f   !..f...d&.j...._
+    0010 - 04 6d 27 e4 3b 3c 30 6d-3a 55 20 b2 66 6d 04 a7   .m'.;<0m:U .fm..
+    0020 - ab 93 04 2c 96 3f 13 fb-0d ef f0 64 0c a8 e8 e0   ...,.?.....d....
+    0030 - f7 e2 cf 3f e0 4b 4d 4b-8b 2e 5a e3 3c 88 d6 d1   ...?.KMK..Z.<...
+    0040 - c2 c8 31 3f 46 81 f2 b0-35 06 be 73 70 ac 64 9f   ..1?F...5..sp.d.
+    0050 - d3 07 1b e2 14 c0 7e 23-9a 3f 6b e9 f8 28 a1 91   ......~#.?k..(..
+    0060 - 7f 20 f3 01 6c 78 c2 ed-ce 98 b5 c3 3f 24 d6 24   . ..lx......?$.$
+    0070 - 87 7f 6b 10 7e 15 3b 22-61 aa 67 a6 db b4 51 5f   ..k.~.;"a.g...Q_
+    0080 - af f5 23 7a 05 36 4a b0-df 37 c2 e2 39 1d ec 06   ..#z.6J..7..9...
+    0090 - a5 a3 64 ae 23 f5 e9 c8-9c 46 a0 6f 71 a6 b6 50   ..d.#....F.oq..P
+    00a0 - 74 20 83 69 85 8d 45 ea-fa 75 2f 1b ba 11 3b a5   t .i..E..u/...;.
+    00b0 - bc c9 15 82 d7 16 dd 1f-e3 4f 1a ae 15 fe c7 77   .........O.....w
+    00c0 - 84 6e f5 8e aa 01 da 5c-76 3b 6c 17 f5 29 73 7e   .n.....\v;l..)s~
+
+    Start Time: 1778570505
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+ehlo localhost
+auth login
+cGE4NzFrcnU=
+bWRQc2lzK3MxNDA5MDM=
+mail from:pa871kru@htwg-konstanz.de
+rcpt to:kruesselpaul@gmail.com
+data
+from: deine.htwg.adresse@htwg-konstanz.de
+to: kruesselpaul@gmail.com
+subject: RN Labor OpenSSL Test
+
+Dies ist eine Testmail per OpenSSL.
+.
+quit250-mailgate3.htwg-konstanz.de
+250-PIPELINING
+250-SIZE 54525952
+250-ETRN
+250-AUTH PLAIN LOGIN
+250-AUTH=PLAIN LOGIN
+250-ENHANCEDSTATUSCODES
+250-8BITMIME
+250-DSN
+250-SMTPUTF8
+250 CHUNKING
+334 VXNlcm5hbWU6
+334 UGFzc3dvcmQ6
+235 2.7.0 Authentication successful
+250 2.1.0 Ok
+250 2.1.5 Ok
+354 End data with <CR><LF>.<CR><LF>
+250 2.0.0 Ok: queued as 4D81D100037
+
+221 2.0.0 Bye
+closed

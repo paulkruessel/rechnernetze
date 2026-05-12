@@ -1,0 +1,4 @@
+[TCP CLIENT] before connect local=('0.0.0.0', 0)
+[TCP CLIENT] after connect local=('127.0.0.1', 43324) peer=('127.0.0.1', 50000)
+[TCP CLIENT] TX: b'Hello TCP'
+[TCP CLIENT] RX: b'Hello TCP'
