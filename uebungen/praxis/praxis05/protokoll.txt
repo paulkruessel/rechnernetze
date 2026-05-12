@@ -1,0 +1,94 @@
+Datenstruktur (Liste) Nickname, IP Adresse, UDP Port
+Register Vorgang:
+Client -> Server mit Nachrichtenformat:
+NICKNAME(16 byte)IP(4 byte)UDP(2byte)
+Server schreibt client in Liste
+Server -> Client
+Liste als bytes
+
+Logoff Vorgang
+
+Update Vorgang Dazu
+Server -> alle Clients
+Neuer Client drin
+Clients akutalisieren ihre eigene Liste
+
+Update Vorgang Entfernenen
+Server -> alle Clients
+entfernter Client drin
+Clients akutalisieren ihre eigene Liste
+
+Broadcast Vorgang:
+Client -> Server
+Nachricht kommt vom Server in bytes an
+Server schickt nachricht an alle verbundenen clients
+
+
+Connect Vorgang:
+Client A möchte sich mit Client B verbinden:
+Client A --UDP--> Client B mit Nachricht
+IP-Adresse(A)TCP-Port(A)
+Client B antwortet per UDP mit ACK
+Client B --TCP--> Client A sock.connect()
+
+Message Vorgang:
+Client A schickt per etablierter TCP Verbindung Client B eine Nachricht in bytes
+
+Nachrichtenformat:
+JSON-Länge(4bytes);JSON Binary
+
+struct user:
+{
+    "nick": string,
+    "ip-addr": string,
+    "udp-port": string
+}
+
+Message Register Request
+{
+    "type":"REGISTER",
+    "nick":"NICKNAME",
+    "udp":12345
+}
+
+Message Register Response
+{
+    "type":"REGISTER_OK"
+}
+
+Message Register Fail
+{
+    "type":"REGISTER_FAIL"
+}
+
+Message User List Full
+{
+    "type":"USER_LIST"
+    "USER_LIST":user[]
+}
+
+Message New User
+{
+    "type":"USER_JOINED",
+    "user":user
+}
+
+Message User Disconnect
+{
+    "type":"USER_LEFT",
+    "user":user
+}
+
+Message Client to Client
+{
+    "type":"MESSAGE",
+    "user":user,
+    "msg": string
+}
+
+Broadcast Server to Client
+{
+    "type":"BROADCAST",
+    "broadcasting_user":user
+    "msg": string
+}
