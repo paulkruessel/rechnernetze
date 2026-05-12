@@ -1,7 +1,11 @@
 \documentclass{kdiartcl}
 
-\usepackage{amsmath}
-\usetikzlibrary{arrows.meta,decorations.pathreplacing}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{csquotes}
+
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
 
 \university{HTWG Konstanz}
 \institute{Fachbereich Angewandte Informatik}
@@ -17,16 +21,32 @@
 \begin{document}
 \maketitle
 
-\section{Beginn der Paketübertragung}
-\begin{tabular}{c|c|l}
+\begin{tabularx}{\textwidth}{|>{\centering\arraybackslash}p{1.3cm}
+                            |>{\centering\arraybackslash}p{2.2cm}
+                            |>{\centering\arraybackslash}p{2.2cm}
+                            |Y|}
     \hline
-    Paketnummer & Übertragung ausgelöst von Programmzeile & Erklärung \\
+    Paketnr. & Ausgelöst von & Beendet & Erklärung \\
     \hline
-    1 & 26 & Programm A möchte sich mit einem Socket auf Port 50000 verbinden,  allerdings hört dort niemand zu \\
-    
+    1 & A26 & - & Programm A möchte sich mit einem Socket auf Port 50000 verbinden, allerdings hört dort niemand zu. \\
     \hline
-    
-\end{tabular}
+    6 & - & A26 & Der letzte RST/ACK-Fehler führt dazu, dass \texttt{connect()} fehlschlägt. Der Server wird auf A gestartet. \\
+    \hline
+    7 & B26 & - & B versucht mit \texttt{connect()}, sich mit A zu verbinden. \\
+    \hline
+    8 & - & B26 & SYN/ACK vom Server bestätigt den Verbindungsaufbau. \\
+    \hline
+    9 & - & A19 & Der finale ACK des Three-Way-Handshakes lässt \texttt{accept()} in A zurückkehren. \\
+    \hline
+    10 & B10 & A11 & B sendet \texttt{Thx for accepting!!!}, was von A mit \texttt{recv()} empfangen wird. \\
+    \hline
+    12 & A10 & B11 & A sendet \texttt{Thx for connecting!!!}, was von B mit \texttt{recv()} empfangen wird. \\
+    \hline
+    14 & B12 & A11 & B schließt den Socket. Das FIN führt bei A dazu, dass \texttt{recv()} mit EOF bzw. leerem Ergebnis zurückkehrt. \\
+    \hline
+    15 & A12 & - & A schließt den Socket. \\
+    \hline
+\end{tabularx}
 
 
 \end{document}

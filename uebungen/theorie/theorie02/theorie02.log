@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  7 MAY 2026 21:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 11:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -991,24 +991,32 @@ File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 )) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex))) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
-File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen323
-\pgfarrowlength=\dimen324
-\pgfarrowwidth=\dimen325
-\pgfarrowlinewidth=\dimen326
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen327
-\pgfdecoratedremainingdistance=\dimen328
-\pgfdecoratedinputsegmentcompleteddistance=\dimen329
-\pgfdecoratedinputsegmentremainingdistance=\dimen330
-\pgf@decorate@distancetomove=\dimen331
-\pgf@decorate@repeatstate=\count365
-\pgfdecorationsegmentamplitude=\dimen332
-\pgfdecorationsegmentlength=\dimen333
+)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen323
+\TX@old@table=\dimen324
+\TX@old@col=\dimen325
+\TX@target=\dimen326
+\TX@delta=\dimen327
+\TX@cols=\count365
+\TX@ftn=\toks60
+) (/home/paul/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip108
+\RaggedLeftLeftskip=\skip109
+\RaggedRightLeftskip=\skip110
+\CenteringRightskip=\skip111
+\RaggedLeftRightskip=\skip112
+\RaggedRightRightskip=\skip113
+\CenteringParfillskip=\skip114
+\RaggedLeftParfillskip=\skip115
+\RaggedRightParfillskip=\skip116
+\JustifyingParfillskip=\skip117
+\CenteringParindent=\skip118
+\RaggedLeftParindent=\skip119
+\RaggedRightParindent=\skip120
+\JustifyingParindent=\skip121
 )
-\tikz@lib@dec@box=\box105
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
@@ -1020,30 +1028,30 @@ Package babel Info: 'ngerman' activates 'german' shorthands.
 )
 \openout1 = `theorie02.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 17.
-LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 17.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 21.
+LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 21.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/ly1/ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 17.
-LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1079,13 +1087,13 @@ LaTeX Font Info:    ... okay on input line 17.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \microtypecontext on input line 17.
-Package microtype Info: Applying patch `item' on input line 17.
-Package microtype Info: Applying patch `toc' on input line 17.
-Package microtype Info: Applying patch `eqnum' on input line 17.
-Package microtype Info: Applying patch `footnote' on input line 17.
-Package microtype Info: Applying patch `verbatim' on input line 17.
-LaTeX Info: Redefining \microtypesetup on input line 17.
+LaTeX Info: Redefining \microtypecontext on input line 21.
+Package microtype Info: Applying patch `item' on input line 21.
+Package microtype Info: Applying patch `toc' on input line 21.
+Package microtype Info: Applying patch `eqnum' on input line 21.
+Package microtype Info: Applying patch `footnote' on input line 21.
+Package microtype Info: Applying patch `verbatim' on input line 21.
+LaTeX Info: Redefining \microtypesetup on input line 21.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `alltext-nott'.
@@ -1104,23 +1112,23 @@ Package microtype Info: Loading generic protrusion settings for font family
 (/home/paul/.TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count367
-\scratchdimen=\dimen334
-\scratchbox=\box106
+\scratchdimen=\dimen328
+\scratchbox=\box105
 \nofMPsegments=\count368
 \nofMParguments=\count369
-\everyMPshowfont=\toks60
+\everyMPshowfont=\toks61
 \MPscratchCnt=\count370
-\MPscratchDim=\dimen335
+\MPscratchDim=\dimen329
 \MPnumerator=\count371
 \makeMPintoPDFobject=\count372
-\everyMPtoPDFconversion=\toks61
+\everyMPtoPDFconversion=\toks62
 ) (/home/paul/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 17.
+Package hyperref Info: Link coloring ON on input line 21.
  (./theorie02.out) (./theorie02.out)
 \@outlinefile=\write4
 \openout4 = `theorie02.out'.
@@ -1132,100 +1140,73 @@ Package caption Info: End \AtBeginDocument code.
 
 !!! switch to italics
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 19.
+(Font)              scaled to size 12.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 19.
+(Font)              scaled to size 17.28pt on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 20.74pt on input line 19.
+(Font)              scaled to size 20.74pt on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 19.
-LaTeX Font Info:    Trying to load font information for T1+SourceSansThree-TLF on input line 19.
+(Font)              scaled to size 20.74pt on input line 23.
+LaTeX Font Info:    Trying to load font information for T1+SourceSansThree-TLF on input line 23.
 (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcesans/T1SourceSansThree-TLF.fd
 File: T1SourceSansThree-TLF.fd 2026/03/01 (autoinst) Font definitions for T1/SourceSansThree-TLF.
 )
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 19.
+(Font)              `T1/SourceSansThree-TLF/b/n' on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 20.74pt on input line 19.
+(Font)              scaled to size 20.74pt on input line 23.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceSansThree-TLF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/it' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/it' on input line 19.
+(Font)              `T1/SourceSerifFour-LF/m/it' on input line 23.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 19.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 20.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 20.
-LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 20.
-LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 17.28pt on input line 20.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
-File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 21.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
-File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 21.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
-File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 21.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 21.
-
-Overfull \hbox (467.85733pt too wide) in paragraph at lines 21--30
-[] 
+(Font)              scaled to size 12.0pt on input line 23.
+ (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg) (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg) (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg) (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcecodepro/T1SourceCodePro-TLF.fd)
+Overfull \hbox (6.4731pt too wide) in paragraph at lines 49--49
+ []|\T1/SourceSerifFour-LF/m/n/12 (-20) Paketnr.| 
  []
 
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 32.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 52.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 32.
+(Font)              scaled to size 10.0pt on input line 52.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/sc' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 32.
+(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 52.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 32.
+(Font)              scaled to size 10.0pt on input line 52.
 [1{/home/paul/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_ut5yim.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_blpqyz.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_5c2bot.enc}
 
-{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc}] (./theorie02.aux)
+{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcecodepro/a_rzhnou.enc}] (./theorie02.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `theorie02.out' has not changed.
-(rerunfilecheck)             Checksum: 349F53B67A9CF9FCD94E9EBDE39BFD73;187.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 34377 strings out of 469444
- 659237 string characters out of 5467476
- 1109006 words of memory out of 5000000
- 62332 multiletter control sequences out of 15000+600000
- 900971 words of font info for 122 fonts, out of 8000000 for 9000
+ 33837 strings out of 469444
+ 640777 string characters out of 5467476
+ 1106704 words of memory out of 5000000
+ 61790 multiletter control sequences out of 15000+600000
+ 870129 words of font info for 128 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 99i,16n,131p,1065b,547s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb>
-Output written on theorie02.pdf (1 page, 188636 bytes).
+ 99i,16n,131p,1065b,543s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb>
+Output written on theorie02.pdf (1 page, 229925 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
- 45077 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 44 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
+ 2 named destinations out of 1000 (max. 500000)
+ 43021 words of extra memory for PDF output out of 51595 (max. 10000000)
 
