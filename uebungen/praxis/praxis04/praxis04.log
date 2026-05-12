@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 10:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1294,156 +1294,136 @@ Overfull \hbox (107.3461pt too wide) in paragraph at lines 143--143
 []\T1/SourceCodePro-TLF/m/n/12 openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587[] 
  []
 
-
-Overfull \hbox (14.73688pt too wide) in paragraph at lines 145--146
-\T1/SourceCodePro-TLF/m/n/12 (-20) EHLO \T1/SourceSerifFour-LF/m/n/12 (-20) und \T1/SourceCodePro-TLF/m/n/12 (-20) STARTTLS\T1/SourceSerifFour-LF/m/n/12 (-20) , wan-delt den Socket mit \T1/SourceCodePro-TLF/m/n/12 (-20) ssl.create_default_context()
- []
-
-
-Overfull \hbox (20.94614pt too wide) in paragraph at lines 155--155
-[]  \T1/SourceCodePro-TLF/m/n/12 --from-header "Paul Kruessel <pa871kru@htwg-konstanz.de>" \[] 
- []
-
 [3] (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 189.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 178.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 189.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 178.
  (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 8.0pt on input line 189.
+(Font)              scaled to size 8.0pt on input line 178.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
-(Font)              scaled to size 6.0pt on input line 189.
- [4] [5]
+(Font)              scaled to size 6.0pt on input line 178.
+ [4]
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 285.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 274.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 10.95pt on input line 285.
- [6] [7]
-Overfull \hbox (28.14613pt too wide) in paragraph at lines 428--428
+(Font)              scaled to size 10.95pt on input line 274.
+ [5] [6] [7]
+Overfull \hbox (28.14613pt too wide) in paragraph at lines 417--417
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] before bind/connect getsockname=not available yet[] 
  []
 
 
-Overfull \hbox (64.14612pt too wide) in paragraph at lines 428--428
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 417--417
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] after connect local getsockname=('172.20.10.4', 62358)[] 
  []
 
 
-Overfull \hbox (172.14607pt too wide) in paragraph at lines 428--428
+Overfull \hbox (172.14607pt too wide) in paragraph at lines 417--417
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] TX 28 bytes: 0000138853554d050000000100000002000000030000000400000005[] 
  []
 
 
-Overfull \hbox (28.14613pt too wide) in paragraph at lines 443--443
+Overfull \hbox (28.14613pt too wide) in paragraph at lines 432--432
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] before bind/connect getsockname=not available yet[] 
  []
 
 
-Overfull \hbox (64.14612pt too wide) in paragraph at lines 443--443
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 432--432
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] after explicit bind getsockname=('172.20.10.4', 50010)[] 
  []
 
 
-Overfull \hbox (64.14612pt too wide) in paragraph at lines 443--443
+Overfull \hbox (64.14612pt too wide) in paragraph at lines 432--432
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] after connect local getsockname=('172.20.10.4', 50010)[] 
  []
 
 
-Overfull \hbox (172.14607pt too wide) in paragraph at lines 443--443
+Overfull \hbox (172.14607pt too wide) in paragraph at lines 432--432
 []\T1/SourceCodePro-TLF/m/n/12 [CLIENT TCP] TX 28 bytes: 0000138853554d050000000100000002000000030000000400000005[] 
  []
 
 [8]
-Overfull \hbox (69.2951pt too wide) in paragraph at lines 461--462
+Overfull \hbox (69.2951pt too wide) in paragraph at lines 450--451
 \T1/SourceSerifFour-LF/m/n/12 (-20) für neu er-zeug-te Sockets ge-setzt. Ein-zel-ne Sockets kön-nen auch mit \T1/SourceCodePro-TLF/m/n/12 (-20) sock.settimeout(...)
  []
 
 
-Overfull \hbox (42.54613pt too wide) in paragraph at lines 479--479
+Overfull \hbox (42.54613pt too wide) in paragraph at lines 468--468
 []\T1/SourceCodePro-TLF/m/n/12 [DUAL ECHO] TCP and UDP are bound to the same numeric port 50000[] 
  []
 
-[9]
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 488--488
+
+Overfull \hbox (150.54608pt too wide) in paragraph at lines 477--477
 []\T1/SourceCodePro-TLF/m/n/12 [TCP CLIENT] after connect local=('127.0.0.1', 34746) peer=('127.0.0.1', 50000)[] 
  []
 
-[10] [11]
-Overfull \hbox (20.94614pt too wide) in paragraph at lines 580--580
+[9] [10]
+Overfull \hbox (20.94614pt too wide) in paragraph at lines 569--569
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 7: open connect_ex=0 payload=b'RN-LAB-ECHO-TEST\r\n'[] 
  []
 
 
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 580--580
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 569--569
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 13: open connect_ex=0 payload=b'Tue May 12 09:15:31 2026\r\n'[] 
  []
 
-
-Overfull \hbox (208.14606pt too wide) in paragraph at lines 580--580
+[11]
+Overfull \hbox (208.14606pt too wide) in paragraph at lines 569--569
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 22: open connect_ex=0 payload=b'SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.16\r\n'[] 
  []
 
 [12]
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 632--632
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 621--621
 []\T1/SourceCodePro-TLF/m/n/12 [SCAN] proto=udp host=141.37.168.26 ports=1-50 timeout=1.0s workers=50[] 
  []
 
 [13] [14]
-Overfull \hbox (179.34607pt too wide) in paragraph at lines 666--666
+Overfull \hbox (179.34607pt too wide) in paragraph at lines 655--655
 []\T1/SourceCodePro-TLF/m/n/12 [TCP CLIENT] after connect local=('141.37.204.2', 59364) peer=('141.37.122.107', 7)[] 
  []
 
 
-Overfull \hbox (8.91826pt too wide) in paragraph at lines 710--711
+Overfull \hbox (8.91826pt too wide) in paragraph at lines 699--700
 \T1/SourceSerifFour-LF/m/n/12 (-20) Beim UDP-Echo-Test sieht man im Mit-schnitt nur das aus-ge-hen-de UDP-Datagramm
  []
 
 [15]
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 732--732
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 721--721
 []\T1/SourceCodePro-TLF/m/n/12 openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587[] 
  []
 
-[16] [17] [18]
-Overfull \hbox (56.94612pt too wide) in paragraph at lines 856--856
-[]\T1/SourceCodePro-TLF/m/n/12 [S] 535 5.7.8 Error: authentication failed: authentication failure[] 
- []
-
-
-Overfull \hbox (164.94608pt too wide) in paragraph at lines 863--863
-[]\T1/SourceCodePro-TLF/m/n/12 [S] 554 5.7.1 <kruesselpaul@gmail.com>: Recipient address rejected: Access denied[] 
- []
-
-[19] (./praxis04.aux)
+[16] [17] [18] (./praxis04.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `praxis04.out' has not changed.
-(rerunfilecheck)             Checksum: D9D2D9F65102C8F8C90359D5BEA71B30;4949.
+(rerunfilecheck)             Checksum: DDB0F2CB6A3A8223FD9FE5E180B552DD;4815.
  ) 
 Here is how much of TeX's memory you used:
- 34949 strings out of 469444
- 674432 string characters out of 5467476
+ 34934 strings out of 469444
+ 674195 string characters out of 5467476
  1121163 words of memory out of 5000000
- 62557 multiletter control sequences out of 15000+600000
- 1060890 words of font info for 317 fonts, out of 8000000 for 9000
+ 62554 multiletter control sequences out of 15000+600000
+ 1060878 words of font info for 315 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 99i,16n,131p,1062b,794s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,16n,131p,1062b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on praxis04.pdf (19 pages, 382993 bytes).
+Output written on praxis04.pdf (18 pages, 380013 bytes).
 PDF statistics:
- 286 PDF objects out of 1000 (max. 8388607)
- 243 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 80109 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 268 PDF objects out of 1000 (max. 8388607)
+ 226 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 80101 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -134,25 +134,14 @@ python3 port_scanner_tcp_udp.py --proto udp --host 141.37.168.26 \
   2>&1 | tee log_scan_udp_141_37_168_26.txt
 \end{verbatim}
 
-\subsubsection*{SMTP-Programme}
+\subsubsection*{OpenSSL-Befehl für Aufgabe 5}
 
-Für den OpenSSL-Versuch wurde kein eigenes Python-Programm benutzt. Der Socket wurde direkt mit \texttt{openssl s\_client} geöffnet:
+Für den SMTP-Versuch wurde kein eigenes Python-Programm benutzt. Der Socket wurde direkt mit \texttt{openssl s\_client} geöffnet:
 
 \begin{verbatim}
 openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587
 \end{verbatim}
 
-Für den Python-Versuch wurde \texttt{smtp\_socket\_client.py} verwendet. Das Programm öffnet zuerst einen TCP-Socket zum SMTP-Server auf Port \texttt{587}, sendet \texttt{EHLO} und \texttt{STARTTLS}, wandelt den Socket mit \texttt{ssl.create\_default\_context()} in einen TLS-Socket um und führt danach den SMTP-Dialog mit \texttt{AUTH LOGIN}, \texttt{mail from}, \texttt{rcpt to} und \texttt{data} aus.
-
-\begin{verbatim}
-python3 smtp_socket_client.py --username pa871kru \
-  --from-envelope pa871kru@htwg-konstanz.de \
-  --from-header "Paul Kruessel <pa871kru@htwg-konstanz.de>" \
-  --to kruesselpaul@gmail.com \
-  --subject "RN Labor Python SMTP Test" \
-  --body "Testmail per Python-Socket" \
-  2>&1 | tee log_smtp_python.txt
-\end{verbatim}
 
 \subsection{Lokale Kommunikation}
 
@@ -809,60 +798,6 @@ Auch diese Mail wurde vom SMTP-Server angenommen:
 
 Auffällig ist dabei, dass der sichtbare Absender im Mailprogramm aus dem \texttt{from:}-Header stammt und nicht zwingend dem Benutzer entspricht, der sich am SMTP-Server authentifiziert hat. Das zeigt, warum man Absenderangaben in E-Mails nicht blind vertrauen sollte. Moderne Mailserver und Mailprogramme können solche Mails zusätzlich durch SPF, DKIM oder DMARC bewerten und gegebenenfalls als verdächtig markieren.
 
-\subsection{SMTP in Python}
-
-Für den Python-Versuch wurde das Programm \texttt{smtp\_socket\_client.py} geschrieben. Es verwendet keine Mail-Bibliothek wie \texttt{smtplib}. Stattdessen werden direkt ein TCP-Socket und danach ein TLS-Socket verwendet. Der genaue Ausführungsbefehl ist im Abschnitt zu den verwendeten Python-Programmen aufgeführt. Der Ablauf ist:
-
-\begin{enumerate}
-    \item TCP-Verbindung zu \texttt{asmtp.htwg-konstanz.de:587} öffnen
-    \item \texttt{EHLO} senden
-    \item \texttt{STARTTLS} senden
-    \item Socket mit \texttt{ssl.create\_default\_context()} in einen TLS-Socket umwandeln
-    \item erneut \texttt{EHLO} senden
-    \item mit \texttt{AUTH LOGIN} anmelden
-    \item \texttt{mail from}, \texttt{rcpt to}, \texttt{data} und \texttt{quit} senden
-\end{enumerate}
-
-Der Verbindungsaufbau und der Wechsel auf TLS funktionierten im Versuch:
-
-\begin{verbatim}
-[INFO] connect ('asmtp.htwg-konstanz.de', 587)
-[S] 220 mailgate3.htwg-konstanz.de ESMTP Postfix (Ubuntu)
-[C] ehlo localhost
-[S] 250-mailgate3.htwg-konstanz.de
-250-STARTTLS
-[C] starttls
-[S] 220 2.0.0 Ready to start TLS
-[INFO] TLS established
-[C] ehlo localhost
-[S] 250-mailgate3.htwg-konstanz.de
-250-AUTH PLAIN LOGIN
-\end{verbatim}
-
-Die Login-Daten wurden im Skript maskiert ausgegeben:
-
-\begin{verbatim}
-[C] auth login
-[S] 334 VXNlcm5hbWU6
-[C] ***
-[S] 334 UGFzc3dvcmQ6
-[C] ***
-\end{verbatim}
-
-In den aufgezeichneten Python-Läufen ist die Authentifizierung allerdings fehlgeschlagen:
-
-\begin{verbatim}
-[S] 535 5.7.8 Error: authentication failed: authentication failure
-\end{verbatim}
-
-Danach wurde der Empfänger vom Server abgelehnt, da ohne erfolgreiche Authentifizierung kein Versand an externe Empfänger erlaubt war:
-
-\begin{verbatim}
-[S] 554 5.7.1 <kruesselpaul@gmail.com>: Recipient address rejected: Access denied
-[S] 554 5.5.1 Error: no valid recipients
-\end{verbatim}
-
-Der Python-Client zeigt damit trotzdem den Protokollablauf bis einschließlich STARTTLS und AUTH LOGIN. Für einen erfolgreichen Versand müsste der Python-Lauf noch einmal mit den korrekten Zugangsdaten wiederholt werden. Der OpenSSL-Versuch zeigt, dass der SMTP-Server grundsätzlich erreichbar ist und der Versand mit gültiger Authentifizierung funktioniert.
 
 \end{document}
 

@@ -804,11 +804,11 @@ bWRQc2lzK3MxNDA5MDM=
 mail from:pa871kru@htwg-konstanz.de
 rcpt to:kruesselpaul@gmail.com
 data
-from: deine.htwg.adresse@htwg-konstanz.de
+from: lolo@htwg-konstanz.de
 to: kruesselpaul@gmail.com
-subject: RN Labor OpenSSL Test
+subject: RN Labor OpenSSL Test hihi
 
-Dies ist eine Testmail per OpenSSL.
+Dies ist keine Testmail per OpenSSL.
 .
 quit
 ```
