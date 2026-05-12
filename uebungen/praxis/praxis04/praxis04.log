@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 10:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1378,67 +1378,72 @@ Overfull \hbox (150.54608pt too wide) in paragraph at lines 488--488
 []\T1/SourceCodePro-TLF/m/n/12 [TCP CLIENT] after connect local=('127.0.0.1', 34746) peer=('127.0.0.1', 50000)[] 
  []
 
-[10]
-Overfull \hbox (20.94614pt too wide) in paragraph at lines 576--576
+[10] [11]
+Overfull \hbox (20.94614pt too wide) in paragraph at lines 580--580
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 7: open connect_ex=0 payload=b'RN-LAB-ECHO-TEST\r\n'[] 
  []
 
-[11]
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 576--576
+
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 580--580
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 13: open connect_ex=0 payload=b'Tue May 12 09:15:31 2026\r\n'[] 
  []
 
 
-Overfull \hbox (208.14606pt too wide) in paragraph at lines 576--576
+Overfull \hbox (208.14606pt too wide) in paragraph at lines 580--580
 []\T1/SourceCodePro-TLF/m/n/12 TCP port 22: open connect_ex=0 payload=b'SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.16\r\n'[] 
  []
 
-
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 591--591
+[12]
+Overfull \hbox (85.74611pt too wide) in paragraph at lines 632--632
 []\T1/SourceCodePro-TLF/m/n/12 [SCAN] proto=udp host=141.37.168.26 ports=1-50 timeout=1.0s workers=50[] 
  []
 
-
-Overfull \hbox (179.34607pt too wide) in paragraph at lines 604--604
+[13] [14]
+Overfull \hbox (179.34607pt too wide) in paragraph at lines 666--666
 []\T1/SourceCodePro-TLF/m/n/12 [TCP CLIENT] after connect local=('141.37.204.2', 59364) peer=('141.37.122.107', 7)[] 
  []
 
-[12]
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 637--637
+
+Overfull \hbox (8.91826pt too wide) in paragraph at lines 710--711
+\T1/SourceSerifFour-LF/m/n/12 (-20) Beim UDP-Echo-Test sieht man im Mit-schnitt nur das aus-ge-hen-de UDP-Datagramm
+ []
+
+[15]
+Overfull \hbox (107.3461pt too wide) in paragraph at lines 732--732
 []\T1/SourceCodePro-TLF/m/n/12 openssl s_client -starttls smtp -crlf -connect asmtp.htwg-konstanz.de:587[] 
  []
 
-[13] [14] [15]
-Overfull \hbox (56.94612pt too wide) in paragraph at lines 761--761
+[16] [17] [18]
+Overfull \hbox (56.94612pt too wide) in paragraph at lines 856--856
 []\T1/SourceCodePro-TLF/m/n/12 [S] 535 5.7.8 Error: authentication failed: authentication failure[] 
  []
 
 
-Overfull \hbox (164.94608pt too wide) in paragraph at lines 768--768
+Overfull \hbox (164.94608pt too wide) in paragraph at lines 863--863
 []\T1/SourceCodePro-TLF/m/n/12 [S] 554 5.7.1 <kruesselpaul@gmail.com>: Recipient address rejected: Access denied[] 
  []
 
-[16] (./praxis04.aux)
+[19] (./praxis04.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `praxis04.out' has not changed.
-(rerunfilecheck)             Checksum: 58F114B0A30CC0BD8C34294651CC0E38;3805.
+(rerunfilecheck)             Checksum: D9D2D9F65102C8F8C90359D5BEA71B30;4949.
  ) 
 Here is how much of TeX's memory you used:
- 34918 strings out of 469444
- 673635 string characters out of 5467476
- 1121154 words of memory out of 5000000
- 62552 multiletter control sequences out of 15000+600000
- 1059479 words of font info for 304 fonts, out of 8000000 for 9000
+ 34949 strings out of 469444
+ 674432 string characters out of 5467476
+ 1121163 words of memory out of 5000000
+ 62557 multiletter control sequences out of 15000+600000
+ 1060890 words of font info for 317 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  99i,16n,131p,1062b,794s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on praxis04.pdf (16 pages, 373352 bytes).
+Output written on praxis04.pdf (19 pages, 382993 bytes).
 PDF statistics:
- 252 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 54 named destinations out of 1000 (max. 500000)
- 80069 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 286 PDF objects out of 1000 (max. 8388607)
+ 243 compressed objects within 3 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 80109 words of extra memory for PDF output out of 89155 (max. 10000000)
 

@@ -25,7 +25,7 @@
 
 \section{Rechen-Server}
 
-\subsection*{Verwendete Python-Programme und Ausführung}
+\subsection{Verwendete Python-Programme und Ausführung}
 
 Für die Versuche wurden mehrere Python-Programme verwendet. Ich habe die Programme jeweils so ausgeführt, dass die Konsolenausgabe mit \texttt{tee} in eine Logdatei geschrieben wurde. Dadurch sind die Versuche wiederholbar und die Ausgaben können später direkt in der Auswertung verwendet werden. Die Option \texttt{-u} wurde bei Serverprogrammen verwendet, damit Python die Ausgabe nicht puffert. Bei allen Befehlen leitet \texttt{2>\&1} auch Fehlermeldungen in die Logdatei um.
 
@@ -547,7 +547,11 @@ Ein Ping auf den Server lieferte keine Antwort:
 4 packets transmitted, 0 received, 100% packet loss
 \end{verbatim}
 
-Das bedeutet aber nicht automatisch, dass der Server nicht erreichbar ist. ICMP kann blockiert sein. Deshalb wurde die Erreichbarkeit der Dienste mit TCP-Sockets getestet. Der genaue Ausführungsbefehl für den Scanner ist im Abschnitt zu den verwendeten Python-Programmen angegeben.
+Das bedeutet aber nicht automatisch, dass der Server nicht erreichbar ist. ICMP kann blockiert sein. Deshalb wurde die Erreichbarkeit der Dienste mit TCP-Sockets getestet. Der genaue Ausführungsbefehl für den Scanner ist im Abschnitt zu den verwendeten Python-Programmen angegeben. Parallel zum Scan wurde in Wireshark auf dem VPN-Interface \texttt{tun0} mitgeschnitten. Als Display-Filter wurde verwendet:
+
+\begin{verbatim}
+ip.addr == 141.37.122.107 && tcp
+\end{verbatim}
 
 Der TCP-Scan lieferte folgende offenen Ports:
 
@@ -575,11 +579,48 @@ TCP port 19: open connect_ex=0 payload=b' ... '
 TCP port 22: open connect_ex=0 payload=b'SSH-2.0-OpenSSH_9.6p1 Ubuntu-3ubuntu13.16\r\n'
 \end{verbatim}
 
-Alle anderen Ports zwischen 1 und 50 wurden als \texttt{closed\_or\_filtered} erkannt. Im Wireshark-Mitschnitt ist für einen offenen TCP-Port wie Port 7 der normale Verbindungsaufbau zu sehen: Der Client sendet ein SYN, der Server antwortet mit SYN/ACK und der Client bestätigt mit ACK. Danach werden die Nutzdaten übertragen. Bei einem geschlossenen Port ist dagegen keine erfolgreiche Verbindung möglich. Je nach Port sieht man einen Reset oder es kommt bis zum Timeout keine verwertbare Antwort.
+\subsubsection{Wireshark-Auswertung TCP-Scan}
+
+Im Wireshark-Mitschnitt sieht man, dass der Scanner für jeden getesteten TCP-Port versucht, eine Verbindung aufzubauen. Jeder Versuch beginnt mit einem TCP-Paket mit gesetztem \texttt{SYN}-Flag vom Client zum Server. Der Quellport ist dabei ein kurzlebiger lokaler Port des Clients. Der Zielport ist der gerade getestete Port zwischen 1 und 50.
+
+Bei einem offenen Port antwortet der Server mit \texttt{SYN, ACK}. Dadurch ist erkennbar, dass auf diesem Port ein Dienst Verbindungen annimmt. Der Client bestätigt anschließend mit \texttt{ACK}. Danach ist die TCP-Verbindung aufgebaut und das Python-Programm kann Testdaten senden oder Daten vom Server empfangen.
+
+Für Port 7 war im Mitschnitt die typische Folge für einen offenen Echo-Dienst zu sehen:
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|l|Y|}
+\hline
+\textbf{Paket} & \textbf{Richtung} & \textbf{Bedeutung} \\
+\hline
+SYN & Client $\rightarrow$ Server:7 & Start des TCP-Verbindungsaufbaus durch \texttt{connect\_ex()} \\
+\hline
+SYN, ACK & Server:7 $\rightarrow$ Client & Port ist offen, der Server akzeptiert die Verbindung \\
+\hline
+ACK & Client $\rightarrow$ Server:7 & Abschluss des Three-Way-Handshakes \\
+\hline
+PSH, ACK & Client $\rightarrow$ Server:7 & Der Scanner sendet die Testnachricht \texttt{RN-LAB-ECHO-TEST} \\
+\hline
+PSH, ACK & Server:7 $\rightarrow$ Client & Der Echo-Dienst sendet dieselben Nutzdaten zurück \\
+\hline
+FIN/ACK bzw. RST & Client/Server & Die Verbindung wird wieder beendet \\
+\hline
+\end{tabularx}
+\end{center}
+
+Diese Paketfolge passt zur Programmausgabe, da der Scanner für Port 7 eine erfolgreiche Verbindung und die zurückgesendete Nutzlast protokolliert hat. Bei Port 13 und Port 22 war die Verbindung ebenfalls offen, aber das Verhalten des Dienstes war anders. Port 13 sendete von sich aus eine Datum-/Uhrzeit-Zeile. Port 22 sendete ein SSH-Banner. Daran sieht man, dass ein offener TCP-Port nicht immer auf die vom Client gesendeten Testdaten antworten muss. Manche Dienste senden direkt ein Banner, andere warten auf ein Protokollkommando.
+
+Bei geschlossenen Ports war im Mitschnitt keine vollständige TCP-Verbindung zu sehen. Statt eines \texttt{SYN, ACK} kam entweder ein Paket mit \texttt{RST, ACK} zurück oder es kam bis zum Timeout keine Antwort. Ein \texttt{RST, ACK} bedeutet, dass der Zielhost erreichbar ist, auf diesem Port aber kein Dienst lauscht. Ein Timeout bedeutet dagegen, dass keine verwertbare Antwort kam. Das kann an Filterregeln, Firewalls oder Paketverlust liegen. Deshalb wurden solche Ports im Programm als \texttt{closed\_or\_filtered} ausgegeben und nicht weiter unterschieden.
 
 \subsection{UDP Port Scanner}
 
-Für UDP wurde ebenfalls \texttt{port\_scanner\_tcp\_udp.py} verwendet. In diesem Modus sendet das Programm ein UDP-Datagramm an jeden Port und wartet danach auf eine Antwort oder einen Fehler. Gescannt wurde der Server \texttt{141.37.168.26} auf den Ports \texttt{1} bis \texttt{50}. In den Logs wurde für keinen der gescannten UDP-Ports eine Antwort empfangen. Alle Ports liefen in einen Timeout.
+Für UDP wurde ebenfalls \texttt{port\_scanner\_tcp\_udp.py} verwendet. In diesem Modus sendet das Programm ein UDP-Datagramm an jeden Port und wartet danach auf eine Antwort oder einen Fehler. Gescannt wurde der Server \texttt{141.37.168.26} auf den Ports \texttt{1} bis \texttt{50}. Parallel wurde in Wireshark auf dem VPN-Interface \texttt{tun0} mitgeschnitten. Der verwendete Display-Filter war:
+
+\begin{verbatim}
+ip.addr == 141.37.168.26 && (udp || icmp)
+\end{verbatim}
+
+In den Logs wurde für keinen der gescannten UDP-Ports eine Antwort empfangen. Alle Ports liefen in einen Timeout.
 
 \begin{verbatim}
 [SCAN] proto=udp host=141.37.168.26 ports=1-50 timeout=1.0s workers=50
@@ -590,7 +631,28 @@ Für UDP wurde ebenfalls \texttt{port\_scanner\_tcp\_udp.py} verwendet. In diese
 [SUMMARY]
 \end{verbatim}
 
-Auf Fedora/Linux wurde bei diesem Versuch kein Windows-Fehlercode \texttt{10054} angezeigt. Stattdessen wurde für die Ports ein \texttt{TimeoutError} ausgegeben. Das bedeutet bei UDP nicht sicher, dass der Port geschlossen ist. Bei UDP kann ein offener Port ebenfalls nicht antworten, wenn der Dienst auf die gesendeten Daten nicht reagiert. Man kann daher nur sagen, dass im Versuch keine UDP-Antwort empfangen wurde.
+\subsubsection{Wireshark-Auswertung UDP-Scan}
+
+UDP unterscheidet sich deutlich von TCP. Bei UDP gibt es keinen Verbindungsaufbau und damit auch keinen Three-Way-Handshake. Im Mitschnitt sieht man daher pro getesteten Port zunächst nur ein einzelnes UDP-Datagramm vom Client zum Server. Das Datagramm enthält die Testnachricht des Scanners. Danach wartet das Python-Programm mit \texttt{recvfrom()} auf eine Antwort.
+
+Für einen UDP-Port gibt es drei typische Möglichkeiten:
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|Y|Y|}
+\hline
+\textbf{Beobachtung in Wireshark} & \textbf{Bedeutung} & \textbf{Auswirkung im Programm} \\
+\hline
+UDP-Antwort vom Server & Ein Dienst hat auf die Anfrage geantwortet. Der Port ist dadurch experimentell als offen erkennbar. & \texttt{recvfrom()} liefert Daten zurück. \\
+\hline
+ICMP Destination Unreachable / Port Unreachable & Der Zielhost meldet, dass auf diesem UDP-Port kein Dienst erreichbar ist. & Unter Windows kann dies als Fehler 10054 erscheinen. Unter Linux kann es je nach System anders oder gar nicht direkt im Python-Fehler sichtbar werden. \\
+\hline
+Keine Antwort & Der Port kann offen sein und nur auf andere Daten warten, geschlossen sein oder durch eine Firewall gefiltert werden. & Das Programm läuft in einen Timeout. \\
+\hline
+\end{tabularx}
+\end{center}
+
+Im Versuch wurde keine UDP-Antwort empfangen. Außerdem wurde auf Fedora/Linux kein Windows-Fehlercode \texttt{10054} angezeigt. Stattdessen gab das Programm für die Ports einen \texttt{TimeoutError} aus. Das bedeutet bei UDP nicht sicher, dass der jeweilige Port geschlossen ist. Bei UDP ist ein fehlendes Antwortpaket mehrdeutig. Ein offener UDP-Dienst kann ebenfalls nicht antworten, wenn die gesendete Nachricht nicht zum erwarteten Protokoll passt. Deshalb kann aus diesem Versuch nur sicher geschlossen werden, dass im getesteten Bereich keine UDP-Antwort auf die gesendete Testnachricht empfangen wurde.
 
 \subsection{Echo-Dienst auf Port 7}
 
@@ -605,6 +667,35 @@ Der Echo-Dienst wurde mit dem Programm \texttt{echo\_client.py} getestet. Dieses
 
 Der TCP-Echo-Test war erfolgreich. Der Client sendete die Nachricht \texttt{Echo-Test TCP} und empfing dieselbe Nachricht zurück.
 
+\subsubsection{Wireshark-Auswertung TCP-Echo}
+
+Der Wireshark-Mitschnitt zum TCP-Echo-Test zeigt denselben grundsätzlichen Ablauf wie der offene Port 7 im TCP-Scan, nur übersichtlicher, weil hier nur ein einzelner Dienst getestet wurde. Zuerst wird die TCP-Verbindung aufgebaut. Danach sendet der Client die Nutzdaten \texttt{Echo-Test TCP}. Der Server sendet genau diese Bytes zurück. Dadurch ist im Mitschnitt direkt erkennbar, dass es sich um einen Echo-Dienst handelt.
+
+Die Paketfolge lässt sich so zuordnen:
+
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{|l|l|Y|}
+\hline
+\textbf{Paket} & \textbf{Richtung} & \textbf{Erklärung} \\
+\hline
+SYN & Client $\rightarrow$ Server:7 & Der Client ruft \texttt{connect()} auf. \\
+\hline
+SYN, ACK & Server:7 $\rightarrow$ Client & Der Echo-Dienst nimmt die Verbindung an. \\
+\hline
+ACK & Client $\rightarrow$ Server:7 & Verbindung ist aufgebaut. \\
+\hline
+PSH, ACK & Client $\rightarrow$ Server:7 & \texttt{sendall()} überträgt \texttt{Echo-Test TCP}. \\
+\hline
+PSH, ACK & Server:7 $\rightarrow$ Client & Der Server sendet \texttt{Echo-Test TCP} zurück. \\
+\hline
+FIN/ACK & Client/Server & Die Verbindung wird nach dem Test geschlossen. \\
+\hline
+\end{tabularx}
+\end{center}
+
+Der lokale Client-Port war im Log \texttt{59364}. Im Wireshark-Mitschnitt kann man die Verbindung deshalb zusätzlich über das Tupel \texttt{141.37.204.2:59364} zu \texttt{141.37.122.107:7} wiederfinden. Der Zielport 7 bleibt konstant, der Quellport ist dagegen ein automatisch gewählter lokaler Port.
+
 Der UDP-Echo-Test gegen \texttt{141.37.168.26:7} lieferte dagegen keine Antwort:
 
 \begin{verbatim}
@@ -614,7 +705,11 @@ Der UDP-Echo-Test gegen \texttt{141.37.168.26:7} lieferte dagegen keine Antwort:
 TimeoutError: timed out
 \end{verbatim}
 
-Für TCP kann man im Wireshark-Mitschnitt den Verbindungsaufbau und die Echo-Antwort sehen. Für UDP wird nur ein Datagramm vom Client zum Server gesendet. Da keine Antwort kam, lief der \texttt{recvfrom()}-Aufruf in einen Timeout.
+\subsubsection{Wireshark-Auswertung UDP-Echo}
+
+Beim UDP-Echo-Test sieht man im Mitschnitt nur das ausgehende UDP-Datagramm vom Client zum Server. Der Client verwendete lokal den Port \texttt{45389} und sendete an den Zielport \texttt{7}. Da UDP verbindungslos ist, gibt es davor keinen Handshake. Nach dem Senden wartete der Client mit \texttt{recvfrom()} auf eine Antwort.
+
+Da keine UDP-Antwort empfangen wurde, lief der Aufruf in einen Timeout. Im Mitschnitt bedeutet das: Nach dem Paket Client $\rightarrow$ Server:7 erscheint kein passendes Antwortpaket Server:7 $\rightarrow$ Client. Daraus kann man nicht sicher schließen, ob der UDP-Port geschlossen ist oder ob der Dienst nur nicht auf diese Nachricht geantwortet hat. Für diesen Versuch ist aber klar: Ein TCP-Echo-Dienst auf Port 7 war erreichbar, ein UDP-Echo-Dienst lieferte mit der getesteten Nachricht keine Antwort.
 
 \subsection{Ergebnis Port Scan}
 
@@ -624,7 +719,7 @@ Die offenen TCP-Ports im Bereich 1 bis 50 waren im Versuch:
 7, 9, 13, 19, 22
 \end{verbatim}
 
-Für UDP wurde in diesem Versuch im Bereich 1 bis 50 kein Port gefunden, der eine Antwort geliefert hat. Daher konnte experimentell kein sicher offener UDP-Port bestimmt werden.
+Für UDP wurde in diesem Versuch im Bereich 1 bis 50 kein Port gefunden, der eine Antwort geliefert hat. Daher konnte experimentell kein sicher offener UDP-Port bestimmt werden. In der Wireshark-Auswertung zeigt sich der Unterschied zwischen TCP und UDP deutlich: Bei TCP kann ein offener Port am vollständigen Verbindungsaufbau erkannt werden. Bei UDP ist eine fehlende Antwort dagegen mehrdeutig und muss vorsichtiger interpretiert werden.
 
 \section{Mail}
 
