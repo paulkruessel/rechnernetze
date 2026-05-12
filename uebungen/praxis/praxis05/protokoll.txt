@@ -44,6 +44,14 @@ struct user:
     "udp-port": string
 }
 
+struct message:
+{
+    "type": string,
+    "user": user,
+    "userlist":user[]
+    "msg": string
+}
+
 Message Register Request
 {
     "type":"REGISTER",
