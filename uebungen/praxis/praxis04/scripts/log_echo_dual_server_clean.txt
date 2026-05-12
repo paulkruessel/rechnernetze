@@ -1,7 +1,0 @@
-[TCP ECHO] Listening on ('127.0.0.1', 50000)
-[UDP ECHO] Listening on ('127.0.0.1', 50000)
-[DUAL ECHO] TCP and UDP are bound to the same numeric port 50000
-[TCP ECHO] accepted ('127.0.0.1', 34746)
-[TCP ECHO] RX from ('127.0.0.1', 34746): b'Hello TCP'
-[TCP ECHO] closed ('127.0.0.1', 34746)
-[UDP ECHO] RX from ('127.0.0.1', 57220): b'Hello UDP'

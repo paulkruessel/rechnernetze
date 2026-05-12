@@ -1,4 +1,0 @@
-[UDP CLIENT] before send local=('0.0.0.0', 0)
-[UDP CLIENT] TX: b'Hello UDP'
-[UDP CLIENT] after send local=('0.0.0.0', 33233)
-[UDP CLIENT] RX from ('127.0.0.1', 50000): b'Hello UDP'

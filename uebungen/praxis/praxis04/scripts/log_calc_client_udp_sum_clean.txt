@@ -1,7 +1,0 @@
-[CLIENT] socket.setdefaulttimeout=5.0
-[CLIENT] test=SUM([1, 2, 3, 4, 5]) task_id=5000
-[CLIENT UDP] before bind/send getsockname=('0.0.0.0', 0)
-[CLIENT UDP] TX to ('127.0.0.1', 50002) 28 bytes: 0000138853554d050000000100000002000000030000000400000005
-[CLIENT UDP] after send local getsockname=('0.0.0.0', 41126)
-[CLIENT UDP] RX from ('127.0.0.1', 50002) 8 bytes: 000013880000000f
-[CLIENT UDP] parsed response=(5000, 15)
