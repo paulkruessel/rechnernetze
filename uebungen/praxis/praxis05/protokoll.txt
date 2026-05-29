@@ -40,8 +40,8 @@ JSON-Länge(4bytes);JSON Binary
 struct user:
 {
     "nick": string,
-    "ip-addr": string,
-    "udp-port": string
+    "ip_addr": string,
+    "udp_port": string
 }
 
 struct message:
@@ -58,34 +58,53 @@ Message Register Request
     "nick":"NICKNAME",
     "udp":12345
 }
+Beschreibung: Ein Client meldet sich beim Server an und uebergibt Nickname und eigenen UDP-Port.
+Richtung: client->server
 
 Message Register Response
 {
     "type":"REGISTER_OK"
 }
+Beschreibung: Der Server bestaetigt eine erfolgreiche Registrierung.
+Richtung: server->client
 
 Message Register Fail
 {
     "type":"REGISTER_FAIL"
 }
+Beschreibung: Der Server lehnt eine Registrierung ab, wenn REGISTER ungueltig, unvollstaendig oder mit leeren Feldern ist.
+Richtung: server->client
+
+Message Message Fail
+{
+    "type":"MESSAGE_FAIL"
+}
+Beschreibung: Der Server lehnt eine ungueltige, unvollstaendige oder nicht erlaubte Nicht-REGISTER-Nachricht ab.
+Richtung: server->client
 
 Message User List Full
 {
     "type":"USER_LIST"
-    "USER_LIST":user[]
+    "userlist":user[]
 }
+Beschreibung: Vollstaendige Liste aller aktuell registrierten Nutzer.
+Richtung: server->client
 
 Message New User
 {
     "type":"USER_JOINED",
     "user":user
 }
+Beschreibung: Delta-Update, dass ein neuer Nutzer beigetreten ist.
+Richtung: server->client
 
 Message User Disconnect
 {
     "type":"USER_LEFT",
     "user":user
 }
+Beschreibung: Delta-Update, dass ein Nutzer den Chat verlassen hat.
+Richtung: server->client
 
 Message Client to Client
 {
@@ -93,6 +112,40 @@ Message Client to Client
     "user":user,
     "msg": string
 }
+Beschreibung: Direkte Chat-Nachricht zwischen zwei Peers ueber eine bestehende Peer-Verbindung.
+Richtung: client->client
+
+Message Client to Client Fail
+{
+    "type":"MESSAGE_FAIL"
+}
+Beschreibung: Ein Peer meldet, dass eine direkte Client-Nachricht ungueltig, unvollstaendig oder nicht verarbeitbar war.
+Richtung: client->client
+
+Message Peer Invite
+{
+    "type":"PEER_INVITE",
+    "user": user,
+    "tcp_ip": string,
+    "tcp_port": int
+}
+Beschreibung: UDP-Anstoss zum Aufbau einer direkten Peer-Verbindung; enthaelt die TCP-Zieldaten des Initiators.
+Richtung: client->client
+
+Message Peer Invite Ack
+{
+    "type":"PEER_INVITE_ACK",
+    "user": user
+}
+Beschreibung: UDP-Bestaetigung, dass der Peer die Einladung erhalten hat und die direkte Verbindung aufbauen wird.
+Richtung: client->client
+
+Message Peer Disconnect
+{
+    "type":"DISCONNECT"
+}
+Beschreibung: Optionales TCP-Signal zum sauberen Beenden einer direkten Peer-Verbindung.
+Richtung: client->client
 
 Broadcast Server to Client
 {
@@ -100,3 +153,5 @@ Broadcast Server to Client
     "broadcasting_user":user
     "msg": string
 }
+Beschreibung: Vom Server an alle registrierten Clients weitergeleitete Broadcast-Nachricht.
+Richtung: client->server (eingehend), server->client (weitergeleitet)
