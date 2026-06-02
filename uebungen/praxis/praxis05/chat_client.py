@@ -69,7 +69,6 @@ def bytes2message(payload: bytes) -> Message:
 		message.broadcasting_user = message.user
 	return message
 
-
 def build_user(data: dict | None) -> User:
 	user = User()
 	user.nick = ""
@@ -84,6 +83,7 @@ def build_user(data: dict | None) -> User:
 		except (TypeError, ValueError):
 			user.udp_port = 0
 	return user
+
 
 
 def recv_exact(conn: socket.socket, n: int) -> bytes:
@@ -109,22 +109,6 @@ def recv_message(conn: socket.socket, timeout: float | None = None) -> Message:
 def send_message(conn: socket.socket, msg: Message):
 	conn.sendall(message2bytes(msg))
 
-
-def message_from_dict(payload: dict) -> Message:
-	message = Message()
-	message.type = payload.get("type", "")
-	message.msg = payload.get("msg", "")
-	message.user = build_user(payload.get("user"))
-	raw_userlist = payload.get("userlist", [])
-	if isinstance(raw_userlist, list):
-		message.userlist = [build_user(item) for item in raw_userlist]
-	else:
-		message.userlist = []
-	if not message.user.nick:
-		message.user.nick = payload.get("nick", "")
-	return message
-
-
 @dataclass
 class PeerState:
 	lock: threading.Lock = field(default_factory=threading.Lock)
@@ -140,6 +124,7 @@ class AppState:
 	server_ip: str
 	server_port: int
 	bind_ip: str
+	verbose: bool = False
 	server_socket: socket.socket | None = None
 	udp_socket: socket.socket | None = None
 	tcp_listener: socket.socket | None = None
@@ -158,16 +143,16 @@ class AppState:
 
 
 def debug(state: AppState, text: str):
-	# verbose removed: no-op
-	return
+	if state.verbose:
+		print(colorize(f"[DEBUG] {text}", Ansi.DIM))
 
 
 def info(text: str):
-	print(text)
+	print(colorize(f"[INFO] {text}", Ansi.CYAN))
 
 
 def warn(text: str):
-	print(text)
+	print(colorize(f"[WARNING] {text}", Ansi.YELLOW))
 
 
 def error(text: str):
@@ -216,7 +201,7 @@ def server_receiver(state: AppState):
 	try:
 		while state.running:
 			try:
-				message = recv_message(state.server_socket)
+				message = recv_message(state.server_socket) # type: ignore
 			except socket.timeout:
 				continue
 
@@ -273,10 +258,10 @@ def start_server_connection(state: AppState):
 def udp_listener(state: AppState):
 	debug(state, f"udp listener on {state.local_udp_port}")
 	sock = state.udp_socket
-	sock.settimeout(UDP_TIMEOUT)
+	sock.settimeout(UDP_TIMEOUT) # type: ignore
 	while state.running:
 		try:
-			payload, address = sock.recvfrom(4096)
+			payload, address = sock.recvfrom(4096) # type: ignore
 		except socket.timeout:
 			continue
 		except OSError:
@@ -365,7 +350,7 @@ def tcp_listener_loop(state: AppState):
 	sock = state.tcp_listener
 	while state.running:
 		try:
-			conn, _ = sock.accept()
+			conn, _ = sock.accept() # type: ignore
 		except socket.timeout:
 			continue
 		except OSError:
@@ -436,7 +421,7 @@ def handle_peer_invite(state: AppState, data: dict, address: tuple[str, int]):
 		},
 	}
 	try:
-		state.udp_socket.sendto(json.dumps(ack).encode("utf-8"), address)
+		state.udp_socket.sendto(json.dumps(ack).encode("utf-8"), address) # type: ignore
 	except OSError:
 		warn("Could not send UDP ACK.")
 		return
@@ -456,7 +441,7 @@ def handle_peer_invite(state: AppState, data: dict, address: tuple[str, int]):
 	except OSError as exc:
 		error(f"Failed to connect back to {sender.nick}: {exc}")
 		try:
-			peer_sock.close()
+			peer_sock.close() # type: ignore
 		except Exception:
 			pass
 
@@ -519,7 +504,7 @@ def send_server_broadcast(state: AppState, text: str):
 	message.user = build_user({"nick": state.nick, "ip_addr": state.local_ip, "udp_port": state.local_udp_port})
 	message.msg = text
 	try:
-		send_message(state.server_socket, message)
+		send_message(state.server_socket, message) # type: ignore
 	except OSError as exc:
 		error(f"Could not send broadcast: {exc}")
 
@@ -555,7 +540,7 @@ def register_with_server(state: AppState):
 	register = Message()
 	register.type = "REGISTER"
 	register.user = build_user({"nick": state.nick, "ip_addr": state.local_ip, "udp_port": state.local_udp_port})
-	send_message(state.server_socket, register)
+	send_message(state.server_socket, register) # type: ignore
 	debug(state, "REGISTER sent")
 
 
@@ -621,6 +606,7 @@ def parse_args():
 	parser.add_argument("--server-port", type=int, default=50001)
 	parser.add_argument("--nick", default="")
 	parser.add_argument("--bind-ip", default="0.0.0.0")
+	parser.add_argument("--verbose", action="store_true", help="Enable debug output")
 	return parser.parse_args()
 
 
@@ -633,6 +619,7 @@ def main():
 		sys.exit(1)
 
 	state = init_state(args)
+	state.verbose = args.verbose
 	start_udp_listener(state)
 	start_tcp_listener(state)
 	start_server_connection(state)

@@ -327,9 +327,7 @@ def receive_message(conn: socket.socket):
     except (json.JSONDecodeError, UnicodeDecodeError, struct.error):
         try:
             conn.sendall(message2bytes(create_message_fail_message(server_user)))
-        except OSError:
-            pass
-        except (ConnectionError, OSError) as e:
+        except (ConnectionError, OSError) as e: # type: ignore
             error(f"Socket error: {e}")
             traceback.print_exc()
     finally:
