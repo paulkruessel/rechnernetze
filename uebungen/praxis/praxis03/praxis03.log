@@ -1,69 +1,69 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.23)  12 MAY 2026 15:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.9)  14 JUN 2026 16:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/paul/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex
-(/home/paul/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
-(./kdiartcl.cls
+**c:/Users/krues/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex
+(c:/Users/krues/studium/rechnernetze/uebungen/praxis/praxis03/praxis03.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-05-26>
+(kdiartcl.cls
 Document Class: kdiartcl 2019/10/22 Article Erweiterungen fuer Konzepte der Informatik an der Uni Konstanz
-(/home/paul/.TinyTeX/texmf-dist/tex/latex/base/article.cls
+(C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(/home/paul/.TinyTeX/texmf-dist/tex/latex/base/size12.clo
+(C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
 File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
-\c@part=\count275
-\c@section=\count276
-\c@subsection=\count277
-\c@subsubsection=\count278
-\c@paragraph=\count279
-\c@subparagraph=\count280
-\c@figure=\count281
-\c@table=\count282
+\c@part=\count276
+\c@section=\count277
+\c@subsection=\count278
+\c@subsubsection=\count279
+\c@paragraph=\count280
+\c@subparagraph=\count281
+\c@figure=\count282
+\c@table=\count283
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen148
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+\bibindent=\dimen150
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 ))
-\Gm@cnth=\count283
-\Gm@cntv=\count284
-\c@Gm@tempcnt=\count285
-\Gm@bindingoffset=\dimen149
-\Gm@wd@mp=\dimen150
-\Gm@odd@mp=\dimen151
-\Gm@even@mp=\dimen152
-\Gm@layoutwidth=\dimen153
-\Gm@layoutheight=\dimen154
-\Gm@layouthoffset=\dimen155
-\Gm@layoutvoffset=\dimen156
+\Gm@cnth=\count284
+\Gm@cntv=\count285
+\c@Gm@tempcnt=\count286
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
 \Gm@dimlist=\toks18
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/textpos/textpos.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/textpos\textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
 \TP@textbox=\box53
 \TP@holdbox=\box54
-\TPHorizModule=\dimen157
-\TPVertModule=\dimen158
-\TP@margin=\dimen159
-\TP@absmargin=\dimen160
+\TPHorizModule=\dimen159
+\TPVertModule=\dimen160
+\TP@margin=\dimen161
+\TP@absmargin=\dimen162
 
 Grid set 16 x 16 = 37.34424pt x 52.81541pt
-\TPboxrulesize=\dimen161
-\TP@ox=\dimen162
-\TP@oy=\dimen163
+\TPboxrulesize=\dimen163
+\TP@ox=\dimen164
+\TP@oy=\dimen165
 \TP@tbargs=\toks19
 TextBlockOrigin set to 0pt x 0pt
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@headwidth=\skip51
 \f@nch@offset@elh=\skip52
@@ -80,130 +80,138 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthC=\skip63
 \f@nch@widthR=\skip64
 \@temptokenb=\toks20
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/titling/titling.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/titling\titling.sty
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip65
 \thanksmargin=\skip66
 \droptitle=\skip67
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2026/03/08 v26.4 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
-\babel@savecnt=\count286
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2078.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2080.
-LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2082.
-LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2083.
-LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2084.
-LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2086.
-LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2111.
-\U@D=\dimen164
-\l@unhyphenated=\language8
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2026/05/20 v26.8 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count287
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2084.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2086.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2088.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2089.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2090.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2092.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2117.
+\U@D=\dimen166
+\l@unhyphenated=\language79
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read2
-\bbl@dirlevel=\count287
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/babel/locale/en/babel-english.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/babel/locale/invalid/babel-ngerman.tex)
+\bbl@dirlevel=\count288
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4228.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/en\babel-english.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/babel/locale/invalid\babel-ngerman.tex)
 Package babel Info: Importing font and identification data for english
-(babel)             from babel-en.ini. Reported on input line 4330.
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/babel-english/english.ldf
+(babel)             from babel-en.ini. Reported on input line 4356.
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language3). Reported on input line 105.
+(babel)             (\language73). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language3). Reported on input line 108.
+(babel)             (\language73). Reported on input line 108.
 )
 Package babel Info: Importing font and identification data for ngerman
-(babel)             from babel-de.ini. Reported on input line 4330.
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/babel-german/ngerman.ldf
+(babel)             from babel-de.ini. Reported on input line 4356.
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ldf
 Language: ngerman 
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/babel-german/babel-german.def
-Package babel Info: Making " an active character on input line 496.
-))) (/home/paul/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\babel-german.def
+Package babel Info: Making " an active character on input line 500.
+))) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.sty
-Package: csquotes 2024-04-04 v5.2o context-sensitive quotations (JAW)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.sty
+Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count288
+\etb@tempcnta=\count289
 )
-\csq@reset=\count289
-\csq@gtype=\count290
-\csq@glevel=\count291
-\csq@qlevel=\count292
-\csq@maxlvl=\count293
-\csq@tshold=\count294
+\csq@reset=\count290
+\csq@gtype=\count291
+\csq@glevel=\count292
+\csq@qlevel=\count293
+\csq@maxlvl=\count294
+\csq@tshold=\count295
 \csq@ltx@everypar=\toks21
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.def
-File: csquotes.def 2024-04-04 v5.2o csquotes generic definitions (JAW)
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.def
+File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.cfg
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/csquotes\csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Option 'babel' depreciated.
 (csquotes)             Using 'autostyle'.
 Package csquotes Info: Enabling multilingual quotes.
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/epigraph/epigraph.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/epigraph\epigraph.sty
 Package: epigraph 2020/01/02 v1.5e typesetting epigraphs
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/nextpage/nextpage.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/nextpage\nextpage.sty
 Package: nextpage 2009/09/03 v1.1a additional page commands
 )
 \beforeepigraphskip=\skip68
 \afterepigraphskip=\skip69
 \epigraphwidth=\skip70
 \epigraphrule=\skip71
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
 \MT@toks=\toks22
 \MT@tempbox=\box55
-\MT@count=\count295
+\MT@count=\count296
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
 LaTeX Info: Redefining \leftprotrusion on input line 1085.
 \MT@prot@toks=\toks23
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen165
+\MT@outer@kern=\dimen167
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count296
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+\MT@listname@count=\count297
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-pdftex.def
 File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 944.
 LaTeX Info: Redefining \lslig on input line 944.
 \MT@outer@space=\skip72
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
 File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcecodepro/sourcecodepro.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourcecodepro\sourcecodepro.sty
 Package: sourcecodepro 2025/04/06 v2.8 Adobe's Source Code Pro typeface
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex.sty
 Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluatex.sty
 Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks24
 \XKV@tempa@toks=\toks25
-\XKV@tempb@toks=\toks26
 )
-\XKV@depth=\count297
+\XKV@depth=\count298
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/ly1/ly1enc.def
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/ly1\ly1enc.def
 File: ly1enc.def 2022/06/11 v0.8 TeX 'n ANSI encoding (DPC/KB)
 Now handling font encoding LY1 ...
 ... processing UTF-8 mapping file for font encoding LY1
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/base/ly1enc.dfu
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\ly1enc.dfu
 File: ly1enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
@@ -330,35 +338,35 @@ File: ly1enc.dfu 2022/06/07 v1.3c UTF-8 support
    defining Unicode char U+FB04 (decimal 64260)
    defining Unicode char U+FB05 (decimal 64261)
    defining Unicode char U+FB06 (decimal 64262)
-)))) (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourceserif/sourceserifpro.sty
+)))) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourceserif\sourceserifpro.sty
 Package: sourceserifpro 2025/04/05 v2.0 Compatibility package for sourceserif
 
 
 Package sourceserifpro Warning: This package has been replaced by `sourceserif'.
 
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourceserif/sourceserif.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourceserif\sourceserif.sty
 Package: sourceserif 2025/04/06 v2.0 Adobe's Source Serif typeface
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcesans/sourcesanspro.sty
-Package: sourcesanspro 2025/04/05 v3.0 Compatibility package for sourcesans
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourcesans\sourcesanspro.sty
+Package: sourcesanspro 2026/05/03 v3.1 Compatibility package for sourcesans
 
 
 Package sourcesanspro Warning: This package has been replaced by `sourcesans'.
 
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcesans/sourcesans.sty
-Package: sourcesans 2025/04/06 v3.0 Adobe's Source Sans typeface
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourcesans\sourcesans.sty
+Package: sourcesans 2026/05/03 v3.1 Adobe's Source Sans typeface
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+SourceSerifFour-LF on input line 116.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourceserif/T1SourceSerifFour-LF.fd
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourceserif\t1sourceseriffour-lf.fd
 File: T1SourceSerifFour-LF.fd 2026/03/01 (autoinst) Font definitions for T1/SourceSerifFour-LF.
 )
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
 (Font)              `T1/SourceSerifFour-LF/m/n' on input line 116.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
 (Font)              scaled to size 12.0pt on input line 116.
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/sectsty/sectsty.sty
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sectsty\sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
 
@@ -369,31 +377,31 @@ LaTeX Warning: Command \underbar  has changed.
 LaTeX Warning: Command \underline  has changed.
                Check if current package is valid.
 
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/07/09 v2.17z AMS math features
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2026/05/19 v2.18d AMS math features
 \@mathmargin=\skip73
 
 For additional information on amsmath, use the `?' option.
-(/home/paul/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks27
-\ex@=\dimen166
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\@emptytoks=\toks26
+\ex@=\dimen168
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen167
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+\pmbraise@=\dimen169
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
-\inf@bad=\count298
+\inf@bad=\count299
 LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count299
-\leftroot@=\count300
+\uproot@=\count300
+\leftroot@=\count301
 LaTeX Info: Redefining \overline on input line 398.
 LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count301
-\DOTSCASE@=\count302
+\classnum@=\count302
+\DOTSCASE@=\count303
 LaTeX Info: Redefining \ldots on input line 495.
 LaTeX Info: Redefining \dots on input line 498.
 LaTeX Info: Redefining \cdots on input line 619.
@@ -403,73 +411,73 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen168
+\big@size=\dimen170
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count303
+\macc@depth=\count304
 LaTeX Info: Redefining \bmod on input line 904.
 LaTeX Info: Redefining \pmod on input line 909.
 LaTeX Info: Redefining \smash on input line 939.
 LaTeX Info: Redefining \relbar on input line 969.
 LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count304
+\c@MaxMatrixCols=\count305
 \dotsspace@=\muskip17
-\c@parentequation=\count305
-\dspbrk@lvl=\count306
-\tag@help=\toks28
-\row@=\count307
-\column@=\count308
-\maxfields@=\count309
-\andhelp@=\toks29
-\eqnshift@=\dimen169
-\alignsep@=\dimen170
-\tagshift@=\dimen171
-\tagwidth@=\dimen172
-\totwidth@=\dimen173
-\lineht@=\dimen174
-\@envbody=\toks30
+\c@parentequation=\count306
+\dspbrk@lvl=\count307
+\tag@help=\toks27
+\row@=\count308
+\column@=\count309
+\maxfields@=\count310
+\andhelp@=\toks28
+\eqnshift@=\dimen171
+\alignsep@=\dimen172
+\tagshift@=\dimen173
+\tagwidth@=\dimen174
+\totwidth@=\dimen175
+\lineht@=\dimen176
+\@envbody=\toks29
 \multlinegap=\skip74
 \multlinetaggap=\skip75
-\mathdisplay@stack=\toks31
-LaTeX Info: Redefining \[ on input line 2950.
-LaTeX Info: Redefining \] on input line 2951.
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+\mathdisplay@stack=\toks30
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/amscls/amsthm.sty
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks32
-\thm@bodyfont=\toks33
-\thm@headfont=\toks34
-\thm@notefont=\toks35
-\thm@headpunct=\toks36
+\thm@style=\toks31
+\thm@bodyfont=\toks32
+\thm@headfont=\toks33
+\thm@notefont=\toks34
+\thm@headpunct=\toks35
 \thm@preskip=\skip76
 \thm@postskip=\skip77
 \thm@headsep=\skip78
-\dth@everypar=\toks37
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/marvosym/marvosym.sty
+\dth@everypar=\toks36
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/marvosym\marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
 \multirow@colwidth=\skip79
-\multirow@cntb=\count310
+\multirow@cntb=\count311
 \multirow@dima=\skip80
-\bigstrutjot=\dimen175
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+\bigstrutjot=\dimen177
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -479,209 +487,202 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
-Package: colortbl 2024/10/29 v1.0k Color table columns (DPC)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen176
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2026/02/24 v2.7b Tabular extension package (FMi)
+\col@sep=\dimen178
 \ar@mcellbox=\box58
-\extrarowheight=\dimen177
-\NC@list=\toks38
+\extrarowheight=\dimen179
+\NC@list=\toks37
 \extratabsurround=\skip81
 \backup@length=\skip82
 \ar@cellbox=\box59
 )
-\everycr=\toks39
+new hooks used!!
 \minrowclearance=\skip83
-\rownum=\count311
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+\rownum=\count312
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count312
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+\c@section@level=\count313
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\@linkdim=\dimen178
-\Hy@linkcounter=\count313
-\Hy@pagecounter=\count314
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen180
+\Hy@linkcounter=\count314
+\Hy@pagecounter=\count315
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count315
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count316
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 4072.
-Package hyperref Info: Hyper figures OFF on input line 4201.
-Package hyperref Info: Link nesting OFF on input line 4206.
-Package hyperref Info: Hyper index ON on input line 4209.
-Package hyperref Info: Plain pages OFF on input line 4216.
-Package hyperref Info: Backreferencing OFF on input line 4221.
+Package hyperref Info: Option `colorlinks' set `true' on input line 4070.
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4468.
-\c@Hy@tempcnt=\count316
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/url/url.sty
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count317
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen179
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen181
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count317
-\Field@Width=\dimen180
-\Fld@charsize=\dimen181
-Package hyperref Info: Hyper figures OFF on input line 6084.
-Package hyperref Info: Link nesting OFF on input line 6089.
-Package hyperref Info: Hyper index ON on input line 6092.
-Package hyperref Info: backreferencing OFF on input line 6099.
-Package hyperref Info: Link coloring ON on input line 6102.
-Package hyperref Info: Link coloring with OCG OFF on input line 6109.
-Package hyperref Info: PDF/A mode OFF on input line 6114.
-\Hy@abspage=\count318
-\c@Item=\count319
-\c@Hfootnote=\count320
+\Fld@menulength=\count318
+\Field@Width=\dimen182
+\Fld@charsize=\dimen183
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring ON on input line 6109.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count319
+\c@Item=\count320
+\c@Hfootnote=\count321
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
-\Fld@listcount=\count321
-\c@bookmark@seq@number=\count322
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
+\Fld@listcount=\count322
+\c@bookmark@seq@number=\count323
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
 )
 \Hy@SectionHShift=\skip84
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 106.
 )
-\Gin@req@height=\dimen182
-\Gin@req@width=\dimen183
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/float/float.sty
+\Gin@req@height=\dimen184
+\Gin@req@width=\dimen185
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count323
-\float@exts=\toks40
+\c@float@type=\count324
+\float@exts=\toks38
 \float@box=\box60
-\@float@everytoks=\toks41
+\@float@everytoks=\toks39
 \@floatcapt=\box61
 )
-\@float@every@figure=\toks42
-\@float@every@table=\toks43
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+\@float@every@figure=\toks40
+\@float@every@table=\toks41
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen184
-\captionmargin=\dimen185
-\caption@leftmargin=\dimen186
-\caption@rightmargin=\dimen187
-\caption@width=\dimen188
-\caption@indent=\dimen189
-\caption@parindent=\dimen190
-\caption@hangindent=\dimen191
+\caption@tempdima=\dimen186
+\captionmargin=\dimen187
+\caption@leftmargin=\dimen188
+\caption@rightmargin=\dimen189
+\caption@width=\dimen190
+\caption@indent=\dimen191
+\caption@parindent=\dimen192
+\caption@hangindent=\dimen193
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count324
-\c@continuedfloat=\count325
+\c@caption@flags=\count325
+\c@continuedfloat=\count326
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 )
-\@float@every@Programmcode=\toks44
-\c@Programmcode=\count326
-\@float@every@Algorithmus=\toks45
-\c@Algorithmus=\count327
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count328
+\@float@every@Programmcode=\toks42
+\c@Programmcode=\count327
+\@float@every@Algorithmus=\toks43
+\c@Algorithmus=\count328
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count329
 \lst@gtempboxa=\box62
-\lst@token=\toks46
-\lst@length=\count329
-\lst@currlwidth=\dimen192
-\lst@column=\count330
-\lst@pos=\count331
-\lst@lostspace=\dimen193
-\lst@width=\dimen194
-\lst@newlines=\count332
-\lst@lineno=\count333
-\lst@maxwidth=\dimen195
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/listings/lstpatch.sty
+\lst@token=\toks44
+\lst@length=\count330
+\lst@currlwidth=\dimen194
+\lst@column=\count331
+\lst@pos=\count332
+\lst@lostspace=\dimen195
+\lst@width=\dimen196
+\lst@newlines=\count333
+\lst@lineno=\count334
+\lst@maxwidth=\dimen197
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
 File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/listings/lstmisc.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
-\c@lstnumber=\count334
-\lst@skipnumbers=\count335
+\c@lstnumber=\count335
+\lst@skipnumbers=\count336
 \lst@framebox=\box63
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/listings/listings.cfg
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2025/11/14 1.11b listings configuration
 ))
 Package: listings 2025/11/14 1.11b (Carsten Heinz)
-
-==> First Aid for listings.sty no longer applied!
-    Expected:
-        2024/09/23 1.10c (Carsten Heinz)
-    but found:
-        2025/11/14 1.11b (Carsten Heinz)
-    so I'm assuming it got fixed.
-(/home/paul/.TinyTeX/texmf-dist/tex/latex/listings/lstlang1.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2025/11/14 1.11b listings language file
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/algorithm2e\algorithm2e.sty
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
-\c@AlgoLine=\count336
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+\c@AlgoLine=\count337
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip85
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
 Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
-\c@checkoddpage=\count337
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/xspace.sty
+\c@checkoddpage=\count338
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/relsize/relsize.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip86
@@ -692,12 +693,12 @@ Package: relsize 2013/03/29 ver 4.1
 \skiplength=\skip91
 \algomargin=\skip92
 \skipalgocfslide=\skip93
-\algowidth=\dimen196
-\inoutsize=\dimen197
-\inoutindent=\dimen198
-\interspacetitleruled=\dimen199
-\interspacealgoruled=\dimen256
-\interspacetitleboxruled=\dimen257
+\algowidth=\dimen198
+\inoutsize=\dimen199
+\inoutindent=\dimen256
+\interspacetitleruled=\dimen257
+\interspacealgoruled=\dimen258
+\interspacetitleboxruled=\dimen259
 \algocf@ruledwidth=\skip94
 \algocf@inoutbox=\box64
 \algocf@inputbox=\box65
@@ -714,238 +715,238 @@ Package: relsize 2013/03/29 ver 4.1
 \algoheightrule=\skip101
 \algotitleheightruledefault=\skip102
 \algotitleheightrule=\skip103
-\c@algocfline=\count338
-\c@algocfproc=\count339
-\c@algocf=\count340
+\c@algocfline=\count339
+\c@algocfproc=\count340
+\c@algocf=\count341
 \algocf@algoframe=\box70
 \algocf@algobox=\box71
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/struktex/struktex.sty (/home/paul/.TinyTeX/texmf-dist/tex/latex/struktex/struktxf.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/struktex\struktex.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/struktex\struktxf.sty
 \symitalics=\mathgroup6
 LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 38.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
 (Font)                  U/msb/m/n --> U/msb/m/n on input line 38.
 LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
 (Font)                  U/msb/m/n --> U/msb/m/n on input line 38.
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/struktex/struktxp.sty) (/home/paul/.TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/struktex\struktxp.sty) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\pict2e.sty
 Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/pict2e/pict2e.cfg
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\pict2e.cfg
 File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
 )
 Package pict2e Info: Driver file: pdftex.def on input line 112.
 Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/pict2e/p2e-pdftex.def
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pict2e\p2e-pdftex.def
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
-\pIIe@GRAPH=\toks47
-\@arclen=\dimen258
-\@arcrad=\dimen259
-\pIIe@tempdima=\dimen260
-\pIIe@tempdimb=\dimen261
-\pIIe@tempdimc=\dimen262
-\pIIe@tempdimd=\dimen263
-\pIIe@tempdime=\dimen264
-\pIIe@tempdimf=\dimen265
+\pIIe@GRAPH=\toks45
+\@arclen=\dimen260
+\@arcrad=\dimen261
+\pIIe@tempdima=\dimen262
+\pIIe@tempdimb=\dimen263
+\pIIe@tempdimc=\dimen264
+\pIIe@tempdimd=\dimen265
+\pIIe@tempdime=\dimen266
+\pIIe@tempdimf=\dimen267
 )
 debug inactive
-\savelength@nss=\dimen266
-\gx@nss=\count341
-\gy@nss=\count342
-\gsize@nss=\count343
+\savelength@nss=\dimen268
+\gx@nss=\count342
+\gy@nss=\count343
+\gsize@nss=\count344
 \TextBox@nss=\box72
-\TextBoxHt@nss=\dimen267
+\TextBoxHt@nss=\dimen269
 LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 167.
 \descriptionindent=\skip104
 \descriptionwidth=\skip105
 \descriptionsep=\skip106
 \descriptionwidth@nss=\skip107
-\indentmeasure@nss=\dimen268
-\indentmeasureright@nss=\dimen269
-\thisindent@nss=\dimen270
-\thisindentright@nss=\dimen271
-\thislength@nss=\dimen272
+\indentmeasure@nss=\dimen270
+\indentmeasureright@nss=\dimen271
+\thisindent@nss=\dimen272
+\thisindentright@nss=\dimen273
+\thislength@nss=\dimen274
 \CenterBox@nss=\box73
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
-\pgfutil@everybye=\toks48
-\pgfutil@tempdima=\dimen273
-\pgfutil@tempdimb=\dimen274
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks46
+\pgfutil@tempdima=\dimen275
+\pgfutil@tempdimb=\dimen276
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
 \pgfutil@abb=\box74
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
 Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
 ))
 Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
 Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks49
-\pgfkeys@temptoks=\toks50
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeyslibraryfiltered.code.tex
-\pgfkeys@tmptoks=\toks51
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks47
+\pgfkeys@temptoks=\toks48
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks49
 ))
-\pgf@x=\dimen275
-\pgf@y=\dimen276
-\pgf@xa=\dimen277
-\pgf@ya=\dimen278
-\pgf@xb=\dimen279
-\pgf@yb=\dimen280
-\pgf@xc=\dimen281
-\pgf@yc=\dimen282
-\pgf@xd=\dimen283
-\pgf@yd=\dimen284
+\pgf@x=\dimen277
+\pgf@y=\dimen278
+\pgf@xa=\dimen279
+\pgf@ya=\dimen280
+\pgf@xb=\dimen281
+\pgf@yb=\dimen282
+\pgf@xc=\dimen283
+\pgf@yc=\dimen284
+\pgf@xd=\dimen285
+\pgf@yd=\dimen286
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count344
-\c@pgf@countb=\count345
-\c@pgf@countc=\count346
-\c@pgf@countd=\count347
-\t@pgf@toka=\toks52
-\t@pgf@tokb=\toks53
-\t@pgf@tokc=\toks54
-\pgf@sys@id@count=\count348
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+\c@pgf@counta=\count345
+\c@pgf@countb=\count346
+\c@pgf@countc=\count347
+\c@pgf@countd=\count348
+\t@pgf@toka=\toks50
+\t@pgf@tokb=\toks51
+\t@pgf@tokc=\toks52
+\pgf@sys@id@count=\count349
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
 )
 Driver file for pgf: pgfsys-pdftex.def
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
-))) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+))) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfsyssoftpath@smallbuffer@items=\count349
-\pgfsyssoftpath@bigbuffer@items=\count350
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+\pgfsyssoftpath@smallbuffer@items=\count350
+\pgfsyssoftpath@bigbuffer@items=\count351
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
 Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen285
-\pgfmath@count=\count351
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen287
+\pgfmath@count=\count352
 \pgfmath@box=\box75
-\pgfmath@toks=\toks55
-\pgfmath@stack@operand=\toks56
-\pgfmath@stack@operation=\toks57
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count352
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+\pgfmath@toks=\toks53
+\pgfmath@stack@operand=\toks54
+\pgfmath@stack@operation=\toks55
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count353
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@picminx=\dimen286
-\pgf@picmaxx=\dimen287
-\pgf@picminy=\dimen288
-\pgf@picmaxy=\dimen289
-\pgf@pathminx=\dimen290
-\pgf@pathmaxx=\dimen291
-\pgf@pathminy=\dimen292
-\pgf@pathmaxy=\dimen293
-\pgf@xx=\dimen294
-\pgf@xy=\dimen295
-\pgf@yx=\dimen296
-\pgf@yy=\dimen297
-\pgf@zx=\dimen298
-\pgf@zy=\dimen299
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+\pgf@picminx=\dimen288
+\pgf@picmaxx=\dimen289
+\pgf@picminy=\dimen290
+\pgf@picmaxy=\dimen291
+\pgf@pathminx=\dimen292
+\pgf@pathmaxx=\dimen293
+\pgf@pathminy=\dimen294
+\pgf@pathmaxy=\dimen295
+\pgf@xx=\dimen296
+\pgf@xy=\dimen297
+\pgf@yx=\dimen298
+\pgf@yy=\dimen299
+\pgf@zx=\dimen300
+\pgf@zy=\dimen301
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@path@lastx=\dimen300
-\pgf@path@lasty=\dimen301
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+\pgf@path@lastx=\dimen302
+\pgf@path@lasty=\dimen303
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@shorten@end@additional=\dimen302
-\pgf@shorten@start@additional=\dimen303
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+\pgf@shorten@end@additional=\dimen304
+\pgf@shorten@start@additional=\dimen305
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfpic=\box76
 \pgf@hbox=\box77
 \pgf@layerbox@main=\box78
-\pgf@picture@serial@count=\count353
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+\pgf@picture@serial@count=\count354
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgflinewidth=\dimen304
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+\pgflinewidth=\dimen306
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@pt@x=\dimen305
-\pgf@pt@y=\dimen306
-\pgf@pt@temp=\dimen307
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+\pgf@pt@x=\dimen307
+\pgf@pt@y=\dimen308
+\pgf@pt@temp=\dimen309
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowsep=\dimen308
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+\pgfarrowsep=\dimen310
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@max=\dimen309
-\pgf@sys@shading@range@num=\count354
-\pgf@shadingcount=\count355
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+\pgf@max=\dimen311
+\pgf@sys@shading@range@num=\count355
+\pgf@shadingcount=\count356
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfexternal@startupbox=\box79
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+))) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodeparttextbox=\box80
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@nodesepstart=\dimen310
-\pgf@nodesepend=\dimen311
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+\pgf@nodesepstart=\dimen312
+\pgf@nodesepend=\dimen313
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
 Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
-\pgffor@iter=\dimen312
-\pgffor@skip=\dimen313
-\pgffor@stack=\toks58
-\pgffor@toks=\toks59
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+\pgffor@iter=\dimen314
+\pgffor@skip=\dimen315
+\pgffor@stack=\toks56
+\pgffor@toks=\toks57
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
 Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgf@plot@mark@count=\count356
-\pgfplotmarksize=\dimen314
+\pgf@plot@mark@count=\count357
+\pgfplotmarksize=\dimen316
 )
-\tikz@lastx=\dimen315
-\tikz@lasty=\dimen316
-\tikz@lastxsaved=\dimen317
-\tikz@lastysaved=\dimen318
-\tikz@lastmovetox=\dimen319
-\tikz@lastmovetoy=\dimen320
-\tikzleveldistance=\dimen321
-\tikzsiblingdistance=\dimen322
+\tikz@lastx=\dimen317
+\tikz@lasty=\dimen318
+\tikz@lastxsaved=\dimen319
+\tikz@lastysaved=\dimen320
+\tikz@lastmovetox=\dimen321
+\tikz@lastmovetoy=\dimen322
+\tikzleveldistance=\dimen323
+\tikzsiblingdistance=\dimen324
 \tikz@figbox=\box81
 \tikz@figbox@bg=\box82
 \tikz@tempbox=\box83
 \tikz@tempbox@bg=\box84
-\tikztreelevel=\count357
-\tikznumberofchildren=\count358
-\tikznumberofcurrentchild=\count359
-\tikz@fig@count=\count360
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+\tikztreelevel=\count358
+\tikznumberofchildren=\count359
+\tikznumberofcurrentchild=\count360
+\tikz@fig@count=\count361
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfmatrixcurrentrow=\count361
-\pgfmatrixcurrentcolumn=\count362
-\pgf@matrix@numberofcolumns=\count363
+\pgfmatrixcurrentrow=\count362
+\pgfmatrixcurrentcolumn=\count363
+\pgf@matrix@numberofcolumns=\count364
 )
-\tikz@expandcount=\count364
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+\tikz@expandcount=\count365
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-))) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautomata.code.tex
+))) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryautomata.code.tex
 File: tikzlibraryautomata.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodepartlowerbox=\box85
 \pgfnodeparttwobox=\box86
@@ -967,40 +968,40 @@ File: pgflibraryshapes.multipart.code.tex 2025-08-29 v3.1.11a (3.1.11a)
 \pgfnodepartsevenbox=\box102
 \pgfnodepartsixbox=\box103
 \pgfnodepartfivebox=\box104
-))) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarychains.code.tex
+))) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarychains.code.tex
 File: tikzlibrarychains.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
- (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex))) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex))) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)) (/home/paul/.TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
+)) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen323
-\TX@old@table=\dimen324
-\TX@old@col=\dimen325
-\TX@target=\dimen326
-\TX@delta=\dimen327
-\TX@cols=\count365
-\TX@ftn=\toks60
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/ragged2e/ragged2e.sty
+\TX@col@width=\dimen325
+\TX@old@table=\dimen326
+\TX@old@col=\dimen327
+\TX@target=\dimen328
+\TX@delta=\dimen329
+\TX@cols=\count366
+\TX@ftn=\toks58
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
 Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \CenteringLeftskip=\skip108
 \RaggedLeftLeftskip=\skip109
@@ -1016,30 +1017,30 @@ Package: ragged2e 2023/06/22 v3.6 ragged2e Package
 \RaggedLeftParindent=\skip119
 \RaggedRightParindent=\skip120
 \JustifyingParindent=\skip121
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.meta.code.tex
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-\pgfarrowinset=\dimen328
-\pgfarrowlength=\dimen329
-\pgfarrowwidth=\dimen330
-\pgfarrowlinewidth=\dimen331
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen332
-\pgfdecoratedremainingdistance=\dimen333
-\pgfdecoratedinputsegmentcompleteddistance=\dimen334
-\pgfdecoratedinputsegmentremainingdistance=\dimen335
-\pgf@decorate@distancetomove=\dimen336
-\pgf@decorate@repeatstate=\count366
-\pgfdecorationsegmentamplitude=\dimen337
-\pgfdecorationsegmentlength=\dimen338
+\pgfarrowinset=\dimen330
+\pgfarrowlength=\dimen331
+\pgfarrowwidth=\dimen332
+\pgfarrowlinewidth=\dimen333
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen334
+\pgfdecoratedremainingdistance=\dimen335
+\pgfdecoratedinputsegmentcompleteddistance=\dimen336
+\pgfdecoratedinputsegmentremainingdistance=\dimen337
+\pgf@decorate@distancetomove=\dimen338
+\pgf@decorate@repeatstate=\count367
+\pgfdecorationsegmentamplitude=\dimen339
+\pgfdecorationsegmentlength=\dimen340
 )
 \tikz@lib@dec@box=\box105
-) (/home/paul/.TinyTeX/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex))
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count367
-) (./praxis03.aux
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count368
+) (praxis03.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 9.
 )
@@ -1061,7 +1062,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
 LaTeX Font Info:    Checking defaults for LY1/ptm/m/n on input line 25.
 LaTeX Font Info:    Trying to load font information for LY1+ptm on input line 25.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/ly1/ly1ptm.fd
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/ly1\ly1ptm.fd
 File: ly1ptm.fd 2001/02/01 font definitions for LY1/ptm using Berry names.
 )
 LaTeX Font Info:    ... okay on input line 25.
@@ -1126,34 +1127,34 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceSerifFour-LF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(/home/paul/.TinyTeX/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count368
-\scratchdimen=\dimen339
+\scratchcounter=\count369
+\scratchdimen=\dimen341
 \scratchbox=\box106
-\nofMPsegments=\count369
-\nofMParguments=\count370
-\everyMPshowfont=\toks61
-\MPscratchCnt=\count371
-\MPscratchDim=\dimen340
-\MPnumerator=\count372
-\makeMPintoPDFobject=\count373
-\everyMPtoPDFconversion=\toks62
-) (/home/paul/.TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+\nofMPsegments=\count370
+\nofMParguments=\count371
+\everyMPshowfont=\toks59
+\MPscratchCnt=\count372
+\MPscratchDim=\dimen342
+\MPnumerator=\count373
+\makeMPintoPDFobject=\count374
+\everyMPtoPDFconversion=\toks60
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 25.
- (./praxis03.out) (./praxis03.out)
+ (praxis03.out) (praxis03.out)
 \@outlinefile=\write4
 \openout4 = `praxis03.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count374
+\c@lstlisting=\count375
 
 !!! switch to italics
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
@@ -1173,11 +1174,9 @@ LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
 (Font)              scaled to size 20.74pt on input line 27.
 LaTeX Font Info:    Trying to load font information for T1+SourceSansThree-TLF on input line 27.
-(/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcesans/T1SourceSansThree-TLF.fd
-File: T1SourceSansThree-TLF.fd 2026/03/01 (autoinst) Font definitions for T1/SourceSansThree-TLF.
+(C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourcesans\t1sourcesansthree-tlf.fd
+File: T1SourceSansThree-TLF.fd 2026/05/03 (autoinst) Font definitions for T1/SourceSansThree-TLF.
 )
-LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 27.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
 (Font)              scaled to size 20.74pt on input line 27.
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1192,888 +1191,107 @@ LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
 (Font)              `T1/SourceSerifFour-LF/m/n' on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
 (Font)              scaled to size 17.28pt on input line 30.
-LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
 (Font)              scaled to size 17.28pt on input line 30.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 34.
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 14.4pt on input line 34.
+(Font)              scaled to size 14.4pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/bold/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/b/n' on input line 34.
+(Font)              `T1/SourceSerifFour-LF/b/n' on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 34.
-LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/bold/n' aliased to
-(Font)              `T1/SourceSansThree-TLF/b/n' on input line 34.
+(Font)              scaled to size 14.4pt on input line 31.
 LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 34.
-LaTeX Font Info:    Trying to load font information for T1+SourceCodePro-TLF on input line 39.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourcecodepro/T1SourceCodePro-TLF.fd
-File: T1SourceCodePro-TLF.fd 2025/04/07 (autoinst) Font definitions for T1/SourceCodePro-TLF.
-)
-LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/regular/n' aliased to
-(Font)              `T1/SourceCodePro-TLF/m/n' on input line 39.
-LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 39.
+(Font)              scaled to size 14.4pt on input line 31.
 
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
+Overfull \hbox (1.30592pt too wide) in paragraph at lines 33--33
+[]\T1/SourceSansThree-TLF/b/n/14.4 (-20) Wie un-ter-schei-den sich die Ein-trä-ge von TC-CP und UDP Sockets? 
  []
 
 
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          0.0.0.0:*               LISTEN[] 
+Overfull \hbox (6.49628pt too wide) in paragraph at lines 35--35
+[]\T1/SourceSansThree-TLF/b/n/14.4 (-20) Was be-deu-ten die Ein-trä-ge in der Spal-te SState"bei TCP Sockets? 
  []
 
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:32973         0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:2680          0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:8384          0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:27182         0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40882         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         127.0.0.1:55196         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:55196         127.0.0.1:46137         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:52680    34.107.243.93:443       ESTABLISHED[] 
- []
-
-
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:35622    172.64.155.209:443      TIME_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40872         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:51800    13.69.68.64:443         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40918         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40872         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40882         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40890         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40902         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40918         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40930         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40930         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40902         ESTABLISHED[] 
- []
-
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/n' on input line 93.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 93.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/sc' aliased to
-(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 93.
-LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 93.
-[1{/home/paul/.TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_ut5yim.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_blpqyz.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_5c2bot.enc}
-
-{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcesans/a_uz6pbi.enc}{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourcecodepro/a_rzhnou.enc}]
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:36624    51.104.15.253:443       ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46658         127.0.0.1:35169         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40890         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::5355                 :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::22000                :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 ::1:631                 :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50146 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50366 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (143.34608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:39014 2600:1901:1:4be:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:37036 2603:1061:14:63::1:443  ESTABLISHED[] 
- []
-
-
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:37260 2600:1901:1:7c5:::443   TIME_WAIT[] 
- []
-
-
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:37276 2600:1901:1:7c5:::443   TIME_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         127.0.0.1:46658         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43506 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50412 2a04:4e42:6f::762:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51382 2603:1061:13f1:182c:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:32774 2603:1026:3000:a8:::443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 93--93
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:33476 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 118--118
-[]\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 118--118
-[]\T1/SourceCodePro-TLF/m/n/12 udp        0      0 192.168.178.98:68       192.168.178.1:67        ESTABLISHED[] 
- []
-
-[2]
-LaTeX Font Info:    Trying to load font information for TS1+SourceSerifFour-LF on input line 122.
- (/home/paul/.TinyTeX/texmf-dist/tex/latex/sourceserif/TS1SourceSerifFour-LF.fd
+LaTeX Font Info:    Trying to load font information for TS1+SourceSerifFour-LF on input line 38.
+(C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/sourceserif\ts1sourceseriffour-lf.fd
 File: TS1SourceSerifFour-LF.fd 2026/03/01 (autoinst) Font definitions for TS1/SourceSerifFour-LF.
 )
 LaTeX Font Info:    Font shape `TS1/SourceSerifFour-LF/regular/n' aliased to
-(Font)              `TS1/SourceSerifFour-LF/m/n' on input line 122.
+(Font)              `TS1/SourceSerifFour-LF/m/n' on input line 38.
 LaTeX Font Info:    Font shape `TS1/SourceSerifFour-LF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 122.
+(Font)              scaled to size 12.0pt on input line 38.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `SourceSerifFour-LF' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-
-Overfull \hbox (8.00368pt too wide) in paragraph at lines 129--129
-[]\T1/SourceSansThree-TLF/b/n/14.4 (-20) Was be-deu-ten die Ein-trä-ge in der Spal-te ^^RState^^P bei TCP Sockets? 
- []
-
-
-Overfull \hbox (10.71033pt too wide) in paragraph at lines 132--132
-[]\T1/SourceSansThree-TLF/b/n/14.4 (-20) Wie vie-le Ser-ver Ports hat ihr Rech-ner ge-öff-net (state=Listening)?
- []
-
-[3{/home/paul/.TinyTeX/texmf-dist/fonts/enc/dvips/sourceserif/a_hfktdb.enc}]
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:32973         0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:631           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:2680          0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:8384          0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:27182         0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40882         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:33298    34.107.243.93:443       ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46137         127.0.0.1:55196         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:55196         127.0.0.1:46137         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:45420    20.189.173.27:443       ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40872         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:42026    172.64.155.209:443      TIME_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40918         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:60926    13.69.68.64:443         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40872         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40882         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40890         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40902         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40918         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:40930         127.0.0.1:5054          ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40930         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40902         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:46658         127.0.0.1:35169         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.1:5054          127.0.0.1:40890         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::5355                 :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::22000                :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 ::1:631                 :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36298 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36306 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (143.34608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36878 2606:4700:7::175:443    ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:39014 2600:1901:1:4be:::443   ESTABLISHED[] 
- []
-
-[4]
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:35288 2600:1480:2000:23:::443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:44138 2600:1480:2000:23:::443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51582 2603:1061:13f1:181a:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42646 2600:1901:1:7c5:::443   TIME_WAIT[] 
- []
-
-
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42668 2600:1901:1:7c5:::443   TIME_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 127.0.0.1:35169         127.0.0.1:46658         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51606 2600:1901:1:7c5:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51618 2600:1901:1:7c5:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43538 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43540 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:50200 2a04:4e42:6f::762:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 205--205
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (107.3461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 Proto Recv-Q Send-Q Local Address           Foreign Address         State[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.54:53           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:5355            0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 127.0.0.53:53           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 0.0.0.0:27500           0.0.0.0:*               LISTEN[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:38170    34.107.243.93:443       ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:45420    20.189.173.27:443       ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:60926    13.69.68.64:443         ESTABLISHED[] 
- []
-
-
-Overfull \hbox (136.14609pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:40334    104.18.32.47:443        TIME_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp        0      0 192.168.178.98:46836    151.64.4.102:21535      ESTABLISHED[] 
- []
-
-[5]
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::5355                 :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 :::22000                :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (114.5461pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 ::1:631                 :::*                    LISTEN[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51774 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (143.34608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6      76      0 2003:ef:f734:2b00:53324 2a04:4e42:6f::347:443   CLOSE_WAIT[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:42438 2a06:98c1:310b::ac4:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:56110 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:58232 2a04:4e42:6f::347:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:41176 2a04:4e42:6f::763:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:60640 2600:1901:1:4be:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:60594 2600:1480:2000:23:::443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:51582 2603:1061:13f1:181a:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:44988 2603:1061:14:63::1:443  ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:53942 2600:1901:1:7c5:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:53952 2600:1901:1:7c5:::443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 192.168.178.98:22000    192.168.178.89:22000    ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:43540 2a06:98c1:3108::ac4:443 ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:36134 2a04:4e42:6f::762:443   ESTABLISHED[] 
- []
-
-
-Overfull \hbox (150.54608pt too wide) in paragraph at lines 246--246
-[]\T1/SourceCodePro-TLF/m/n/12 tcp6       0      0 2003:ef:f734:2b00:46376 2600:1901:1:ca7:::443   ESTABLISHED[] 
- []
-
-[6]
-Overfull \hbox (25.39545pt too wide) in paragraph at lines 279--279
-[]\T1/SourceSansThree-TLF/b/n/14.4 (-20) In wel-chem Netz be-fin-det sich der Web-Server der ers-ten Wireshark-
- []
-
-
-Overfull \hbox (56.94612pt too wide) in paragraph at lines 284--284
-[]\T1/SourceCodePro-TLF/m/n/12 http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html[] 
- []
-
-
-Overfull \hbox (265.74603pt too wide) in paragraph at lines 290--290
-[]\T1/SourceCodePro-TLF/m/n/12 curl -4 -v http://gaia.cs.umass.edu/wireshark-labs/INTRO-wireshark-file1.html -o /tmp/gaia.html[] 
- []
-
-
-Overfull \hbox (29.48361pt too wide) in paragraph at lines 292--293
-[]\T1/SourceSerifFour-LF/m/n/12 (-20) Die Aus-ga-be zeigt, dass \T1/SourceCodePro-TLF/m/n/12 (-20) gaia.cs.umass.edu \T1/SourceSerifFour-LF/m/n/12 (-20) auf die IPv4-Adresse \T1/SourceCodePro-TLF/m/n/12 (-20) 128.119.245.12
- []
-
-[7]
-Overfull \hbox (36.53961pt too wide) in paragraph at lines 331--332
-[]\T1/SourceSerifFour-LF/m/n/12 (-20) Die Aus-ga-be zeigt, dass \T1/SourceCodePro-TLF/m/n/12 (-20) www.htwg-konstanz.de \T1/SourceSerifFour-LF/m/n/12 (-20) auf die IPv4-Adresse \T1/SourceCodePro-TLF/m/n/12 (-20) 141.37.20.31
- []
-
-
-Overfull \hbox (6.54614pt too wide) in paragraph at lines 336--336
-[]\T1/SourceCodePro-TLF/m/n/12 * Connected to www.htwg-konstanz.de (141.37.20.31) port 443[] 
- []
-
-
-Overfull \hbox (85.74611pt too wide) in paragraph at lines 361--361
-[]\T1/SourceCodePro-TLF/m/n/12 org-name:       Hochschule Konstanz Technik, Wirtschaft und Gestaltung[] 
- []
-
-[8]
-Overfull \hbox (33.93121pt too wide) in paragraph at lines 363--364
-[]\T1/SourceSerifFour-LF/m/n/12 (-20) Über die HT-WG fin-det man al-so, dass die Web-sei-te un-ter der IP-Adresse \T1/SourceCodePro-TLF/m/n/12 (-20) 141.37.20.31
- []
-
-
-Overfull \hbox (32.79904pt too wide) in paragraph at lines 363--364
-\T1/SourceSerifFour-LF/m/n/12 (-20) me ist \T1/SourceCodePro-TLF/m/n/12 (-20) FH-KN\T1/SourceSerifFour-LF/m/n/12 (-20) . Als Or-ga-ni-sa-ti-on ist \T1/SourceCodePro-TLF/m/n/12 (-20) Hochschule Konstanz Technik, Wirtschaft
- []
-
-LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/bold/n' aliased to
-(Font)              `T1/SourceCodePro-TLF/b/n' on input line 373.
-LaTeX Font Info:    Font shape `T1/SourceCodePro-TLF/b/n' will be
-(Font)              scaled to size 14.4pt on input line 373.
-
-Overfull \hbox (229.74605pt too wide) in paragraph at lines 380--380
-[]\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ ss -H -tan state established | grep -Ev '127\.|::1|192\.168\.178\.' | wc -l[] 
- []
-
-
-Overfull \hbox (11.0059pt too wide) in paragraph at lines 386--386
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/n' aliased to
+(Font)              `T1/SourceSerifFour-LF/m/n' on input line 60.
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 60.
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/regular/sc' aliased to
+(Font)              `T1/SourceSerifFour-LF/m/sc' on input line 60.
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 60.
+ [1{C:/Users/krues/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourceserif/a_ut5yim.enc}{C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourceserif/a_blpqyz.enc}{C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourceserif/a_5c2bot.enc}
+
+{C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourcesans/a_d4iwsr.enc}{C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/sourceserif/a_hfktdb.enc}] (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+ (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (C:\Users\krues\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
+(Font)              scaled to size 8.0pt on input line 73.
+LaTeX Font Info:    Font shape `T1/SourceSerifFour-LF/m/it' will be
+(Font)              scaled to size 6.0pt on input line 73.
+ [2]
+Overfull \hbox (16.14119pt too wide) in paragraph at lines 91--92
+\T1/SourceSerifFour-LF/m/n/12 (-20) Das Pro-gramm IP-Ne-t-In-fo kon-tak-tiert einen Arin WHOIS Ser-ver auf der IP $\OT1/cmr/m/n/12 (-20) 199\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 5\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 26\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 (-20) 46$\T1/SourceSerifFour-LF/m/n/12 (-20) .
+ []
+
+
+Overfull \hbox (18.0369pt too wide) in paragraph at lines 94--96
+\T1/SourceSerifFour-LF/m/n/12 (-20) Die Web-sei-te aus Auf-ga-be 1 ist die-se: http://gaia.cs.umass.edu/wireshark-labs/INTRO-
+ []
+
+[3]
+LaTeX Font Info:    Font shape `T1/SourceSansThree-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 118.
+
+Overfull \hbox (11.0059pt too wide) in paragraph at lines 124--124
 []\T1/SourceSansThree-TLF/b/n/14.4 (-20) Was ist die ma-xi-ma-le An-zahl von Sockets pro Remote-IP-Adresse? 
  []
 
-
-Overfull \hbox (193.74606pt too wide) in paragraph at lines 398--398
-[]\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/01_spiegel_established.txt \[] 
- []
-
-[9]
-Overfull \hbox (49.74612pt too wide) in paragraph at lines 398--398
-[]\T1/SourceCodePro-TLF/m/n/12 > | sed -E 's/^\[([^]]+)\]:[0-9]+$/\1/; s/^([^:]+):[0-9]+$/\1/' \[] 
- []
-
-
-Overfull \hbox (4.86716pt too wide) in paragraph at lines 402--403
-\T1/SourceSerifFour-LF/m/n/12 (-20) Der zwei-te Teil ist für nor-ma-le IPv4-Adressen mit Port ge-dacht, z.B. \T1/SourceCodePro-TLF/m/n/12 (-20) 1.2.3.4:443\T1/SourceSerifFour-LF/m/n/12 (-20) .
- []
-
-
-Overfull \hbox (193.74606pt too wide) in paragraph at lines 414--414
-[]\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/01_spiegel_established.txt \[] 
- []
-
-
-Overfull \hbox (42.54613pt too wide) in paragraph at lines 426--426
-[]\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ cat socket_webseiten_analyse/06_spiegel_whois.csv[] 
- []
-
-[10]
-Overfull \hbox (229.74605pt too wide) in paragraph at lines 449--449
-[]\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ ss -H -tan state established | grep -Ev '127\.|::1|192\.168\.178\.' | wc -l[] 
- []
-
-
-Overfull \hbox (208.14606pt too wide) in paragraph at lines 460--460
-[]\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/07_vergleich_established.txt \[] 
- []
-
-
-Overfull \hbox (208.14606pt too wide) in paragraph at lines 471--471
-[]\T1/SourceCodePro-TLF/m/n/12 paul@fedora:~$ awk '{print $4}' socket_webseiten_analyse/07_vergleich_established.txt \[] 
- []
-
-
-Overfull \hbox (49.74612pt too wide) in paragraph at lines 471--471
-[]\T1/SourceCodePro-TLF/m/n/12 > | sed -E 's/^\[([^]]+)\]:[0-9]+$/\1/; s/^([^:]+):[0-9]+$/\1/' \[] 
- []
-
-[11] (./praxis03.aux)
+[4] [5] [6] [7] (praxis03.aux)
  ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-05-26>
  ***********
 Package rerunfilecheck Info: File `praxis03.out' has not changed.
-(rerunfilecheck)             Checksum: 2F048D26095BFC0312C1DC5B2632F3D1;8870.
+(rerunfilecheck)             Checksum: 35FC5D639535F14C3856D2DC0A815811;7157.
  ) 
 Here is how much of TeX's memory you used:
- 34701 strings out of 469444
- 669251 string characters out of 5467476
- 1140716 words of memory out of 5000000
- 62504 multiletter control sequences out of 15000+600000
- 928633 words of font info for 199 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 99i,16n,131p,1062b,868s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcecodepro/SourceCodePro-Regular.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb></home/paul/.TinyTeX/texmf-dist/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb>
-Output written on praxis03.pdf (11 pages, 306306 bytes).
+ 34842 strings out of 467509
+ 678475 string characters out of 5408781
+ 1135061 words of memory out of 5000000
+ 63203 multiletter control sequences out of 15000+600000
+ 981777 words of font info for 206 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,16n,131p,1066b,635s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/sourcesans/SourceSans3-Bold.pfb><C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/sourceserif/SourceSerif4-It.pfb><C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/type1/adobe/sourceserif/SourceSerif4-Regular.pfb><C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/krues/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+Output written on praxis03.pdf (7 pages, 251562 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 30 named destinations out of 1000 (max. 500000)
- 55453 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 158 PDF objects out of 1000 (max. 8388607)
+ 27 named destinations out of 1000 (max. 500000)
+ 61605 words of extra memory for PDF output out of 61914 (max. 10000000)
 
