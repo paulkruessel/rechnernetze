@@ -1,0 +1,28 @@
+"Verlorene Segmente: 3, 14, 15, 17, IW: 3, RTO: 5 RTTs, Pakete: 20",,,,,,,,,,,
+RTT,ACKs An,flightsize 1,DupACK,ssthresh,cwnd,Segmente Ab,flightsize 2,CA Segment,Segmente AN,ACKs Ab,Kommentare
+0,x,0,0,64,1,1,1,x,1,1,cwnd=IW; Segmente nach cwnd übertragen
+1,1,0,0,64,2,2-3,2,x,2,2,SlowStart: cwnd+=1 pro ACK
+2,2,0,0,64,3,4-5,3,x,4-5,2x2,Segment 3 fehlt; bestätige letztes in Reihe empfangenes Segment 
+3,2x2,3,2,64,3,6-7,5,x,6-7,2x2,sende ein Segment für 1. und 2. DupACK obwohl cwnd nicht ausreicht
+4,2,5,3,"2,5","5,5",3,5,x,3,7,"3. DupACK, ssthresh=flightsize/2, cwnd=ssthresh+3, wiederholte Übertragung von Segment 3
+ACK für Segment 7 bestätigt, dass alle Segmente bis inklusive Segmente 7 korrekt empfangen wurden"
+,2,5,4,"2,5","6,5",8,6,x,8,8,"4. DupACK, cwnd+=1, Segmente nach cwnd übertragen"
+5,7,1,0,"2,5","2,5",9,2,9,9,9,"ACK 7 ist neues ACK, cwnd=ssthresh, übertrage Segmente nach cwnd, erstes davon wird CA Segment"
+,8,1,0,"2,5","2,5",10,2,9,10,10,"ACK 8 ist nicht ACK für CA Segment, keine Änderung des cwnd"
+6,9,1,0,"2,5","3,5",11-12,3,11,11-12,11-12,"cwnd+=1 bei ACK für CA Segment, nächstes gesendetes Segment wird CA Segment"
+,10,2,0,"2,5","3,5",13,3,11,13,13,"cwnd bleibt gleich, da nicht für CA Segment"
+7,11-13,0,0,"2,5","4,5",14-17,4,14,16,13,"kompakte Schreibweise für CA mit allen ACKs in einer Zeile
+Achtung: auf neues CA Segment aufpassen, wenn nicht erstes ACK für CA Segment (siehe Übung)"
+8,13,4,1,"2,5","4,5",18,5,14,18,13,1. DupACK
+9,13,5,2,"2,5","4,5",19,6,14,19,13,2. DupACK
+10,13,6,3,3,6,14,6,x,14,14,3. DupACK
+11,14,5,0,3,3,x,,,,,"Neues ACK, Congestion Avoidance, nach cwnd können keine Segmente gesendet werden"
+,,,,,,,,,,,"weder ACKs noch Segmente kommen an, es kommt RTO=5xRTT nach letztem gesendeten Segment zu einem Timeout"
+15,TIMEOUT,0,0,"2,5",1,15,1,x,15,16,"Timeout: ssthresh=flightsize/2, cwnd=1, beginne Wiedeholungsübertragungen mit felhendem Segment"
+16,16,0,0,"2,5",2,17-18,2,x,17-18,2x19,"Slow Start: cwnd+1, nach Timeout wird ignoriert, dass Segment 14-17 bereits übertragen wurden
+Empfänger hat Segmente 18 und 19 aber gespeichert und kann ACK 19 nach Erhalt von Segment 17 versenden"
+17,19,0,0,"2,5",3,20-22,3,20,20-22,20-22,in Slow Start cwnd+=1; cwnd>=ssthresh daher Übergang zu Congestion Avoidance; Segment 20 wird CA Segment
+,19,0,1,"2,5",3,23,4,20,23,23,1. DupACK
+18,20-23,0,0,"2,5",4,24-27,4,24,24-27,24-27,kompakte Schreibweise für ACKs 20-23
+19,24-27,0,0,"2,5",5,28-30,3,28,28-30,28-30,
+20,28-30,0,0,"2,5",6,,,,,,
